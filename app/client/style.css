@@ -28,6 +28,9 @@
 .text-align-right{
   text-align: right;
 }
+.text-align-left{
+  text-align: left;
+}
 .margin-bottom-minus-10{
   margin-bottom: -10px;
 }

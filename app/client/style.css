@@ -1,0 +1,40 @@
+.Nunito-font{
+  font-family: "Nunito", sans-serif;
+}
+.font-large{
+  font-size: 72px;
+}
+.font-medium{
+  font-size: 36px;
+}
+.font-small{
+  font-size: 18px;
+}
+.font-bold{
+  font-weight: bold;
+}
+.font-color-white{
+  color: white;
+}
+.font-color-grey{
+  color: darkgray;
+}
+.font-color-lightgrey{
+  color: lightgrey;
+}
+.font-color-green{
+  color: #6fbe44;
+}
+.background-site{
+  background: url('/images/Landing-3.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+.inverted-section {
+  background-color: rgba(0,0,0,.8);
+  padding-top: 68px!important;
+  padding-bottom: 9px!important;
+}
+.inverted-main-header {
+  color: #fff;
+  font-size: 72px;
+}

@@ -31,8 +31,14 @@
 .margin-bottom-minus-10{
   margin-bottom: -10px;
 }
+.big-padding-bottom{
+  padding-bottom: 96px;
+}
+.big-padding-top{
+  padding-top: 96px;
+}
 .background-site{
-  background: url('/images/Landing-3.jpg') no-repeat center center fixed;
+  background: url('/images/Landing-5.jpg') no-repeat center center fixed;
   background-size: cover;
 }
 .inverted-section {

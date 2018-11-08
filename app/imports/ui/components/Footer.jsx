@@ -8,30 +8,30 @@ class Footer extends React.Component {
         <footer>
           <Grid textAlign='center' container>
             <Grid.Column width={3}>
-              <List> Useful links </List>
+              <List> Social Media </List>
               <hr/>
-              <List.Item> Khan Academy </List.Item>
-              <List.Item> The text book bro </List.Item>
+              <List.Item> Facebook </List.Item>
+              <List.Item> Instagram </List.Item>
+              <List.Item> Twitter </List.Item>
             </Grid.Column>
             <Grid.Column width={3}>
-              <List>We like ratings!</List>
+              <List>Useful Links</List>
               <hr/>
-              <List.Item>A Mentor</List.Item>
-              <List.Item>A Student</List.Item>
-              <List.Item>This app</List.Item>
+              <List.Item>Khan Academy</List.Item>
+              <List.Item>Chegg</List.Item>
+              <List.Item>Stack Overflow</List.Item>
             </Grid.Column>
             <Grid.Column width={3}>
               <List>Support Us</List>
               <hr/>
               <List.Item>PayPal</List.Item>
               <List.Item>GoFund Me</List.Item>
-              <List.Item>PLz HAlp, need MoNeeyzz</List.Item>
             </Grid.Column>
             <Grid.Column width={3}>
               <List>About Us</List>
               <hr/>
               <List.Item>
-                PHQSHTP inc llc est 2018 ltd <br />
+                PHQSHTP inc. llc. co. LtD. est 2018 <br />
                 University of Hawaii<br />
                 Honolulu, HI 96822
               </List.Item>

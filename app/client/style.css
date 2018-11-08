@@ -25,6 +25,12 @@
 .font-color-green{
   color: #6fbe44;
 }
+.text-align-right{
+  text-align: right;
+}
+.margin-bottom-minus-10{
+  margin-bottom: -10px;
+}
 .background-site{
   background: url('/images/Landing-3.jpg') no-repeat center center fixed;
   background-size: cover;

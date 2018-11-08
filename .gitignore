@@ -1,6 +1,11 @@
 <<<<<<< HEAD
 *.iml
 .idea
+<<<<<<< HEAD
 =======
 .idea
 >>>>>>> a8bfd6351c0ba1f15b3962eff4861950da9b6238
+=======
+*.iml
+node_modules
+>>>>>>> origin/CSS/MiddleMenu

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b0664e7d-7c1e-4681-80f2-9d1bdef73294" name="Default Changelist" comment="" />
+    <list default="true" id="0c714f8d-2936-4c5f-881e-09a29d14f485" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -9,31 +10,23 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FUSProjectUsageTrigger">
-    <session id="-128240135">
+    <session id="1403635093">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.3" value="1" />
           <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="md" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="Markdown" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="md" value="7" />
+          <entry key="gitignore" value="11" />
+          <entry key="jsx" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Markdown" value="7" />
+          <entry key="JSX Harmony" value="29" />
+          <entry key="PLAIN_TEXT" value="11" />
         </counts>
       </usages-collector>
     </session>
@@ -41,13 +34,19 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="570">
-                <caret line="22" selection-start-line="22" selection-end-line="22" />
-              </first_editor>
-              <second_editor />
+        <entry file="file://$PROJECT_DIR$/app/imports/ui/components/Footer.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="5" lean-forward="true" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -60,7 +59,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/app/imports/ui/components/Footer.jsx" />
       </list>
     </option>
   </component>
@@ -81,15 +81,400 @@
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
-      <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/etc/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/@babel/code-frame/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/@babel/generator/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/@babel/helper-function-name/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/@babel/helper-get-function-arity/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/@babel/highlight/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/@babel/runtime/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/@babel/template/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/@babel/traverse/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/@babel/types/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/@semantic-ui-react/event-stack/node_modules/prop-types/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/@semantic-ui-react/event-stack/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/acorn-jsx/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/acorn/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/ajv-keywords/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/ajv/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/ansi-escapes/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/ansi-regex/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/ansi-styles/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/argparse/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/aria-query/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/array-includes/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/array-union/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/array-uniq/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/arrify/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/asap/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/ast-types-flow/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/axobject-query/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/babel-eslint/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/babylon/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/balanced-match/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/brace-expansion/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/builtin-modules/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/caller-path/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/callsites/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/chalk/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/chardet/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/circular-json/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/classnames/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/cli-cursor/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/cli-width/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/clone/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/color-convert/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/color-name/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/commander/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/concat-map/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/contains-path/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/core-js/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/cross-spawn/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/damerau-levenshtein/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/deep-is/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/define-properties/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/del/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/doctrine/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/emoji-regex/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/encoding/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/error-ex/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/es-abstract/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/es-to-primitive/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/escape-string-regexp/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/eslint-config-airbnb-base/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/eslint-config-airbnb/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/eslint-import-resolver-node/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/eslint-import-resolver-node/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/eslint-module-utils/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/eslint-module-utils/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/eslint-plugin-import/memo-parser/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/eslint-plugin-import/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/eslint-plugin-import/node_modules/doctrine/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/eslint-plugin-import/node_modules/isarray/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/eslint-plugin-import/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/eslint-plugin-jsx-a11y/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/eslint-plugin-meteor/node_modules/invariant/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/eslint-plugin-meteor/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/eslint-plugin-react/node_modules/prop-types/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/eslint-plugin-react/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/eslint-restricted-globals/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/eslint-scope/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/eslint-utils/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/eslint-visitor-keys/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/eslint/node_modules/@babel/code-frame/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/eslint/node_modules/@babel/highlight/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/eslint/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/eslint/node_modules/eslint-scope/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/eslint/node_modules/globals/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/eslint/node_modules/js-tokens/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/eslint/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/eslint/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/espree/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/esprima/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/esquery/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/esrecurse/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/estraverse/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/esutils/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/exenv/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/extend/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/external-editor/node_modules/iconv-lite/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/external-editor/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/fast-deep-equal/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/fast-json-stable-stringify/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/fast-levenshtein/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/fbjs/node_modules/core-js/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/fbjs/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/figures/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/file-entry-cache/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/find-up/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/flat-cache/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/fs.realpath/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/function-bind/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/functional-red-black-tree/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/glob/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/globals/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/globby/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/graceful-fs/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/graphql/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/has-flag/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/has-symbols/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/has/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/history/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/hoist-non-react-statics/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/hosted-git-info/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/iconv-lite/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/ignore/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/imurmurhash/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/inflight/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/inherits/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/inquirer/node_modules/lodash/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/inquirer/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/invariant/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/is-arrayish/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/is-builtin-module/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/is-callable/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/is-date-object/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/is-fullwidth-code-point/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/is-path-cwd/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/is-path-in-cwd/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/is-path-inside/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/is-promise/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/is-regex/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/is-resolvable/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/is-stream/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/is-symbol/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/isarray/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/isexe/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/isomorphic-fetch/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/iterall/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/jquery/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/js-tokens/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/js-yaml/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/jsesc/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/json-schema-traverse/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/json-stable-stringify-without-jsonify/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/jsx-ast-utils/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/keyboard-key/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/levn/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/load-json-file/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/locate-path/node_modules/path-exists/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/locate-path/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/lodash._basecallback/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/lodash._baseeach/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/lodash._basefind/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/lodash._basefindindex/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/lodash._baseisequal/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/lodash._baseismatch/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/lodash._basematches/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/lodash._bindcallback/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/lodash._getnative/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/lodash._reinterpolate/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/lodash.every/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/lodash.find/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/lodash.findwhere/node_modules/lodash.find/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/lodash.findwhere/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/lodash.foreach/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/lodash.includes/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/lodash.isarguments/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/lodash.isarray/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/lodash.isempty/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/lodash.isobject/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/lodash.istypedarray/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/lodash.keys/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/lodash.merge/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/lodash.omit/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/lodash.pairs/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/lodash.pick/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/lodash.template/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/lodash.templatesettings/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/lodash.union/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/lodash.uniq/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/lodash.without/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/lodash/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/loose-envify/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/message-box/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/asn1.js/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/assert/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/base64-js/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/bn.js/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/brorand/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/browserify-aes/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/browserify-cipher/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/browserify-des/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/browserify-rsa/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/browserify-sign/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/browserify-zlib/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/browserify-zlib/test/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/buffer-xor/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/buffer/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/builtin-status-codes/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/cipher-base/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/console-browserify/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/constants-browserify/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/core-util-is/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/create-ecdh/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/create-hash/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/create-hmac/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/crypto-browserify/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/date-now/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/des.js/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/diffie-hellman/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/domain-browser/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/elliptic/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/events/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/evp_bytestokey/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/hash-base/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/hash.js/node_modules/inherits/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/hash.js/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/hmac-drbg/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/https-browserify/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/ieee754/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/indexof/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/inherits/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/isarray/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/md5.js/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/miller-rabin/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/minimalistic-assert/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/minimalistic-crypto-utils/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/os-browserify/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/pako/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/parse-asn1/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/path-browserify/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/pbkdf2/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/process-nextick-args/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/process/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/public-encrypt/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/punycode/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/querystring-es3/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/querystring/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/randombytes/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/randomfill/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/readable-stream/node_modules/inherits/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/readable-stream/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/ripemd160/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/safe-buffer/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/sha.js/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/stream-browserify/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/stream-http/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/stream-http/test/browser/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/string_decoder/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/timers-browserify/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/to-arraybuffer/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/tty-browserify/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/url/node_modules/punycode/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/url/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/util-deprecate/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/util/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/vm-browserify/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/node_modules/xtend/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/meteor-node-stubs/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/mimic-fn/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/minimatch/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/minimist/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/mkdirp/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/mongo-object/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/mute-stream/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/natural-compare/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/nice-try/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/node-fetch/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/normalize-package-data/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/object-assign/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/object-keys/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/object.assign/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/object.entries/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/once/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/onetime/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/optionator/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/os-tmpdir/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/p-limit/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/p-locate/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/p-try/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/parse-json/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/path-exists/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/path-is-absolute/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/path-is-inside/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/path-key/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/path-parse/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/path-to-regexp/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/path-type/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/pify/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/pinkie-promise/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/pinkie/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/pkg-dir/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/pluralize/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/prelude-ls/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/progress/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/promise/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/prop-types/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/punycode/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/react-addons-pure-render-mixin/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/react-dom/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/react-router-dom/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/react-router/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/react/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/read-pkg-up/node_modules/find-up/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/read-pkg-up/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/read-pkg/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/regenerator-runtime/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/regexpp/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/require-uncached/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/resolve-from/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/resolve-pathname/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/resolve/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/resolve/test/module_dir/zmodules/bbb/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/resolve/test/resolver/baz/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/resolve/test/resolver/browser_field/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/resolve/test/resolver/dot_main/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/resolve/test/resolver/dot_slash_main/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/resolve/test/resolver/incorrect_main/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/restore-cursor/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/rimraf/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/run-async/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/rxjs/ajax/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/rxjs/internal-compatibility/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/rxjs/operators/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/rxjs/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/rxjs/src/ajax/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/rxjs/src/internal-compatibility/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/rxjs/src/operators/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/rxjs/src/testing/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/rxjs/src/webSocket/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/rxjs/testing/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/rxjs/webSocket/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/safer-buffer/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/semantic-ui-css/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/semantic-ui-react/node_modules/@babel/runtime/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/semantic-ui-react/node_modules/classnames/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/semantic-ui-react/node_modules/lodash/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/semantic-ui-react/node_modules/prop-types/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/semantic-ui-react/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/semver/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/setimmediate/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/shallowequal/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/shebang-command/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/shebang-regex/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/signal-exit/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/simpl-schema/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/slice-ansi/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/source-map/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/spdx-correct/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/spdx-exceptions/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/spdx-expression-parse/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/spdx-license-ids/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/sprintf-js/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/string-width/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/strip-ansi/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/strip-bom/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/strip-json-comments/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/supports-color/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/table/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/text-table/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/through/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/tmp/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/to-fast-properties/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/trim-right/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/tslib/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/type-check/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/ua-parser-js/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/uniforms-semantic/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/uniforms/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/uri-js/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/validate-npm-package-license/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/value-equal/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/warning/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/whatwg-fetch/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/which/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/wordwrap/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/wrappy/package.json" />
+      <path value="$PROJECT_DIR$/app/node_modules/write/package.json" />
       <path value="$PROJECT_DIR$/app/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="40" />
-    <option name="y" value="55" />
-    <option name="width" value="1339" />
-    <option name="height" value="911" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="948" />
+    <option name="width" value="981" />
+    <option name="height" value="1092" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -99,7 +484,7 @@
         </expanded-state>
         <selected-state>
           <State>
-            <id>Android</id>
+            <id>JavaScript</id>
           </State>
         </selected-state>
       </profile-state>
@@ -110,8 +495,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -123,21 +506,21 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541622483226" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/AppData/Roaming/npm/eslint.cmd" />
+    <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.standard" value="project" />
-    <property name="node.js.selected.package.eslint" value="/usr/local/lib/node_modules/eslint" />
-    <property name="node.js.selected.package.standard" value="/usr/local/lib/node_modules/eslint" />
+    <property name="node.js.selected.package.eslint" value="C:\Users\Aaron\AppData\Roaming\npm\node_modules\eslint" />
+    <property name="node.js.selected.package.standard" value="C:\Users\Aaron\AppData\Roaming\npm\node_modules\eslint" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
   </component>
   <component name="RunDashboard">
@@ -152,36 +535,15 @@
       </list>
     </option>
   </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
-  <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="b0664e7d-7c1e-4681-80f2-9d1bdef73294" name="Default Changelist" comment="" />
-      <created>1541621833206</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1541621833206</updated>
-      <workItem from="1541621835528" duration="366000" />
-    </task>
-    <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="366000" />
-  </component>
   <component name="ToolWindowManager">
-    <frame x="40" y="55" width="1339" height="911" extended-state="0" />
+    <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
       <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24980725" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24960254" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -190,12 +552,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Maven Projects" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -208,31 +565,19 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="570">
-            <caret line="22" selection-start-line="22" selection-end-line="22" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="5" lean-forward="true" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>10</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+    <entry file="file://$PROJECT_DIR$/app/imports/ui/components/Footer.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

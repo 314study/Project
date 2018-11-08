@@ -21,7 +21,7 @@ class Landing extends React.Component {
                 <span className="font-bold font-color-lightgrey"> P</span>lease.
               </p>
             </p>
-            <Grid container stackable centered columns={3}>
+            <Grid container stackable columns={3}>
               <Grid.Column>
                 <p className="font-color-white">CARD</p>
               </Grid.Column>

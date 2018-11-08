@@ -22,7 +22,7 @@ class Landing extends React.Component {
               </p>
             </p>
             <Grid container stackable centered columns={3}>
-              <Grid.Column centered>
+              <Grid.Column>
                 <p className="font-color-white">CARD</p>
               </Grid.Column>
               <Grid.Column>

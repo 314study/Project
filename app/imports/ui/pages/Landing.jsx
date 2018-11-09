@@ -28,10 +28,10 @@ class Landing extends React.Component {
                     <Card.Header>Phillip Johnson</Card.Header>
                     <Card.Content>
                       <Grid>
-                        <Grid.Column width={6}>
+                        <Grid.Column width={8}>
                           <Rating icon='star' defaultRating={5} maxRating={5}/>
                         </Grid.Column>
-                        <Grid.Column width={6}>
+                        <Grid.Column width={4} className='text-align-center'>
                           Testing
                         </Grid.Column>
                       </Grid>
@@ -43,10 +43,10 @@ class Landing extends React.Component {
                     <Card.Header>Phillip Johnson</Card.Header>
                     <Card.Content>
                       <Grid>
-                        <Grid.Column width={6}>
+                        <Grid.Column width={8}>
                           <Rating icon='star' defaultRating={5} maxRating={5}/>
                         </Grid.Column>
-                        <Grid.Column width={6}>
+                        <Grid.Column width={4} className='text-align-center'>
                           Testing
                         </Grid.Column>
                       </Grid>
@@ -58,10 +58,10 @@ class Landing extends React.Component {
                     <Card.Header>Phillip Johnson</Card.Header>
                     <Card.Content>
                       <Grid>
-                        <Grid.Column width={6}>
+                        <Grid.Column width={8}>
                           <Rating icon='star' defaultRating={5} maxRating={5}/>
                         </Grid.Column>
-                        <Grid.Column width={6}>
+                        <Grid.Column width={4} className='text-align-center'>
                           Testing
                         </Grid.Column>
                       </Grid>

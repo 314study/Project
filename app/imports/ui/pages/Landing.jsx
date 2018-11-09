@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Image, Header } from 'semantic-ui-react';
+import { Grid, Image, Header, Card, Rating } from 'semantic-ui-react';
 
 /** A simple static component to render some text for the landing page. */
 class Landing extends React.Component {
@@ -24,13 +24,49 @@ class Landing extends React.Component {
               </p>
               <Grid container stackable columns={3}>
                 <Grid.Column>
-                  <p className="font-color-white">CARD</p>
+                  <Card>
+                    <Card.Header>Phillip Johnson</Card.Header>
+                    <Card.Content>
+                      <Grid>
+                        <Grid.Column width={6}>
+                          <Rating icon='star' defaultRating={5} maxRating={5}/>
+                        </Grid.Column>
+                        <Grid.Column width={6}>
+                          Testing
+                        </Grid.Column>
+                      </Grid>
+                    </Card.Content>
+                  </Card>
                 </Grid.Column>
                 <Grid.Column>
-                  <p className="font-color-white">CARD</p>
+                  <Card>
+                    <Card.Header>Phillip Johnson</Card.Header>
+                    <Card.Content>
+                      <Grid>
+                        <Grid.Column width={6}>
+                          <Rating icon='star' defaultRating={5} maxRating={5}/>
+                        </Grid.Column>
+                        <Grid.Column width={6}>
+                          Testing
+                        </Grid.Column>
+                      </Grid>
+                    </Card.Content>
+                  </Card>
                 </Grid.Column>
                 <Grid.Column>
-                  <p className="font-color-white">CARD</p>
+                  <Card>
+                    <Card.Header>Phillip Johnson</Card.Header>
+                    <Card.Content>
+                      <Grid>
+                        <Grid.Column width={6}>
+                          <Rating icon='star' defaultRating={5} maxRating={5}/>
+                        </Grid.Column>
+                        <Grid.Column width={6}>
+                          Testing
+                        </Grid.Column>
+                      </Grid>
+                    </Card.Content>
+                  </Card>
                 </Grid.Column>
               </Grid>
             </div>

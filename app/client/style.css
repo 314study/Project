@@ -47,12 +47,15 @@
   background: url('/images/Landing-5.jpg') no-repeat center center fixed;
   background-size: cover;
 }
-.inverted-section {
+.inverted-section{
+  background-color: rgba(0,0,0,.8);
+}
+.inverted-section-with-padding{
   background-color: rgba(0,0,0,.8);
   padding-top: 68px!important;
   padding-bottom: 9px!important;
 }
-.inverted-main-header {
+.inverted-main-header{
   color: #fff;
   font-size: 72px;
 }

@@ -101,7 +101,7 @@ class Landing extends React.Component {
               </Grid>
             </div>
           </div>
-          <div className="background-site">
+          <div className="inverted-section">
             <p>
               But I must explain to you how all this mistaken idea of denouncing pleasure
               and praising pain was born and I will give you a complete account of the system,
@@ -133,7 +133,7 @@ class Landing extends React.Component {
               no annoying consequences, or one who avoids a pain that produces no resultant pleasure?
             </p>
           </div>
-          <div className="background-site">
+          <div className="inverted-section">
             <p>
               But I must explain to you how all this mistaken idea of denouncing pleasure
               and praising pain was born and I will give you a complete account of the system,
@@ -165,7 +165,7 @@ class Landing extends React.Component {
               no annoying consequences, or one who avoids a pain that produces no resultant pleasure?
             </p>
           </div>
-          <div className="background-site">
+          <div className="inverted-section">
             <p>
               But I must explain to you how all this mistaken idea of denouncing pleasure
               and praising pain was born and I will give you a complete account of the system,
@@ -197,7 +197,7 @@ class Landing extends React.Component {
               no annoying consequences, or one who avoids a pain that produces no resultant pleasure?
             </p>
           </div>
-          <div className="background-site">
+          <div className="inverted-section">
             <p>
               But I must explain to you how all this mistaken idea of denouncing pleasure
               and praising pain was born and I will give you a complete account of the system,
@@ -229,7 +229,7 @@ class Landing extends React.Component {
               no annoying consequences, or one who avoids a pain that produces no resultant pleasure?
             </p>
           </div>
-          <div className="background-site">
+          <div className="inverted-section">
             <p>
               But I must explain to you how all this mistaken idea of denouncing pleasure
               and praising pain was born and I will give you a complete account of the system,
@@ -261,7 +261,7 @@ class Landing extends React.Component {
               no annoying consequences, or one who avoids a pain that produces no resultant pleasure?
             </p>
           </div>
-          <div className="background-site">
+          <div className="inverted-section">
             <p>
               But I must explain to you how all this mistaken idea of denouncing pleasure
               and praising pain was born and I will give you a complete account of the system,

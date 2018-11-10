@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c714f8d-2936-4c5f-881e-09a29d14f485" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/imports/ui/pages/ClassList.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/imports/ui/pages/Students.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/imports/ui/pages/Tutors.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/imports/ui/components/NavBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/imports/ui/components/NavBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/imports/ui/layouts/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/imports/ui/layouts/App.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,13 +52,13 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="1" />
-          <entry key="JSX Harmony" value="5" />
+          <entry key="JSX Harmony" value="12" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JSX Harmony" value="392" />
+          <entry key="JSX Harmony" value="721" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
@@ -66,13 +66,13 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="jpg" value="1" />
-          <entry key="jsx" value="5" />
+          <entry key="jsx" value="12" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="jsx" value="392" />
+          <entry key="jsx" value="721" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
@@ -92,11 +92,92 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/imports/ui/layouts/App.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="36" column="70" selection-start-line="36" selection-start-column="70" selection-end-line="36" selection-end-column="70" />
+            <state relative-caret-position="204">
+              <caret line="36" column="73" lean-forward="true" selection-start-line="36" selection-start-column="73" selection-end-line="36" selection-end-column="73" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/ClassList.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="47" lean-forward="true" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/Tutors.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="90" selection-start-line="10" selection-start-column="90" selection-end-line="10" selection-end-column="90" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/Students.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="91" selection-start-line="9" selection-start-column="91" selection-end-line="9" selection-end-column="91" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/EditStuff.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-425">
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/ListStuffAdmin.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-505">
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/Signout.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/AddStuff.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="107">
+              <caret line="46" column="65" lean-forward="true" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="65" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -117,6 +198,9 @@
         <option value="$PROJECT_DIR$/.idea/modules.xml" />
         <option value="$PROJECT_DIR$/app/imports/ui/components/NavBar.jsx" />
         <option value="$PROJECT_DIR$/app/imports/ui/layouts/App.jsx" />
+        <option value="$PROJECT_DIR$/app/imports/ui/pages/ClassList.jsx" />
+        <option value="$PROJECT_DIR$/app/imports/ui/pages/Tutors.jsx" />
+        <option value="$PROJECT_DIR$/app/imports/ui/pages/Students.jsx" />
       </list>
     </option>
   </component>
@@ -1918,6 +2002,9 @@
       </profile-state>
     </entry>
   </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -2083,15 +2170,6 @@
     <entry file="file://$PROJECT_DIR$/app/public/images/Landing-1.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/AddStuff.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-675">
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/ListStuff.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -2122,8 +2200,75 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/imports/ui/layouts/App.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="36" column="70" selection-start-line="36" selection-start-column="70" selection-end-line="36" selection-end-column="70" />
+        <state relative-caret-position="204">
+          <caret line="36" column="73" lean-forward="true" selection-start-line="36" selection-start-column="73" selection-end-line="36" selection-end-column="73" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/AddStuff.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="46" column="65" lean-forward="true" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="65" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/ClassList.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="47" lean-forward="true" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/Tutors.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="90" selection-start-line="10" selection-start-column="90" selection-end-line="10" selection-end-column="90" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/Students.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="91" selection-start-line="9" selection-start-column="91" selection-end-line="9" selection-end-column="91" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/EditStuff.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-425">
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/ListStuffAdmin.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-505">
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/Signout.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

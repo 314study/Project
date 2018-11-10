@@ -44,8 +44,9 @@
   padding-top: 96px;
 }
 .background-site{
-  background: url('/images/Landing-5.jpg') no-repeat center center fixed;
+  background-image: url('/images/Landing-3.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .inverted-section{
   background-color: rgba(0,0,0,.8);

@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0c714f8d-2936-4c5f-881e-09a29d14f485" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/imports/ui/layouts/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/imports/ui/layouts/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/imports/ui/pages/Statistics.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/imports/ui/pages/Statistics.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/imports/ui/pages/Students.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/imports/ui/pages/Students.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,10 +35,11 @@
     <session id="2104008139">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.70" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -82,11 +80,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/imports/ui/layouts/App.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
-              <caret line="16" column="39" lean-forward="true" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+              <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -94,7 +92,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/ListStuffAdmin.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
+            <state relative-caret-position="714">
               <caret line="48" column="51" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="51" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
@@ -106,7 +104,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/ListStuff.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
+            <state relative-caret-position="714">
               <caret line="48" column="46" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="46" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
@@ -115,10 +113,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/Students.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
+            <state relative-caret-position="153">
               <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
@@ -131,7 +129,7 @@
         <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/Statistics.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="4" column="39" lean-forward="true" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+              <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -142,8 +140,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/imports/ui/components/NavBar.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="20" column="82" lean-forward="true" selection-start-line="20" selection-start-column="71" selection-end-line="20" selection-end-column="82" />
+            <state relative-caret-position="238">
+              <caret line="20" column="82" selection-start-line="20" selection-start-column="71" selection-end-line="20" selection-end-column="82" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -177,7 +175,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/Tutors.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
+            <state relative-caret-position="153">
               <caret line="10" column="90" selection-start-line="10" selection-start-column="90" selection-end-line="10" selection-end-column="90" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
@@ -189,7 +187,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/AddStuff.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
+            <state relative-caret-position="595">
               <caret line="46" column="65" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="65" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
@@ -241,177 +239,6 @@
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/abbrev-7a20a0a9/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/ajv-490c03c6/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/ansi-regex-53508fc9/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/ansi-regex-abde7bee/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/aproba-57c8a851/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/are-we-there-yet-4f1cd9ad/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/asn1-e9f009f0/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/assert-plus-2610bf5c/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/assert-plus-3cca3b68/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/assert-plus-56166a5b/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/assert-plus-96698896/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/assert-plus-b91cd20e/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/assert-plus-e9d71d1b/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/asynckit-c41cbec6/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/aws-sign2-5838e2d6/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/aws4-267c4ca6/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/balanced-match-dee30573/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/bcrypt-pbkdf-62f11bfc/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/block-stream-7bbadb49/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/boom-48184c1b/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/brace-expansion-fc54bcce/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/caseless-c51bfce2/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/chownr-b036fe16/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/co-d79358a1/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/code-point-at-7cd0ff6d/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/combined-stream-930bc2c4/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/concat-map-dc89da8b/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/console-control-strings-a435e477/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/core-util-is-3770b4a5/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/core-util-is-dcafee1d/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/core-util-is-f7efe26a/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/cryptiles-c93165e9/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/dashdash-68e21320/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/debug-30ec7ee1/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/deep-extend-96643324/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/delayed-stream-4e25ca4a/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/delegates-bfe89ffa/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/detect-libc-ce3d4acf/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/ecc-jsbn-f749ed77/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/extend-a399c716/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/extsprintf-625979dc/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/forever-agent-d4242004/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/form-data-6ecc1241/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/fs-minipass-bb6275d1/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/fs.realpath-d968b1e5/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/fstream-bb530792/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/gauge-bc9fb4f9/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/getpass-3c8344c9/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/glob-e562f69d/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/graceful-fs-f0e502b4/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/har-schema-e58fbb49/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/har-validator-890ae249/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/has-unicode-b12e040e/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/hawk-5ae8abbb/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/hoek-b8d37147/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/http-signature-7809c098/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/iconv-lite-68ec26bb/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/ignore-walk-2a1e159e/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/inflight-dc72b1a6/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/inherits-317dd947/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/inherits-45cdb2b1/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/inherits-bc02819d/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/ini-83525cbc/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/is-fullwidth-code-point-31be488d/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/is-typedarray-c0268bf1/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/isarray-4756423e/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/isarray-feaf6eae/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/isexe-a5eba17a/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/isstream-9541ec4f/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/jsbn-fd18cd04/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/json-schema-6ef92a31/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/json-stable-stringify-920705c4/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/json-stringify-safe-96fcfe53/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/jsonify-e0fc4269/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/jsprim-7a6a7d80/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/mime-db-114e3ab4/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/mime-types-7d2c4b6c/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/minimatch-fe6abd52/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/minimist-4a9aeb7e/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/minimist-a5310fc8/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/minipass-ac1dc5de/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/minizlib-7d206486/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/mkdirp-e169396d/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/ms-9344d651/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/needle-ebe66971/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/node-gyp-6f29a445/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/node-pre-gyp-d27fce3f/lib/util/nw-pre-gyp/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/node-pre-gyp-d27fce3f/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/nopt-12961ebf/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/nopt-943441e1/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/npm-bundled-c0ad00b4/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/npm-packlist-a743dfcc/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/npmlog-16df2dda/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/number-is-nan-0830cdb9/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/oauth-sign-46798193/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/object-assign-126716f5/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/once-0e972cb5/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/os-homedir-44103eba/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/os-tmpdir-2682b776/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/osenv-9a99df04/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/path-is-absolute-f64187c4/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/performance-now-06d0bffb/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/process-nextick-args-29b0826c/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/process-nextick-args-3443b339/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/punycode-bd294b59/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/qs-e160b301/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/rc-f3d636b1/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/readable-stream-00468996/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/readable-stream-90b2065c/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/request-f768b6a9/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/rimraf-0553cced/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/safe-buffer-6cd7071f/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/safe-buffer-910917cc/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/safe-buffer-9720ee9b/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/safer-buffer-53ecb6aa/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/sax-bc0995f6/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/semver-57013065/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/set-blocking-2ecd69b1/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/signal-exit-408d8c81/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/sntp-a013738d/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/sshpk-d1cdabca/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/string-width-c2d7486d/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/string_decoder-4d66998d/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/string_decoder-59c3ba3a/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/stringstream-dfb95bb9/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/strip-ansi-4b04a6c2/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/strip-ansi-d08bc89a/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/strip-json-comments-395d9db8/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/tar-41bb7f14/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/tar-4335ec59/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/tough-cookie-49c7f96c/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/tunnel-agent-056f7123/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/tweetnacl-01548bb2/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/util-deprecate-6dfe3238/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/util-deprecate-f3006302/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/uuid-8f5e7778/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/verror-bad3675d/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/which-f9ea14d3/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/wide-align-f569977f/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/wrappy-a5f18da0/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/.staging/yallist-bee7ea77/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/amdefine/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/ansi-styles/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/asap/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/chalk/node_modules/ansi-regex/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/chalk/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/core-util-is/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/duplexer2/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/escape-string-regexp/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/fibers/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/has-ansi/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/inherits/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/isarray/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/meteor-promise/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/multipipe/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/object-assign/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/process-nextick-args/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/promise/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/readable-stream/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/safe-buffer/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/semver/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/source-map-support/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/source-map/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/split2/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/string_decoder/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/strip-ansi/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/supports-color/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/through2/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/underscore/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/util-deprecate/package.json" />
-      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/xtend/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/npm/node_modules/@babel/runtime/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/npm/node_modules/@semantic-ui-react/event-stack/node_modules/prop-types/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/npm/node_modules/@semantic-ui-react/event-stack/package.json" />
@@ -2143,7 +1970,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1292" height="692" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1709062" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -2157,7 +1983,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.3285968" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="8" side_tool="true" visible="true" weight="0.3285968" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -2217,17 +2043,85 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/Signout.jsx">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/EditStuff.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="-425" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/Landing.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/imports/startup/server/stuff.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-165" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/imports/ui/layouts/App.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/ListStuffAdmin.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="48" column="51" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="51" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/EditStuff.jsx">
+    <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/ListStuff.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-425">
+        <state relative-caret-position="714">
+          <caret line="48" column="46" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/Students.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/Statistics.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/imports/ui/components/NavBar.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="20" column="82" selection-start-line="20" selection-start-column="71" selection-end-line="20" selection-end-column="82" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/imports/ui/components/StuffItemAdmin.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -2244,28 +2138,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/AddStuff.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="46" column="65" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="65" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/imports/ui/components/StuffItemAdmin.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/Tutors.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
+        <state relative-caret-position="153">
           <caret line="10" column="90" selection-start-line="10" selection-start-column="90" selection-end-line="10" selection-end-column="90" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
@@ -2273,76 +2148,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/Landing.jsx">
+    <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/AddStuff.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/imports/startup/server/stuff.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-165">
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/ListStuffAdmin.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" column="51" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/ListStuff.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="48" column="46" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/imports/ui/components/NavBar.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="20" column="82" lean-forward="true" selection-start-line="20" selection-start-column="71" selection-end-line="20" selection-end-column="82" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/imports/ui/layouts/App.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="39" lean-forward="true" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/Statistics.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="39" lean-forward="true" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/Students.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+        <state relative-caret-position="595">
+          <caret line="46" column="65" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="65" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

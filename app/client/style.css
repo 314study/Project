@@ -63,7 +63,10 @@
   padding-top: 68px!important;
   padding-bottom: 9px!important;
 }
-.inverted-main-header{
+.inverted-main-header {
   color: #fff;
   font-size: 72px;
+}
+.black {
+  color: black;
 }

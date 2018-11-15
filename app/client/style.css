@@ -7,6 +7,9 @@
 .font-medium{
   font-size: 36px;
 }
+.font-kindaSmall{
+  font-size: 25px;
+}
 .font-small{
   font-size: 18px;
 }
@@ -25,11 +28,40 @@
 .font-color-green{
   color: #6fbe44;
 }
-.background-site{
-  background: url('/images/Landing-3.jpg') no-repeat center center fixed;
-  background-size: cover;
+.text-align-right{
+  text-align: right;
 }
-.inverted-section {
+.text-align-left{
+  text-align: left;
+}
+.text-align-center{
+  text-align: center;
+}
+.margin-bottom-minus-10{
+  margin-bottom: -10px;
+}
+.big-padding-bottom{
+  padding-bottom: 96px;
+}
+.big-padding-top{
+  padding-top: 96px;
+}
+.background-site{
+  background-image: url('/images/Landing-3.jpg');
+  background-size: cover;
+  background-position-y: -100px;
+  background-repeat: no-repeat;
+}
+.background-site-second{
+  background-image: url('/images/Landing-4.jpg');
+  background-size: cover;
+  background-position-y: -100px;
+  background-repeat: no-repeat;
+}
+.inverted-section{
+  background-color: rgba(0,0,0,.8);
+}
+.inverted-section-with-padding{
   background-color: rgba(0,0,0,.8);
   padding-top: 68px!important;
   padding-bottom: 9px!important;
@@ -37,4 +69,7 @@
 .inverted-main-header {
   color: #fff;
   font-size: 72px;
+}
+.black {
+  color: black;
 }

@@ -47,9 +47,9 @@
   padding-top: 96px;
 }
 .background-site{
-  background-image: url('/images/Landing-3.jpg');
+  background-image: url('/images/image0.jpg');
   background-size: cover;
-  background-position-y: -100px;
+  background-position-y: -625px;
   background-repeat: no-repeat;
 }
 .background-site-second{
@@ -72,4 +72,8 @@
 }
 .black {
   color: black;
+}
+.footer-trial {
+  position: absolute;
+  bottom: 0;
 }

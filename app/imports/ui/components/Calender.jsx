@@ -10,7 +10,7 @@ class Calender extends React.Component {
           <Table celled>
             <Table.Header>
               <Table.Row>
-                <Table.HeaderCell className="text-align-center">Availability</Table.HeaderCell>
+              <Table.HeaderCell colSpan='7'>Availability</Table.HeaderCell>
               </Table.Row>
             </Table.Header>
             <Table.Header>
@@ -30,7 +30,7 @@ class Calender extends React.Component {
                 <Table.Cell positive>7:00am - 7:00pm</Table.Cell>
                 <Table.Cell negative>7:00am - 7:00pm</Table.Cell>
                 <Table.Cell negative>7:00am - 7:00pm</Table.Cell>
-                <Table.Cell>7:00am - 7:00pm</Table.Cell>
+                <Table.Cell warning>7:00am - 7:00pm</Table.Cell>
                 <Table.Cell warning>7:00am - 7:00pm</Table.Cell>
                 <Table.Cell>7:00am - 7:00pm</Table.Cell>
               </Table.Row>

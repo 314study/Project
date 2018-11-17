@@ -18,6 +18,7 @@ import Signout from '../pages/Signout';
 import ClassList from '../pages/ClassList';
 import Tutors from '../pages/Tutors';
 import Students from '../pages/Students';
+import EditProfile from '../pages/EditProfile';
 import Statistics from '../pages/Statistics';
 
 
@@ -41,6 +42,7 @@ class App extends React.Component {
               <AdminProtectedRoute path="/admin" component={ListStuffAdmin}/>
               <AdminProtectedRoute path="/stats" component={Statistics}/>
               <ProtectedRoute path="/signout" component={Signout}/>
+              <ProtectedRoute path="/editprofile" component={EditProfile}/>
               <Route component={NotFound}/>
             </Switch>
             <Footer/>

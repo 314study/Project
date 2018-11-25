@@ -1,8 +1,8 @@
 import React from 'react';
-import { Grid, Header, Loader } from 'semantic-ui-react';
+import { Card, Grid, Header, Loader } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 import { withTracker } from 'meteor/react-meteor-data';
-import { Meteor } from 'meteor/meteor'
+import { Meteor } from 'meteor/meteor';
 
 class Students extends React.Component {
 
@@ -12,12 +12,156 @@ class Students extends React.Component {
   }
 
   render() {
+    const divStyle = { paddingTop: '15px' };
     return (
-        <Grid container centered>
-          <Grid.Column>
-            <Header as="h2" textAlign="center">Students but only visable to those logged in</Header>
-          </Grid.Column>
-        </Grid>
+        <div style={divStyle}>
+          <Header as="h2" textAlign="center">Class List</Header>
+          <Grid container stackable columns={4}>
+            <Grid.Column>
+              <Card>
+                <Card.Header className='text-align-center font-Small Nunito-font'>Test Student 1</Card.Header>
+                <Card.Content>
+                  <Grid>
+                    <Grid.Column width={8} className='text-align-center'>
+                      Classes: <br />
+                      Math <br />
+                      English
+                    </Grid.Column>
+                    <Grid.Column width={6} className='text-align-center'>
+                      Availability: <br />
+                      M W F
+                    </Grid.Column>
+                  </Grid>
+                </Card.Content>
+              </Card>
+            </Grid.Column>
+            <Grid.Column>
+              <Card>
+                <Card.Header className='text-align-center font-Small Nunito-font'>Test Student 2</Card.Header>
+                <Card.Content>
+                  <Grid>
+                    <Grid.Column width={8} className='text-align-center'>
+                      Classes: <br />
+                      ICS <br />
+                    </Grid.Column>
+                    <Grid.Column width={6} className='text-align-center'>
+                      Availability: <br />
+                      T R
+                    </Grid.Column>
+                  </Grid>
+                </Card.Content>
+              </Card>
+            </Grid.Column>
+            <Grid.Column>
+              <Card>
+                <Card.Header className='text-align-center font-Small Nunito-font'>Test Student 3</Card.Header>
+                <Card.Content>
+                  <Grid>
+                    <Grid.Column width={8} className='text-align-center'>
+                      Classes: <br />
+                      Chemisrty <br />
+                      Spelling
+                    </Grid.Column>
+                    <Grid.Column width={6} className='text-align-center'>
+                      Availability: <br />
+                      T F S Su
+                    </Grid.Column>
+                  </Grid>
+                </Card.Content>
+              </Card>
+            </Grid.Column>
+            <Grid.Column>
+              <Card>
+                <Card.Header className='text-align-center font-Small Nunito-font'>Test Student 3</Card.Header>
+                <Card.Content>
+                  <Grid>
+                    <Grid.Column width={8} className='text-align-center'>
+                      Classes: <br />
+                      Chemisrty <br />
+                      Spelling
+                    </Grid.Column>
+                    <Grid.Column width={6} className='text-align-center'>
+                      Availability: <br />
+                      T F S Su
+                    </Grid.Column>
+                  </Grid>
+                </Card.Content>
+              </Card>
+            </Grid.Column>
+            <Grid.Column>
+              <Card>
+                <Card.Header className='text-align-center font-Small Nunito-font'>Test Student 3</Card.Header>
+                <Card.Content>
+                  <Grid>
+                    <Grid.Column width={8} className='text-align-center'>
+                      Classes: <br />
+                      Chemisrty <br />
+                      Spelling
+                    </Grid.Column>
+                    <Grid.Column width={6} className='text-align-center'>
+                      Availability: <br />
+                      T F S Su
+                    </Grid.Column>
+                  </Grid>
+                </Card.Content>
+              </Card>
+            </Grid.Column>
+            <Grid.Column>
+              <Card>
+                <Card.Header className='text-align-center font-Small Nunito-font'>Test Student 3</Card.Header>
+                <Card.Content>
+                  <Grid>
+                    <Grid.Column width={8} className='text-align-center'>
+                      Classes: <br />
+                      Chemisrty <br />
+                      Spelling
+                    </Grid.Column>
+                    <Grid.Column width={6} className='text-align-center'>
+                      Availability: <br />
+                      T F S Su
+                    </Grid.Column>
+                  </Grid>
+                </Card.Content>
+              </Card>
+            </Grid.Column>
+            <Grid.Column>
+              <Card>
+                <Card.Header className='text-align-center font-Small Nunito-font'>Test Student 3</Card.Header>
+                <Card.Content>
+                  <Grid>
+                    <Grid.Column width={8} className='text-align-center'>
+                      Classes: <br />
+                      Chemisrty <br />
+                      Spelling
+                    </Grid.Column>
+                    <Grid.Column width={6} className='text-align-center'>
+                      Availability: <br />
+                      T F S Su
+                    </Grid.Column>
+                  </Grid>
+                </Card.Content>
+              </Card>
+            </Grid.Column>
+            <Grid.Column>
+              <Card>
+                <Card.Header className='text-align-center font-Small Nunito-font'>Test Student 1</Card.Header>
+                <Card.Content>
+                  <Grid>
+                    <Grid.Column width={8} className='text-align-center'>
+                      Classes: <br />
+                      Math <br />
+                      English
+                    </Grid.Column>
+                    <Grid.Column width={6} className='text-align-center'>
+                      Availability: <br />
+                      M W F
+                    </Grid.Column>
+                  </Grid>
+                </Card.Content>
+              </Card>
+            </Grid.Column>
+          </Grid>
+        </div>
     );
   }
 }

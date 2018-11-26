@@ -15,7 +15,8 @@ class Students extends React.Component {
     const divStyle = { paddingTop: '15px' };
     return (
         <div style={divStyle}>
-          <Header as="h2" textAlign="center">Class List</Header>
+          <Header as="h2" textAlign="center">Maybe you'd prefer studying in a group? </Header>
+          <p className='text-align-center font-Small Nunito-font'> Here is a list of students that are also looking for help in the same class as you</p>
           <Grid container stackable columns={4}>
             <Grid.Column>
               <Card>

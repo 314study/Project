@@ -1,7 +1,8 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Container, Grid, Header, Loader } from 'semantic-ui-react';
+import { Container, Header, Loader, Segment, List, Icon } from 'semantic-ui-react';
 import { Mentors } from '/imports/api/mentor/mentor';
+import MentorItemAdmin from '/imports/ui/components/MentorItemAdmin';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 
@@ -23,10 +24,27 @@ class AdminMentorList extends React.Component {
         Only changed mentor references and imported Mentors schema from /imports/api/mentor/mentor
          */
         <Container>
-          <Header as="h2" textAlign="center">Mentor List (Admin)</Header>
-          <Grid>
-            <Header as='h1'>THIS IS A TEST</Header>
-          </Grid>
+          <Header as="h1" textAlign="center">Mentor List (Admin)</Header>
+          <Segment.Group>
+            <Segment>
+              <Header as='h1'><Icon name='user'/>Example Name</Header>
+              <Header as='h2'>Subjects</Header>
+              <List bulleted relaxed>
+                <List.Item>Class 1</List.Item>
+                <List.Item>Class 2</List.Item>
+                <List.Item>Class 3</List.Item>
+              </List>
+            </Segment>
+            <Segment>
+              <Header as='h1'><Icon name='user'/>Example Name</Header>
+              <Header as='h2'>Subjects</Header>
+              <List bulleted relaxed>
+                <List.Item>Class 1</List.Item>
+                <List.Item>Class 2</List.Item>
+                <List.Item>Class 3</List.Item>
+              </List>
+            </Segment>
+          </Segment.Group>
         </Container>
     );
   }

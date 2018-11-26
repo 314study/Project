@@ -11,9 +11,10 @@ class MentorItemAdmin extends React.Component {
         Fit this back into AdminMentorList later
            {this.props.mentors.map((mentor) => <MentorItemAdmin key={mentor._id} mentor={mentor} />)}
          */
-        <Grid.row>
-          <Header as='h2'><Icon name='user'/>{this.props.mentor.firstName} {this.props.mentor.lastName}</Header>
-        </Grid.row>
+        <Grid.Row>
+          /*<text>SPAM SPAM</text>*/
+          /*<Header as='h2'><Icon name='user'/>{this.props.mentor.firstName} {this.props.mentor.lastName}</Header>*/
+        </Grid.Row>
     );
   }
 }

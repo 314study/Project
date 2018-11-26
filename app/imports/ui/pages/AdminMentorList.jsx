@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Container, Table, Header, Loader } from 'semantic-ui-react';
+import { Container, Grid, Header, Loader } from 'semantic-ui-react';
 import { Mentors } from '/imports/api/mentor/mentor';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
@@ -23,19 +23,10 @@ class AdminMentorList extends React.Component {
         Only changed mentor references and imported Mentors schema from /imports/api/mentor/mentor
          */
         <Container>
-          <Header as="h2" textAlign="center">List Stuff (Admin)</Header>
-          <Table celled>
-            <Table.Header>
-              <Table.Row>
-                <Table.HeaderCell>Name</Table.HeaderCell>
-                <Table.HeaderCell>Quantity</Table.HeaderCell>
-                <Table.HeaderCell>Condition</Table.HeaderCell>
-                <Table.HeaderCell>Owner</Table.HeaderCell>
-              </Table.Row>
-            </Table.Header>
-            <Table.Body>
-            </Table.Body>
-          </Table>
+          <Header as="h2" textAlign="center">Mentor List (Admin)</Header>
+          <Grid>
+            <Header as='h1'>THIS IS A TEST</Header>
+          </Grid>
         </Container>
     );
   }
@@ -51,9 +42,11 @@ AdminMentorList.propTypes = {
 export default withTracker(() => {
   /*
   Going to need to make a mentor.js file in '/startup/server'
+  11/25/18
+  -subscribed 'MentorAdmin' is from '/api/mentor/mentor.js'
    */
 
-  const subscription = Meteor.subscribe('CHANGE__ME');
+  const subscription = Meteor.subscribe('MentorAdmin');
   return {
     mentor: Mentors.find({}).fetch(),
     ready: subscription.ready(),

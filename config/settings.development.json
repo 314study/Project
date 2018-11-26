@@ -9,5 +9,10 @@
     { "name": "Bicycle", "quantity": 2, "owner": "john@foo.com", "condition": "poor" },
     { "name": "Banana", "quantity": 2, "owner": "admin@foo.com", "condition": "good" },
     { "name": "Boogie Board", "quantity": 2, "owner": "admin@foo.com", "condition": "excellent" }
+  ],
+
+  "defaultMentors": [
+    { "firstName": "Philip", "lastName": "Johnson", "class1": "software Engineering", "class2": "Data Structures",
+      "class3": "D4nk Maymays", "availability": "all day err day" }
   ]
 }

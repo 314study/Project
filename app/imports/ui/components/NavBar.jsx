@@ -15,17 +15,20 @@ class NavBar extends React.Component {
         <Menu.Item as={NavLink} activeClassName="" exact to="/">
           <Image size ='medium' src="/images/StudBudd2.png"/>
         </Menu.Item>
-        <Menu.Item as={NavLink} activeClassName="active" exact to='/classes' key='classes' className='font-kindaSmall Nunito-font'>Classes</Menu.Item>
-        <Menu.Item as={NavLink} activeClassName="active" exact to='/tutors' key='tutors' className='font-kindaSmall Nunito-font'>Tutors</Menu.Item>
+        <Menu.Item as={NavLink} activeClassName="active" exact to='/classes'
+                   key='classes' className='font-kindaSmall Nunito-font'>Classes</Menu.Item>
+        <Menu.Item as={NavLink} activeClassName="active" exact to='/tutors'
+                   key='tutors' className='font-kindaSmall Nunito-font'>Tutors</Menu.Item>
         {this.props.currentUser ? (
-            [<Menu.Item as={NavLink} activeClassName="active" exact to="/students" key='add' className='font-kindaSmall Nunito-font'>Students</Menu.Item>]
+            [<Menu.Item as={NavLink} activeClassName="active"
+                        exact to="/students" key='add'
+                        className='font-kindaSmall Nunito-font'>Students</Menu.Item>]
         ) : ''}
         {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
-<<<<<<< HEAD
-            <Menu.Item as={NavLink} activeClassName="active" exact to="/stats" key='admin' className='font-kindaSmall Nunito-font'>User Statatistics</Menu.Item>
-=======
-            <Menu.Item as={NavLink} activeClassName="active" exact to="/stats" key='admin' className='font-kindaSmall Nunito-font'>User Statistics</Menu.Item>
->>>>>>> Profile-page-mockup
+            <Menu.Item as={NavLink} activeClassName="active" exact to="/stats"
+                       key='admin' className='font-kindaSmall Nunito-font'>
+              User Statistics
+            </Menu.Item>
         ) : ''}
         <Menu.Item position="right">
           {this.props.currentUser === '' ? (

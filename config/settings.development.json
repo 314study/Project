@@ -10,13 +10,10 @@
     { "name": "Banana", "quantity": 2, "owner": "admin@foo.com", "condition": "good" },
     { "name": "Boogie Board", "quantity": 2, "owner": "admin@foo.com", "condition": "excellent" }
   ],
-<<<<<<< HEAD
-
   "defaultProfile": [
     { "firstName": "Kain", "lastName": "Yogi", "studyClass": "test", "owner": "admin@foo.com" }
-=======
+    ],
   "defaultCalendar":[
     { "day": "Mo", "timeBegin": "7:00", "timeEnd": "7:00", "condition": "available", "owner": "john@foo.com"}
->>>>>>> Profile-page-mockup
   ]
 }

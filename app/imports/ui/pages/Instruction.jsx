@@ -17,6 +17,8 @@ class Instruction extends React.Component {
             <p> You can use the Edit Profile page to change your first name, last name, and a class that you are looking for help in.</p>
             <Header as="h3" textAlign="center">Class List</Header>
             <p>If you are signed in as a student, you will be able to select from a variety of classes that are offered by Tutors to help you. Within the classes, it will also show you when and where the tutoring sessions will be held. </p>
+            <Header as="h3" textAlign="center">Students Page</Header>
+            <p> Once you are logged in as a student, you will be able to create a study session with fellow students who are also interested or need help in your course/ subject.</p>
             <Header as="h3" textAlign="center">Tutors</Header>
             <p> The Tutors page will allow students to view tutors that has applied and has been approved, as well as their major and area of strength.</p>
             <Header as="h3" textAlign="center">Sign Out</Header>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-<<<<<<< HEAD
+
     <list default="true" id="0c714f8d-2936-4c5f-881e-09a29d14f485" name="Default Changelist" comment="">
-=======
+
     <list default="true" id="97a86278-9990-4676-b7c1-80d97052fab7" name="Default Changelist" comment="">
->>>>>>> ee1c040d76514bb353806bce4a7acec6a6074839
+
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -88,14 +88,14 @@
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
-=======
+
     <leaf>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/settings.production.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="600">
               <caret line="40" column="43" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
->>>>>>> ee1c040d76514bb353806bce4a7acec6a6074839
+
             </state>
           </provider>
         </entry>
@@ -108,10 +108,10 @@
               <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
             </state>
           </provider>
-=======
+
         <entry file="file://$PROJECT_DIR$/config/settings.development.json">
           <provider selected="true" editor-type-id="text-editor" />
->>>>>>> ee1c040d76514bb353806bce4a7acec6a6074839
+
         </entry>
       </file>
     </leaf>
@@ -138,7 +138,7 @@
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
-<<<<<<< HEAD
+
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/amdefine/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/ansi-regex/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/ansi-styles/package.json" />
@@ -1615,7 +1615,7 @@
     <option name="x" value="185" />
     <option name="width" value="1605" />
     <option name="height" value="1040" />
-=======
+
       <path value="$PROJECT_DIR$/app/.meteor/local/dev_bundle/etc/package.json" />
       <path value="$PROJECT_DIR$/app/node_modules/@babel/code-frame/package.json" />
       <path value="$PROJECT_DIR$/app/node_modules/@babel/generator/package.json" />
@@ -2012,7 +2012,7 @@
     <option name="y" value="23" />
     <option name="width" value="1075" />
     <option name="height" value="805" />
->>>>>>> ee1c040d76514bb353806bce4a7acec6a6074839
+
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -2102,8 +2102,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../digits" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
-=======
->>>>>>> ee1c040d76514bb353806bce4a7acec6a6074839
+
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="/usr/local/lib/node_modules/eslint" />
@@ -2130,7 +2129,7 @@
     </option>
   </component>
   <component name="ToolWindowManager">
-<<<<<<< HEAD
+
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24917382" />
@@ -2138,7 +2137,7 @@
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" />
-=======
+
     <frame x="16" y="23" width="1075" height="805" extended-state="0" />
     <editor active="true" />
     <layout>
@@ -2149,7 +2148,7 @@
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
->>>>>>> ee1c040d76514bb353806bce4a7acec6a6074839
+
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -2172,7 +2171,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-<<<<<<< HEAD
+
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -2188,14 +2187,14 @@
           </folding>
         </state>
       </provider>
-=======
+
     <entry file="file://$PROJECT_DIR$/config/settings.development.json">
       <provider selected="true" editor-type-id="text-editor" />
->>>>>>> ee1c040d76514bb353806bce4a7acec6a6074839
+
     </entry>
     <entry file="file://$PROJECT_DIR$/config/settings.production.json">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
+
         <state relative-caret-position="238">
           <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
         </state>
@@ -2208,10 +2207,10 @@
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
-=======
+
         <state relative-caret-position="600">
           <caret line="40" column="43" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
->>>>>>> ee1c040d76514bb353806bce4a7acec6a6074839
+
         </state>
       </provider>
     </entry>

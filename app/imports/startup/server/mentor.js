@@ -19,8 +19,7 @@ if (Mentors.find().count() === 0) {
 /** This subscription publishes only the documents associated with the logged in user */
 Meteor.publish('Mentor', function publish() {
   if (this.userId) {
-    const username = Meteor.users.findOne(this.userId).username;
-    return Mentors.find({ owner: username });
+    return Mentors.find();
   }
   return this.ready();
 });

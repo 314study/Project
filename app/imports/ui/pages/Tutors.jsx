@@ -45,7 +45,7 @@ class Tutors extends React.Component {
                 <List.Item>Class 3</List.Item>
               </List>
             </Segment>
-            {this.props.mentors.map(mentor => <Mentor key={mentor._id} mentor={mentor} />)}
+            {this.props.mentors.map(mentor => <MentorCard key={mentor._id} mentor={mentor} />)}
           </Segment.Group>
         </Container>
     );
@@ -53,7 +53,7 @@ class Tutors extends React.Component {
 }
 
 /** Require an array of Stuff documents in the props. */
-MentorCard.propTypes = {
+Tutors.propTypes = {
   mentors: PropTypes.array.isRequired,
   ready: PropTypes.bool.isRequired,
 };

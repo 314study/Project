@@ -67,6 +67,9 @@
 }
 
 .background-site {
+=======
+.background-site{
+>>>>>>> Calender/Scheduling-Mockup
   background-image: url('/images/image0.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -97,3 +100,10 @@
 .black {
   color: black;
 }
+<<<<<<< HEAD
+=======
+.footer-trial {
+  position: absolute;
+  bottom: 0;
+}
+>>>>>>> Calender/Scheduling-Mockup

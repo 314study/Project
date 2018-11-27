@@ -50,10 +50,16 @@ export default class Signin extends React.Component {
         <Container>
           <Grid textAlign="center" verticalAlign="middle" centered columns={2}>
             <Grid.Column>
+<<<<<<< HEAD
               <p className="text-align-center Nunito-font font-medium small-padding-top font-color-white">
                 Login to
                 <span className="font-color-green"><span className="font-bold"> Your</span> Account</span>
               </p>
+=======
+              <Header as="h2" textAlign="center" className="font-color-green">
+                Login to your account
+              </Header>
+>>>>>>> Calender/Scheduling-Mockup
               <Form onSubmit={this.handleSubmit}>
                 <Segment stacked>
                   <Form.Input

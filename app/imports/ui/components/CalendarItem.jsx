@@ -1,9 +1,12 @@
 import React from 'react';
+import { Meteor } from 'meteor/meteor';
 import { Table } from 'semantic-ui-react';
-import { withRouter } from 'react-router-dom';
+import { Calendar } from '/imports/api/Calendar/Calendar';
+import PropTypes from 'prop-types';
+import { withTracker } from 'meteor/react-meteor-data';
 
 /** Renders a single row in the List Stuff table. See pages/ListStuff.jsx. */
-class Calender extends React.Component {
+class CalendarItem extends React.Component {
   render() {
     return (
         <div className="ui container">
@@ -26,7 +29,7 @@ class Calender extends React.Component {
             </Table.Header>
             <Table.Body>
               <Table.Row>
-                <Table.Cell positive>7:00am - 7:00pm</Table.Cell>
+                <Table.Cell>{this.props.Calendar.timeBegin} to {this.props.Calendar.timeBegin}</Table.Cell>
                 <Table.Cell positive>7:00am - 7:00pm</Table.Cell>
                 <Table.Cell negative>7:00am - 7:00pm</Table.Cell>
                 <Table.Cell negative>7:00am - 7:00pm</Table.Cell>
@@ -40,5 +43,15 @@ class Calender extends React.Component {
     );
   }
 }
+CalendarItem.propTypes = {
+  Calendar: PropTypes.object.isRequired,
+};
 
-export default withRouter(Calender);
+export default withTracker(() => {
+  // Get access to Stuff documents.
+  const subscription = Meteor.subscribe('Calendar');
+  return {
+    Calendar: Calendar.find({}).fetch(),
+    ready: subscription.ready(),
+  };
+})(CalendarItem);

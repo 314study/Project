@@ -1,7 +1,6 @@
 import React from 'react';
 import { Header, Icon, Segment, List } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
-/*import { List } from 'semantic-ui-react/dist/commonjs/elements/List/List';*/
 
 /** Renders a single row in the List Stuff (Admin) table. See pages/ListStuffAdmin.jsx. */
 class MentorItemAdmin extends React.Component {

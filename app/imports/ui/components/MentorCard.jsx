@@ -1,10 +1,9 @@
 import React from 'react';
-import { Grid, Card, Container, Rating } from 'semantic-ui-react';
+import { Grid, Card, Container, Rating, List } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
-import { List } from 'semantic-ui-react/dist/commonjs/elements/List/List';
 
 /** Renders a single row in the List Stuff (Admin) table. See pages/ListStuffAdmin.jsx. */
-class MentorItemAdmin extends React.Component {
+class MentorCard extends React.Component {
   render() {
     return (
         /*
@@ -24,7 +23,7 @@ class MentorItemAdmin extends React.Component {
                     <Rating icon='star' defaultRating={5} maxRating={5}/>
                   </Grid.Column>
                   <Grid.Column width={4} className='text-align-center'>
-                    <List bulleted relaxed>
+                    <List bulleted>
                       <List.Item>{this.props.mentor.class1}</List.Item>
                       <List.Item>{this.props.mentor.class2}</List.Item>
                       <List.Item>{this.props.mentor.class1}</List.Item>
@@ -40,8 +39,8 @@ class MentorItemAdmin extends React.Component {
 }
 
 /** Require a document to be passed to this component. */
-MentorItemAdmin.propTypes = {
+MentorCard.propTypes = {
   mentor: PropTypes.object.isRequired,
 };
 
-export default MentorItemAdmin;
+export default MentorCard;

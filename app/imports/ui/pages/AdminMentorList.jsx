@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Container, List, Header, Loader, Icon, Segment } from 'semantic-ui-react';
+import { Container, Header, Loader, Segment } from 'semantic-ui-react';
 import { Mentors } from '/imports/api/mentor/mentor';
 import MentorItemAdmin from '/imports/ui/components/MentorItemAdmin';
 import { withTracker } from 'meteor/react-meteor-data';
@@ -27,24 +27,6 @@ class AdminMentorList extends React.Component {
         <Container>
           <Header as="h1" textAlign="center">Mentor List (Admin)</Header>
           <Segment.Group>
-            <Segment>
-              <Header as='h1'><Icon name='user'/>Example Name</Header>
-              <Header as='h2'><Icon name='book'/>Subjects</Header>
-              <List bulleted relaxed>
-                <List.Item>Class 1</List.Item>
-                <List.Item>Class 2</List.Item>
-                <List.Item>Class 3</List.Item>
-              </List>
-            </Segment>
-            <Segment>
-              <Header as='h1'><Icon name='user'/>Example Name</Header>
-              <Header as='h2'><Icon name='book'/>Subjects</Header>
-              <List bulleted relaxed>
-                <List.Item>Class 1</List.Item>
-                <List.Item>Class 2</List.Item>
-                <List.Item>Class 3</List.Item>
-              </List>
-            </Segment>
             {this.props.mentors.map(mentor => <MentorItemAdmin key={mentor._id} mentor={mentor} />)}
           </Segment.Group>
         </Container>
@@ -66,7 +48,7 @@ export default withTracker(() => {
   -subscribed 'MentorAdmin' is from '/startup/server/mentor.js'
    */
 
-  const subscription = Meteor.subscribe('MentorAdmin');
+  const subscription = Meteor.subscribe('Mentor');
   return {
     mentors: Mentors.find({}).fetch(),
     ready: subscription.ready(),

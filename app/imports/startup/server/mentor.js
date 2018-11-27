@@ -16,13 +16,9 @@ if (Mentors.find().count() === 0) {
   }
 }
 
-/** This subscription publishes only the documents associated with the logged in user */
+/** This subscription publishes REGARDLESS of user */
 Meteor.publish('Mentor', function publish() {
-  if (this.userId) {
-    const username = Meteor.users.findOne(this.userId).username;
-    return Mentors.find({ owner: username });
-  }
-  return this.ready();
+  return Mentors.find();
 });
 
 

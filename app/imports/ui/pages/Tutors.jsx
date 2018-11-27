@@ -2,7 +2,7 @@ import React from 'react';
 import { Meteor } from 'meteor/meteor';
 import { Container, List, Header, Loader, Icon, Segment } from 'semantic-ui-react';
 import { Mentors } from '/imports/api/mentor/mentor';
-import { MentorCard } from '/imports/ui/components/MentorCard';
+import MentorCard from '/imports/ui/components/MentorCard';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 
@@ -45,7 +45,7 @@ class Tutors extends React.Component {
                 <List.Item>Class 3</List.Item>
               </List>
             </Segment>
-            {this.props.mentors.map(mentor => <Mentor key={mentor._id} mentor={mentor} />)}
+             {this.props.mentors.map(mentor => <MentorCard key={mentor._id} mentor={mentor} />)}
           </Segment.Group>
         </Container>
     );
@@ -53,7 +53,7 @@ class Tutors extends React.Component {
 }
 
 /** Require an array of Stuff documents in the props. */
-MentorCard.propTypes = {
+Tutors.propTypes = {
   mentors: PropTypes.array.isRequired,
   ready: PropTypes.bool.isRequired,
 };
@@ -66,7 +66,7 @@ export default withTracker(() => {
   -subscribed 'MentorAdmin' is from '/startup/server/mentor.js'
    */
 
-  const subscription = Meteor.subscribe('Mentor');
+  const subscription = Meteor.subscribe('MentorAdmin');
   return {
     mentors: Mentors.find({}).fetch(),
     ready: subscription.ready(),

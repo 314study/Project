@@ -9,7 +9,7 @@ class StudentCard extends React.Component {
     return (
         <Card centered>
           <Card.Content>
-            <Card.Header>{this.props.student.firstName}{this.props.student.lastName}</Card.Header>
+            <Card.Header>{this.props.student.firstName} {this.props.student.lastName}</Card.Header>
             <Card.Meta>{this.props.student.studyClass}</Card.Meta>
           </Card.Content>
         </Card>

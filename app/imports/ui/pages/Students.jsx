@@ -24,7 +24,7 @@ class Students extends React.Component {
           <Container>
             <Header as="h2" textAlign="center" inverted>List Contacts</Header>
             <Card.Group>
-              {this.props.student.map((firstName) => <StudentCard name={firstName}/>)}
+              {this.props.student.map((student) => <StudentCard key={student._id} student={student}/>)}
             </Card.Group>
           </Container>
         </div>

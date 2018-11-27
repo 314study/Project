@@ -15,8 +15,8 @@ const MentorSchema = new SimpleSchema({
   contactNumber: Number,
   experience: {
     type: String,
-    allowedValues: ['yes', 'no'],
-    defaultValue: 'yes',
+    allowedValues: ['Yes', 'No'],
+    defaultValue: 'Yes',
   },
   availableHours: String,
   availableDaysOfWeek: String,

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Container, Header, Loader, Segment, List, Icon } from 'semantic-ui-react';
+import { Container, List, Header, Loader, Icon, Segment } from 'semantic-ui-react';
 import { Mentors } from '/imports/api/mentor/mentor';
 import MentorItemAdmin from '/imports/ui/components/MentorItemAdmin';
 import { withTracker } from 'meteor/react-meteor-data';
@@ -45,6 +45,7 @@ class AdminMentorList extends React.Component {
                 <List.Item>Class 3</List.Item>
               </List>
             </Segment>
+            {this.props.mentors.map(mentor => <MentorItemAdmin key={mentor._id} mentor={mentor} />)}
           </Segment.Group>
         </Container>
     );
@@ -67,7 +68,7 @@ export default withTracker(() => {
 
   const subscription = Meteor.subscribe('MentorAdmin');
   return {
-    mentor: Mentors.find({}).fetch(),
+    mentors: Mentors.find({}).fetch(),
     ready: subscription.ready(),
   };
 })(AdminMentorList);

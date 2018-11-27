@@ -46,6 +46,9 @@
 .big-padding-top{
   padding-top: 96px;
 }
+.small-padding-top{
+  padding-top: 24px;
+}
 .background-site{
   background-image: url('/images/Landing-3.jpg');
   background-size: cover;

@@ -40,9 +40,10 @@ class EditProfile extends React.Component {
   /** Render the form. Use Uniforms: https://github.com/vazco/uniforms */
   render() {
     return (
+        <div className="inverted-section">
         <Grid centered container>
           <Grid.Column>
-            <Header as="h2" textAlign="center">Edit Profile</Header>
+            <p className="text-align-center Nunito-font font-medium small-padding-top font-color-white">Edit Profile</p>
             <AutoForm ref={(ref) => { this.formRef = ref; }} schema={ProfileSchema} onSubmit={this.submit}>
               <Segment>
                 <TextField name='firstName'/>
@@ -55,6 +56,7 @@ class EditProfile extends React.Component {
             </AutoForm>
           </Grid.Column>
         </Grid>
+        </div>
     );
   }
 }

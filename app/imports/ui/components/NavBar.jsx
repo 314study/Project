@@ -15,6 +15,7 @@ class NavBar extends React.Component {
         <Menu.Item as={NavLink} activeClassName="" exact to="/">
           <Image size ='medium' src="/images/StudBudd2-transperent.png"/>
         </Menu.Item>
+        <Menu.Item as={NavLink} activeClassName="active" exact to='/instruction' key='instruction' className='font-kindaSmall Nunito-font'>Instruction</Menu.Item>
         <Menu.Item as={NavLink} activeClassName="active" exact to='/classes' key='classes' className='font-kindaSmall Nunito-font'>Classes</Menu.Item>
         <Menu.Item as={NavLink} activeClassName="active" exact to='/tutors' key='tutors' className='font-kindaSmall Nunito-font'>Tutors</Menu.Item>
         {this.props.currentUser ? (

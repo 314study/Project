@@ -20,6 +20,7 @@ import Tutors from '../pages/Tutors';
 import Students from '../pages/Students';
 import Statistics from '../pages/Statistics';
 import Mentorapp from '../pages/Mentorapp';
+import Instruction from '../pages/Instruction';
 
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
@@ -36,6 +37,7 @@ class App extends React.Component {
               <Route path="/signup" component={Signup}/>
               <Route path="/classes" component={ClassList}/>
               <Route path="/tutors" component={Tutors}/>
+              <Route path="/instruction" component={Instruction}/>
               <ProtectedRoute path="/students" component={Students}/>
               <ProtectedRoute path="/list" component={ListStuff}/>
               <ProtectedRoute path="/add" component={AddStuff}/>

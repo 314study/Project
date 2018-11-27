@@ -1,75 +1,101 @@
-.Nunito-font{
+.Nunito-font {
   font-family: "Nunito", sans-serif;
 }
-.font-large{
+
+.font-large {
   font-size: 72px;
 }
-.font-medium{
+
+.font-medium {
   font-size: 36px;
 }
-.font-kindaSmall{
+
+.font-kindaSmall {
   font-size: 25px;
 }
-.font-small{
+
+.font-small {
   font-size: 18px;
 }
-.font-bold{
+
+.font-bold {
   font-weight: bold;
 }
-.font-color-white{
+
+.font-color-white {
   color: white;
 }
-.font-color-grey{
+
+.font-color-grey {
   color: darkgray;
 }
-.font-color-lightgrey{
+
+.font-color-lightgrey {
   color: lightgrey;
 }
-.font-color-green{
+
+.font-color-green {
   color: #6fbe44;
 }
-.text-align-right{
+
+.text-align-right {
   text-align: right;
 }
-.text-align-left{
+
+.text-align-left {
   text-align: left;
 }
-.text-align-center{
+
+.text-align-center {
   text-align: center;
 }
-.margin-bottom-minus-10{
+
+.margin-bottom-minus-10 {
   margin-bottom: -10px;
 }
-.big-padding-bottom{
+
+.big-padding-bottom {
   padding-bottom: 96px;
 }
-.big-padding-top{
+
+.big-padding-top {
   padding-top: 96px;
 }
+.small-padding-top {
+  padding-top: 24px;
+}
 .background-site{
-  background-image: url('/images/Landing-3.jpg');
+  background-image: url('/images/image0.jpg');
   background-size: cover;
-  background-position-y: -100px;
   background-repeat: no-repeat;
 }
-.background-site-second{
+
+.background-site-second {
   background-image: url('/images/Landing-4.jpg');
   background-size: cover;
   background-position-y: -100px;
   background-repeat: no-repeat;
 }
-.inverted-section{
-  background-color: rgba(0,0,0,.8);
+
+.inverted-section {
+  background-color: rgba(0, 0, 0, .8);
 }
-.inverted-section-with-padding{
-  background-color: rgba(0,0,0,.8);
-  padding-top: 68px!important;
-  padding-bottom: 9px!important;
+
+.inverted-section-with-padding {
+  background-color: rgba(0, 0, 0, .8);
+  padding-top: 68px !important;
+  padding-bottom: 9px !important;
 }
+
 .inverted-main-header {
   color: #fff;
   font-size: 72px;
 }
+
 .black {
   color: black;
+}
+.footer-trial {
+  position: absolute;
+  bottom: 0;
 }

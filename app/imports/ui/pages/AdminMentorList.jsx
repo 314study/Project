@@ -22,13 +22,14 @@ class AdminMentorList extends React.Component {
         Implementing layout for mentor list display
         Nothing Changed yet
         Only changed mentor references and imported Mentors schema from /imports/api/mentor/mentor
-         */
+        {this.props.mentors.map(mentor => <MentorItemAdmin key={mentor._id} mentor={mentor} />)}
+        */
         <Container>
           <Header as="h1" textAlign="center">Mentor List (Admin)</Header>
           <Segment.Group>
             <Segment>
               <Header as='h1'><Icon name='user'/>Example Name</Header>
-              <Header as='h2'>Subjects</Header>
+              <Header as='h2'><Icon name='book'/>Subjects</Header>
               <List bulleted relaxed>
                 <List.Item>Class 1</List.Item>
                 <List.Item>Class 2</List.Item>
@@ -37,7 +38,7 @@ class AdminMentorList extends React.Component {
             </Segment>
             <Segment>
               <Header as='h1'><Icon name='user'/>Example Name</Header>
-              <Header as='h2'>Subjects</Header>
+              <Header as='h2'><Icon name='book'/>Subjects</Header>
               <List bulleted relaxed>
                 <List.Item>Class 1</List.Item>
                 <List.Item>Class 2</List.Item>

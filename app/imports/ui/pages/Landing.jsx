@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Header, Card, Rating } from 'semantic-ui-react';
+import { Grid, Header, Card, Rating, Container, List } from 'semantic-ui-react';
 
 /** A simple static component to render some text for the landing page. */
 class Landing extends React.Component {
@@ -25,16 +25,22 @@ class Landing extends React.Component {
               <Grid container stackable columns={3}>
                 <Grid.Column>
                   <Card>
-                    <Card.Header>Phillip Johnson</Card.Header>
+                    <Card.Header className='mentor-card-header'>Phillip Johnson</Card.Header>
                     <Card.Content>
-                      <Grid>
-                        <Grid.Column width={8}>
-                          <Rating icon='star' defaultRating={5} maxRating={5}/>
-                        </Grid.Column>
-                        <Grid.Column width={4} className='text-align-center'>
-                          Testing
-                        </Grid.Column>
-                      </Grid>
+                      <Container>
+                        <Grid>
+                          <Grid.Column width={8}>
+                            <Rating icon='star' defaultRating={5} maxRating={5}/>
+                          </Grid.Column>
+                          <Grid.Column width={4} className='text-align-center'>
+                            <List bulleted relaxed>
+                              <List.Item>test</List.Item>
+                              <List.Item>test</List.Item>
+                              <List.Item>test</List.Item>
+                            </List>
+                          </Grid.Column>
+                        </Grid>
+                      </Container>
                     </Card.Content>
                   </Card>
                 </Grid.Column>

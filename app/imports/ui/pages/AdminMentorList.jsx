@@ -63,7 +63,7 @@ export default withTracker(() => {
   /*
   Going to need to make a mentor.js file in '/startup/server'
   11/25/18
-  -subscribed 'MentorAdmin' is from '/api/mentor/mentor.js'
+  -subscribed 'MentorAdmin' is from '/startup/server/mentor.js'
    */
 
   const subscription = Meteor.subscribe('MentorAdmin');

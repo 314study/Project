@@ -12,7 +12,11 @@
   ],
 
   "defaultMentors": [
-    { "firstName": "Philip", "lastName": "Johnson", "class1": "software Engineering", "class2": "Data Structures",
-      "class3": "D4nk Maymays", "availability": "all day err day" }
+    { "firstName": "Philip", "lastName": "Johnson", "class1": "Software Engineering", "class2": "Data Structures",
+      "class3": "Advanced AI", "availability": "all day err day" },
+    { "firstName": "Aaron", "lastName": "Geronimo", "class1": "Biology", "class2": "Forensics",
+      "class3": "Embroidery", "availability": "get plenty time wheneva" },
+    { "firstName": "Kain", "lastName": "Yogi", "class1": "Ceramics", "class2": "Advanced Marketing",
+      "class3": "League of Legends", "availability": "please leave me alone" }
   ]
 }

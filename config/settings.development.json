@@ -11,6 +11,6 @@
     { "name": "Boogie Board", "quantity": 2, "owner": "admin@foo.com", "condition": "excellent" }
   ],
   "defaultCalendar":[
-    { "day": "Mo", "timeBegin": "7:00", "timeEnd": "7:00","condition": "available"}
+    { "day": "Mo", "timeBegin": "7:00", "timeEnd": "7:00", "condition": "available", "owner": "john@foo.com"}
   ]
 }

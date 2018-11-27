@@ -32,7 +32,7 @@ class EditProfile extends React.Component {
 
   /** On submit, insert the data. */
   submit(data) {
-    const { firstName, lastName, studyClass} = data;
+    const { firstName, lastName, studyClass } = data;
     const owner = Meteor.user().username;
     Profile.insert({ firstName, lastName, studyClass, owner }, this.insertCallback);
   }
@@ -40,7 +40,7 @@ class EditProfile extends React.Component {
   /** Render the form. Use Uniforms: https://github.com/vazco/uniforms */
   render() {
     return (
-        <Grid container centered>
+        <Grid centered container>
           <Grid.Column>
             <Header as="h2" textAlign="center">Edit Profile</Header>
             <AutoForm ref={(ref) => { this.formRef = ref; }} schema={ProfileSchema} onSubmit={this.submit}>

@@ -46,12 +46,14 @@ export default class Signin extends React.Component {
     }
     // Otherwise return the Login form.
     return (
+        <div className="inverted-section">
         <Container>
           <Grid textAlign="center" verticalAlign="middle" centered columns={2}>
             <Grid.Column>
-              <Header as="h2" textAlign="center">
-                Login to your account
-              </Header>
+              <p className="text-align-center Nunito-font font-medium small-padding-top font-color-white">
+                Login to
+                <span className="font-color-green"><span className="font-bold"> Your</span> Account</span>
+              </p>
               <Form onSubmit={this.handleSubmit}>
                 <Segment stacked>
                   <Form.Input
@@ -90,6 +92,7 @@ export default class Signin extends React.Component {
             </Grid.Column>
           </Grid>
         </Container>
+        </div>
     );
   }
 }

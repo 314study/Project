@@ -43,7 +43,7 @@ class EditProfile extends React.Component {
         <div className="inverted-section">
         <Grid centered container>
           <Grid.Column>
-            <p className="text-align-center Nunito-font font-medium small-padding-top font-color-white">Edit Profile</p>
+            <p className="text-align-center Nunito-font font-medium small-padding-top font-color-white">Edit <span className="font-color-green">Profile</span></p>
             <AutoForm ref={(ref) => { this.formRef = ref; }} schema={ProfileSchema} onSubmit={this.submit}>
               <Segment>
                 <TextField name='firstName'/>

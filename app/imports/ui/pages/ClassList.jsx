@@ -5,7 +5,7 @@ import { Mentors } from '/imports/api/mentor/mentor';
 // import MentorCard from '/imports/ui/components/MentorCard';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
-import classSubMenu from 'ui/components/classSubMenu';
+// import classSubMenu from 'ui/components/classSubMenu';
 
 /** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
 class ClassList extends React.Component {
@@ -20,10 +20,6 @@ class ClassList extends React.Component {
     const { activeItem } = this.state || {};
     return (
         <Container>
-          <div>
-            <classSubMenu/>
-          </div>
-
           <Menu vertical>
             <Menu.Item>
               <Menu.Header>STEM</Menu.Header>

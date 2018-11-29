@@ -1,13 +1,20 @@
 import React from 'react';
-import { Grid, Header, Card, Rating } from 'semantic-ui-react';
+import { Meteor } from 'meteor/meteor';
+import { Grid, Header } from 'semantic-ui-react';
+import { Mentors } from '/imports/api/mentor/mentor';
+import MentorCard from '/imports/ui/components/MentorCard';
+import { withTracker } from 'meteor/react-meteor-data';
+import PropTypes from 'prop-types';
 import CalendarItem from '../components/CalendarItem';
 
 /** A simple static component to render some text for the landing page. */
 class Landing extends React.Component {
   render() {
+
     return (
-        <div>
-          <div className="background-site">
+    <div>
+
+      <div className="background-site">
             <div className="ui center aligned container container-width big-padding-bottom">
               <p className="Nunito-font font-large big-padding-top">
                 <span className="font-bold font-color-white">Welcome to</span>
@@ -24,51 +31,9 @@ class Landing extends React.Component {
                 </p>
               </p>
               <Grid container stackable columns={3}>
-                <Grid.Column>
-                  <Card>
-                    <Card.Header>Phillip Johnson</Card.Header>
-                    <Card.Content>
-                      <Grid>
-                        <Grid.Column width={8}>
-                          <Rating icon='star' defaultRating={5} maxRating={5}/>
-                        </Grid.Column>
-                        <Grid.Column width={4} className='text-align-center'>
-                          Testing
-                        </Grid.Column>
-                      </Grid>
-                    </Card.Content>
-                  </Card>
-                </Grid.Column>
-                <Grid.Column>
-                  <Card>
-                    <Card.Header>Phillip Johnson</Card.Header>
-                    <Card.Content>
-                      <Grid>
-                        <Grid.Column width={8}>
-                          <Rating icon='star' defaultRating={5} maxRating={5}/>
-                        </Grid.Column>
-                        <Grid.Column width={4} className='text-align-center'>
-                          Testing
-                        </Grid.Column>
-                      </Grid>
-                    </Card.Content>
-                  </Card>
-                </Grid.Column>
-                <Grid.Column>
-                  <Card>
-                    <Card.Header>Phillip Johnson</Card.Header>
-                    <Card.Content>
-                      <Grid>
-                        <Grid.Column width={8}>
-                          <Rating icon='star' defaultRating={5} maxRating={5}/>
-                        </Grid.Column>
-                        <Grid.Column width={4} className='text-align-center'>
-                          Testing
-                        </Grid.Column>
-                      </Grid>
-                    </Card.Content>
-                  </Card>
-                </Grid.Column>
+                {this.props.mentors.map(mentor => <MentorCard key={mentor._id} mentor={mentor} />)}
+                {this.props.mentors.map(mentor => <MentorCard key={mentor._id} mentor={mentor} />)}
+                {this.props.mentors.map(mentor => <MentorCard key={mentor._id} mentor={mentor} />)}
               </Grid>
             </div>
             <Header/>
@@ -272,4 +237,17 @@ class Landing extends React.Component {
   }
 }
 
-export default Landing;
+/** Require an array of Stuff documents in the props. */
+Landing.propTypes = {
+  mentors: PropTypes.array.isRequired,
+  ready: PropTypes.bool.isRequired,
+};
+
+export default withTracker(() => {
+
+  const subscription = Meteor.subscribe('Mentor');
+  return {
+    mentors: Mentors.find({}).fetch(),
+    ready: subscription.ready(),
+  };
+})(Landing);

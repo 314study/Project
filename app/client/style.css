@@ -61,10 +61,12 @@
 .big-padding-top {
   padding-top: 96px;
 }
+
 .small-padding-top {
   padding-top: 24px;
 }
-.background-site{
+
+.background-site {
   background-image: url('/images/image0.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -95,7 +97,12 @@
 .black {
   color: black;
 }
+
 .footer-trial {
   position: absolute;
   bottom: 0;
+}
+
+.mentor-card-header {
+  padding: 15px 15px 15px 15px;
 }

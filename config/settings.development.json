@@ -1,19 +1,103 @@
 {
   "defaultAccounts": [
-    { "email": "admin@foo.com", "password": "changeme", "role": "admin" },
-    { "email": "john@foo.com", "password": "changeme" }
+    {
+      "email": "admin@foo.com",
+      "password": "changeme",
+      "role": "admin"
+    },
+    {
+      "email": "john@foo.com",
+      "password": "changeme"
+    }
   ],
-
   "defaultData": [
-    { "name": "Basket", "quantity": 3, "owner": "john@foo.com", "condition": "excellent" },
-    { "name": "Bicycle", "quantity": 2, "owner": "john@foo.com", "condition": "poor" },
-    { "name": "Banana", "quantity": 2, "owner": "admin@foo.com", "condition": "good" },
-    { "name": "Boogie Board", "quantity": 2, "owner": "admin@foo.com", "condition": "excellent" }
+    {
+      "name": "Basket",
+      "quantity": 3,
+      "owner": "john@foo.com",
+      "condition": "excellent"
+    },
+    {
+      "name": "Bicycle",
+      "quantity": 2,
+      "owner": "john@foo.com",
+      "condition": "poor"
+    },
+    {
+      "name": "Banana",
+      "quantity": 2,
+      "owner": "admin@foo.com",
+      "condition": "good"
+    },
+    {
+      "name": "Boogie Board",
+      "quantity": 2,
+      "owner": "admin@foo.com",
+      "condition": "excellent"
+    }
   ],
   "defaultProfile": [
-    { "firstName": "Kain", "lastName": "Yogi", "studyClass": "test", "owner": "admin@foo.com" }
-    ],
-  "defaultCalendar":[
-    { "day": "Mo", "timeBegin": "7:00", "timeEnd": "7:00", "condition": "available", "owner": "john@foo.com"}
+    {
+      "firstName": "Kain",
+      "lastName": "Yogi",
+      "studyClass": "test",
+      "owner": "admin@foo.com"
+    }
+  ],
+  "defaultCalendar": [
+    {
+      "day": "Mo",
+      "timeBegin": "7:00",
+      "timeEnd": "7:00",
+      "condition": "available",
+      "owner": "john@foo.com"
+    }
+  ],
+  "defaultMentors": [
+    {
+      "firstName": "Philip",
+      "lastName": "Johnson",
+      "class1": "Software Engineering",
+      "class2": "Data Structures",
+      "class3": "Advanced AI",
+      "availability": "all day err day",
+      "subjectStrength": "XX",
+      "major": "XX",
+      "contactNumber": 2,
+      "experience": "Yes",
+      "availableHours": "XX",
+      "availableDaysOfWeek": "XX",
+      "owner": "john@foo.com"
+    },
+    {
+      "firstName": "Aaron",
+      "lastName": "Geronimo",
+      "class1": "Software Engineering",
+      "class2": "Data Structures",
+      "class3": "Advanced AI",
+      "availability": "all day err day",
+      "subjectStrength": "XX",
+      "major": "XX",
+      "contactNumber": 2,
+      "experience": "Yes",
+      "availableHours": "XX",
+      "availableDaysOfWeek": "XX",
+      "owner": "john@foo.com"
+    },
+    {
+      "firstName": "Kain",
+      "lastName": "Yogi",
+      "class1": "Software Engineering",
+      "class2": "Data Structures",
+      "class3": "Advanced AI",
+      "availability": "all day err day",
+      "subjectStrength": "XX",
+      "major": "XX",
+      "contactNumber": 2,
+      "experience": "Yes",
+      "availableHours": "XX",
+      "availableDaysOfWeek": "XX",
+      "owner": "john@foo.com"
+    }
   ]
 }

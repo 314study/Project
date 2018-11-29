@@ -9,7 +9,6 @@ const Mentors = new Mongo.Collection('Mentors');
 const MentorSchema = new SimpleSchema({
   firstName: String,
   lastName: String,
-  age: Number,
   subjectStrength: String,
   major: String,
   contactNumber: Number,
@@ -21,6 +20,15 @@ const MentorSchema = new SimpleSchema({
   availableHours: String,
   availableDaysOfWeek: String,
   owner: String,
+  class1: String,
+  class2: String,
+  class3: String,
+  availability: String,
+  /*
+  can eventually include
+  -----------------
+  image: String,
+   */
 }, { tracker: Tracker });
 
 /** Attach this schema to the collection. */

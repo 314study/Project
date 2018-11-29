@@ -19,6 +19,8 @@ class NavBar extends React.Component {
                      key='classes' className='font-kindaSmall Nunito-font'>Classes</Menu.Item>
           <Menu.Item as={NavLink} activeClassName="active" exact to='/tutors'
                      key='tutors' className='font-kindaSmall Nunito-font'>Tutors</Menu.Item>
+          <Menu.Item as={NavLink} activeClassName="active" exact to='/instruction' key='instruction'
+                     className='font-kindaSmall Nunito-font'>Instruction</Menu.Item>
           {this.props.currentUser ? (
               [<Menu.Item as={NavLink} activeClassName="active"
                           exact to="/students" key='add'
@@ -27,23 +29,6 @@ class NavBar extends React.Component {
           {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
               <Menu.Item as={NavLink} activeClassName="active" exact to="/stats" key='admin'
                          className='font-kindaSmall Nunito-font'>User Statistics</Menu.Item>) : ''}
-          {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
-              <Menu.Item as={NavLink} activeClassName="active" exact to='/instruction' key='instruction'
-                         className='font-kindaSmall Nunito-font'>Instruction</Menu.Item>) : ''}
-          {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
-              <Menu.Item as={NavLink} activeClassName="active" exact to='/classes' key='classes'
-                         className='font-kindaSmall Nunito-font'>Classes</Menu.Item>) : ''}
-          {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
-              <Menu.Item as={NavLink} activeClassName="active" exact to='/tutors' key='tutors'
-                         className='font-kindaSmall Nunito-font'>Tutors</Menu.Item>) : ''}
-          {this.props.currentUser ? (
-              [<Menu.Item as={NavLink} activeClassName="active" exact to="/students" key='add'
-                          className='font-kindaSmall Nunito-font'>Students</Menu.Item>]
-          ) : ''}
-          {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
-              <Menu.Item as={NavLink} activeClassName="active" exact to="/stats" key='admin'
-                         className='font-kindaSmall Nunito-font'>User Statatistics</Menu.Item>
-          ) : ''}
           <Menu.Item position="right">
             {this.props.currentUser === '' ? (
                 <Dropdown text="Login" pointing="top right" icon={'user'}>

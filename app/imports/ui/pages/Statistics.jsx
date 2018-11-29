@@ -15,7 +15,7 @@ class Statistics extends React.Component {
     return (
         <Grid container centered>
           <Grid.Column>
-            <Header as="h2" textAlign="center">Statiscits</Header>
+            <Header as="h2" textAlign="center">Statistics</Header>
           </Grid.Column>
         </Grid>
     );

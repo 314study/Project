@@ -49,7 +49,6 @@ class Mentorapp extends React.Component {
               <Segment>
                 <TextField name='firstName'/>
                 <TextField name='lastName'/>
-                <NumField name='age' decimal={false}/>
                 <TextField name='subjectStrength'/>
                 <TextField name='major'/>
                 <NumField name='contactNumber' decimal={false}/>

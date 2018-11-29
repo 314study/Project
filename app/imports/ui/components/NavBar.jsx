@@ -20,7 +20,7 @@ class NavBar extends React.Component {
           <Menu.Item as={NavLink} activeClassName="active" exact to='/tutors'
                      key='tutors' className='font-kindaSmall Nunito-font'>Tutors</Menu.Item>
           <Menu.Item as={NavLink} activeClassName="active" exact to='/instruction' key='instruction'
-                     className='font-kindaSmall Nunito-font'>Instruction</Menu.Item>
+                     className='font-kindaSmall Nunito-font'>Instructions</Menu.Item>
           {this.props.currentUser ? (
               [<Menu.Item as={NavLink} activeClassName="active"
                           exact to="/students" key='add'

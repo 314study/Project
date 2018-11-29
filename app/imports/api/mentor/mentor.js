@@ -9,7 +9,6 @@ const Mentors = new Mongo.Collection('Mentors');
 const MentorSchema = new SimpleSchema({
   firstName: String,
   lastName: String,
-  age: Number,
   subjectStrength: String,
   major: String,
   contactNumber: Number,

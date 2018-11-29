@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97a86278-9990-4676-b7c1-80d97052fab7" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/imports/ui/components/NavBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/imports/ui/components/NavBar.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/imports/ui/pages/EditProfile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/imports/ui/pages/EditProfile.jsx" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/app/imports/api/mentor/mentor.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/imports/api/mentor/mentor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/imports/ui/components/NavBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/imports/ui/components/NavBar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/imports/ui/layouts/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/imports/ui/layouts/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/imports/ui/pages/Mentorapp.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/imports/ui/pages/Mentorapp.jsx" afterDir="false" />
+>>>>>>> Instruction-mockup-page
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,6 +24,7 @@
     <session id="967954806">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+<<<<<<< HEAD
           <entry key="project.closed" value="4" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.14" value="1" />
@@ -24,39 +32,71 @@
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.opened" value="5" />
+=======
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.opened" value="2" />
+>>>>>>> Instruction-mockup-page
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+<<<<<<< HEAD
           <entry key="js" value="148" />
           <entry key="json" value="18" />
           <entry key="jsx" value="367" />
+=======
+          <entry key="js" value="322" />
+          <entry key="json" value="18" />
+          <entry key="jsx" value="480" />
+>>>>>>> Instruction-mockup-page
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="18" />
+<<<<<<< HEAD
           <entry key="JSX Harmony" value="367" />
           <entry key="JavaScript" value="148" />
+=======
+          <entry key="JSX Harmony" value="480" />
+          <entry key="JavaScript" value="322" />
+>>>>>>> Instruction-mockup-page
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+<<<<<<< HEAD
           <entry key="js" value="12" />
           <entry key="json" value="1" />
           <entry key="jsx" value="13" />
+=======
+          <entry key="js" value="10" />
+          <entry key="json" value="1" />
+          <entry key="jsx" value="10" />
+>>>>>>> Instruction-mockup-page
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JSON" value="1" />
+<<<<<<< HEAD
           <entry key="JSX Harmony" value="13" />
           <entry key="JavaScript" value="12" />
+=======
+          <entry key="JSX Harmony" value="10" />
+          <entry key="JavaScript" value="10" />
+>>>>>>> Instruction-mockup-page
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
+<<<<<<< HEAD
           <entry key="ESLintLanguageService" value="4" />
+=======
+          <entry key="ESLintLanguageService" value="1" />
+>>>>>>> Instruction-mockup-page
         </counts>
       </usages-collector>
     </session>
@@ -64,10 +104,17 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/EditProfile.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="284">
               <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+=======
+        <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/Signin.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
+>>>>>>> Instruction-mockup-page
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -75,6 +122,7 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/imports/ui/components/NavBar.jsx">
           <provider selected="true" editor-type-id="text-editor">
@@ -83,15 +131,12 @@
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
+=======
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/imports/ui/layouts/App.jsx">
+        <entry file="file://$PROJECT_DIR$/app/imports/ui/components/NavBar.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="44" column="36" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="48" />
+            <state relative-caret-position="640">
+              <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -100,22 +145,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/EditStuff.jsx">
+        <entry file="file://$PROJECT_DIR$/app/imports/api/mentor/mentor.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/imports/api/profile/profile.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="180">
+              <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -123,11 +156,90 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/Mentorapp.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="356">
+              <caret line="50" column="44" selection-start-line="50" selection-start-column="44" selection-end-line="50" selection-end-column="44" />
+>>>>>>> Instruction-mockup-page
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
+        <entry file="file://$PROJECT_DIR$/app/imports/ui/layouts/App.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="44" column="36" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="48" />
+=======
+        <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/Landing.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-99">
+              <caret line="37" column="35" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
+>>>>>>> Instruction-mockup-page
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
+        <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/EditStuff.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+=======
+        <entry file="file://$PROJECT_DIR$/app/imports/ui/layouts/App.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="439">
+              <caret line="39" column="31" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
+>>>>>>> Instruction-mockup-page
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
+        <entry file="file://$PROJECT_DIR$/app/imports/api/profile/profile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+              <folding>
+                <element signature="e#0#37#0" expanded="true" />
+=======
+        <entry file="file://$PROJECT_DIR$/app/imports/startup/both/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+>>>>>>> Instruction-mockup-page
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/app/imports/api/profile/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
               <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+=======
+        <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/AddStuff.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+>>>>>>> Instruction-mockup-page
             </state>
           </provider>
         </entry>
@@ -146,6 +258,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/config/settings.production.json" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/app/client/main.html" />
         <option value="$PROJECT_DIR$/app/imports/ui/pages/MyProfile.jsx" />
         <option value="$PROJECT_DIR$/app/imports/ui/layouts/App.jsx" />
@@ -158,6 +271,14 @@
         <option value="$PROJECT_DIR$/app/imports/api/profile/profile.js" />
         <option value="$PROJECT_DIR$/app/imports/ui/components/NavBar.jsx" />
         <option value="$PROJECT_DIR$/app/imports/ui/pages/EditProfile.jsx" />
+=======
+        <option value="$PROJECT_DIR$/app/imports/api/mentor/index.js" />
+        <option value="$PROJECT_DIR$/app/imports/startup/both/index.js" />
+        <option value="$PROJECT_DIR$/app/imports/ui/layouts/App.jsx" />
+        <option value="$PROJECT_DIR$/app/imports/ui/components/NavBar.jsx" />
+        <option value="$PROJECT_DIR$/app/imports/ui/pages/Mentorapp.jsx" />
+        <option value="$PROJECT_DIR$/app/imports/api/mentor/mentor.js" />
+>>>>>>> Instruction-mockup-page
       </list>
     </option>
   </component>
@@ -179,6 +300,180 @@
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
+<<<<<<< HEAD
+=======
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/abbrev/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/ajv/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/aproba/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/are-we-there-yet/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/asn1/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/assert-plus/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/asynckit/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/aws-sign2/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/aws4/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/balanced-match/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/bcrypt-pbkdf/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/block-stream/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/boom/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/brace-expansion/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/caseless/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/chalk/node_modules/ansi-regex/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/chalk/node_modules/ansi-styles/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/chalk/node_modules/escape-string-regexp/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/chalk/node_modules/has-ansi/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/chalk/node_modules/strip-ansi/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/chalk/node_modules/supports-color/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/chalk/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/chownr/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/co/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/code-point-at/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/combined-stream/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/concat-map/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/console-control-strings/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/core-util-is/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/cryptiles/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/dashdash/node_modules/assert-plus/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/dashdash/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/deep-extend/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/delayed-stream/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/delegates/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/detect-libc/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/ecc-jsbn/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/extend/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/extsprintf/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/fibers/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/forever-agent/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/form-data/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/fs-minipass/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/fs.realpath/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/fstream/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/gauge/node_modules/ansi-regex/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/gauge/node_modules/strip-ansi/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/gauge/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/getpass/node_modules/assert-plus/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/getpass/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/glob/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/graceful-fs/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/har-schema/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/har-validator/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/has-unicode/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/hawk/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/hoek/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/http-signature/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/iconv-lite/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/ignore-walk/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/inflight/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/inherits/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/ini/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/is-fullwidth-code-point/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/is-typedarray/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/isexe/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/isstream/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/jsbn/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/json-schema/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/json-stable-stringify/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/json-stringify-safe/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/jsonify/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/jsprim/node_modules/assert-plus/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/jsprim/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/meteor-promise/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/mime-db/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/mime-types/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/minimatch/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/minimist/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/minipass/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/minizlib/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/mkdirp/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/multipipe/node_modules/core-util-is/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/multipipe/node_modules/duplexer2/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/multipipe/node_modules/inherits/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/multipipe/node_modules/isarray/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/multipipe/node_modules/object-assign/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/multipipe/node_modules/process-nextick-args/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/multipipe/node_modules/readable-stream/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/multipipe/node_modules/safe-buffer/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/multipipe/node_modules/string_decoder/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/multipipe/node_modules/util-deprecate/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/multipipe/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/needle/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/node-gyp/node_modules/semver/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/node-gyp/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/node-pre-gyp/lib/util/nw-pre-gyp/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/node-pre-gyp/node_modules/nopt/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/node-pre-gyp/node_modules/tar/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/node-pre-gyp/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/nopt/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/npm-bundled/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/npm-packlist/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/npmlog/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/number-is-nan/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/oauth-sign/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/object-assign/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/once/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/os-homedir/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/os-tmpdir/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/osenv/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/path-is-absolute/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/performance-now/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/promise/node_modules/asap/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/promise/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/punycode/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/qs/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/rc/node_modules/minimist/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/rc/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/readable-stream/node_modules/core-util-is/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/readable-stream/node_modules/inherits/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/readable-stream/node_modules/isarray/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/readable-stream/node_modules/process-nextick-args/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/readable-stream/node_modules/safe-buffer/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/readable-stream/node_modules/string_decoder/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/readable-stream/node_modules/util-deprecate/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/readable-stream/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/request/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/rimraf/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/safe-buffer/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/safer-buffer/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/sax/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/semver/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/set-blocking/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/signal-exit/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/sntp/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/source-map-support/node_modules/amdefine/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/source-map-support/node_modules/source-map/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/source-map-support/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/split2/node_modules/core-util-is/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/split2/node_modules/inherits/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/split2/node_modules/isarray/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/split2/node_modules/process-nextick-args/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/split2/node_modules/readable-stream/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/split2/node_modules/safe-buffer/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/split2/node_modules/string_decoder/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/split2/node_modules/through2/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/split2/node_modules/util-deprecate/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/split2/node_modules/xtend/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/split2/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/sshpk/node_modules/assert-plus/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/sshpk/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/string-width/node_modules/ansi-regex/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/string-width/node_modules/strip-ansi/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/string-width/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/stringstream/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/strip-json-comments/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/tar/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/tough-cookie/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/tunnel-agent/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/tweetnacl/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/underscore/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/uuid/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/verror/node_modules/assert-plus/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/verror/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/which/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/wide-align/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/wrappy/package.json" />
+      <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/node_modules/yallist/package.json" />
+>>>>>>> Instruction-mockup-page
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/npm/node_modules/@babel/runtime/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/npm/node_modules/@semantic-ui-react/event-stack/node_modules/prop-types/package.json" />
       <path value="$PROJECT_DIR$/app/.meteor/local/build/programs/server/npm/node_modules/@semantic-ui-react/event-stack/package.json" />
@@ -1624,7 +1919,11 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
+<<<<<<< HEAD
     <option name="x" value="350" />
+=======
+    <option name="x" value="273" />
+>>>>>>> Instruction-mockup-page
     <option name="y" value="23" />
     <option name="width" value="1075" />
     <option name="height" value="805" />
@@ -1657,7 +1956,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -1696,7 +1994,11 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="imports" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="profile" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="mentor" type="462c0819:PsiDirectoryNode" />
+>>>>>>> Instruction-mockup-page
             </path>
             <path>
               <item name="studbudd" type="b2602c69:ProjectViewProjectNode" />
@@ -1727,6 +2029,7 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="imports" type="462c0819:PsiDirectoryNode" />
               <item name="startup" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="client" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -1735,6 +2038,8 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="imports" type="462c0819:PsiDirectoryNode" />
               <item name="startup" type="462c0819:PsiDirectoryNode" />
+=======
+>>>>>>> Instruction-mockup-page
               <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -1767,22 +2072,29 @@
               <item name="imports" type="462c0819:PsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
             </path>
             <path>
               <item name="studbudd" type="b2602c69:ProjectViewProjectNode" />
               <item name="studbudd" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
+=======
+>>>>>>> Instruction-mockup-page
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="node.js.detected.package.eslint" value="true" />
+<<<<<<< HEAD
     <property name="node.js.detected.package.standard" value="true" />
+=======
+>>>>>>> Instruction-mockup-page
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/app/node_modules/eslint" />
@@ -1794,6 +2106,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/imports/api" />
+<<<<<<< HEAD
+=======
+      <recent name="$PROJECT_DIR$/app/imports/ui/pages" />
+>>>>>>> Instruction-mockup-page
       <recent name="$PROJECT_DIR$/config" />
     </key>
   </component>
@@ -1810,12 +2126,21 @@
     </option>
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="350" y="23" width="1075" height="805" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49929875" visible="true" weight="0.24952562" />
       <window_info id="Designer" order="1" />
       <window_info id="Structure" order="2" sideWeight="0.50070125" side_tool="true" weight="0.24952562" />
+=======
+    <frame x="273" y="23" width="1075" height="805" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24952562" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+>>>>>>> Instruction-mockup-page
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -1864,6 +2189,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/config/settings.development.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1904,11 +2230,58 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" selection-start-line="2" selection-end-line="2" />
+=======
+    <entry file="file://$PROJECT_DIR$/app/imports/startup/server/accounts.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/EditStuff.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-200">
+          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/Signup.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/Students.jsx">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/imports/api/mentor/index.js" />
+    <entry file="file://$PROJECT_DIR$/app/imports/api/stuff/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/imports/api/stuff/stuff.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/Signin.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/imports/startup/both/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+>>>>>>> Instruction-mockup-page
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/AddStuff.jsx">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="123">
           <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
         </state>
@@ -1918,6 +2291,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="284">
           <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+=======
+        <state relative-caret-position="195">
+          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+>>>>>>> Instruction-mockup-page
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -1926,24 +2303,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/imports/ui/layouts/App.jsx">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="345">
           <caret line="44" column="36" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="48" />
+=======
+        <state relative-caret-position="439">
+          <caret line="39" column="31" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
+>>>>>>> Instruction-mockup-page
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/EditStuff.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+=======
+    <entry file="file://$PROJECT_DIR$/app/imports/ui/components/NavBar.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+>>>>>>> Instruction-mockup-page
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/imports/api/profile/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -1955,22 +2345,45 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+=======
+    <entry file="file://$PROJECT_DIR$/app/imports/api/mentor/mentor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+>>>>>>> Instruction-mockup-page
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/imports/ui/components/NavBar.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-129">
           <caret line="14" column="64" selection-start-line="14" selection-start-column="64" selection-end-line="14" selection-end-column="64" />
+=======
+    <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/Landing.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-99">
+          <caret line="37" column="35" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
+>>>>>>> Instruction-mockup-page
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/Mentorapp.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="50" column="44" selection-start-line="50" selection-start-column="44" selection-end-line="50" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> Instruction-mockup-page
   </component>
   <component name="masterDetails">
     <states>

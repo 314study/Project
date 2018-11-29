@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Container, List, Header, Loader, Icon, Segment } from 'semantic-ui-react';
+import { Container, List, Header, Loader, Icon, Segment, Divider } from 'semantic-ui-react';
 import { Mentors } from '/imports/api/mentor/mentor';
 import MentorCard from '/imports/ui/components/MentorCard';
 import { withTracker } from 'meteor/react-meteor-data';
@@ -25,6 +25,7 @@ class Tutors extends React.Component {
         {this.props.mentors.map(mentor => <MentorItemAdmin key={mentor._id} mentor={mentor} />)}
         */
         <Container>
+          <Divider hidden />
           <Header as="h1" textAlign="center">Tutors</Header>
           <Segment.Group>
             <Segment>

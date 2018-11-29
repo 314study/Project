@@ -1,11 +1,15 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Menu, Container, Loader, Dropdown } from 'semantic-ui-react';
+import { Menu, Grid, Loader, Dropdown, Header, Icon, List, Segment, Container, Divider } from 'semantic-ui-react';
 import { Mentors } from '/imports/api/mentor/mentor';
-// import MentorCard from '/imports/ui/components/MentorCard';
+import MentorCard from '/imports/ui/components/MentorCard';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
-// import classSubMenu from 'ui/components/classSubMenu';
+// import { NavLink } from 'react-router-dom';
+import { Roles } from 'meteor/alanning:roles';
+// import { Segment } from 'semantic-ui-react/dist/commonjs/elements/Segment/Segment';
+// import { List } from 'semantic-ui-react/dist/commonjs/elements/List/List';
+
 
 /** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
 class ClassList extends React.Component {
@@ -19,7 +23,19 @@ class ClassList extends React.Component {
   renderPage() {
     const { activeItem } = this.state || {};
     return (
-        <Container>
+        <Grid>
+          <Grid.Row>
+            <Container>
+              <Divider hidden />
+              <Header as="h1" textAlign="center">Classes Available</Header>
+              <Header as='h3' dividing/>
+            </Container>
+          </Grid.Row>
+          <Grid.Row columns={3}>
+            <Grid.Column width = {1}>
+              <Divider vertical hidden />
+            </Grid.Column>
+         <Grid.Column>
           <Menu vertical>
             <Menu.Item>
               <Menu.Header>STEM</Menu.Header>
@@ -83,10 +99,88 @@ class ClassList extends React.Component {
                     onClick={this.handleItemClick}
                 />
               </Menu.Menu>
+              <Menu.Item>
+                <Menu.Header>Humanities</Menu.Header>
+              <Menu.Menu>
+                <Menu.Item
+                    name='Philosiphy'
+                    active={activeItem === 'Philosiphy'}
+                    onClick={this.handleItemClick}
+                />
+                <Menu.Item
+                    name='History'
+                    active={activeItem === 'History'}
+                    onClick={this.handleItemClick}
+                />
+                <Dropdown item text='Languages'>
+                  <Dropdown.Menu>
+                    <Dropdown.Item text='English'/>
+                    <Dropdown.Item text='Japanese'/>
+                    <Dropdown.Item text='Korean'/>
+                    <Dropdown.Item text='Mandarin'/>
+                    <Dropdown.Item text='Spanish'/>
+                    <Dropdown.Item text='German'/>
+                    <Dropdown.Item text='Russian'/>
+                  </Dropdown.Menu>
+                </Dropdown>
+                <Menu.Item
+                    name='Religon'
+                    active={activeItem === 'Religon'}
+                    onClick={this.handleItemClick}
+                />
+                <Menu.Item
+                    name='Law'
+                    active={activeItem === 'Law'}
+                    onClick={this.handleItemClick}
+                />
+                <Dropdown item text='Art'>
+                  <Dropdown.Menu>
+                    <Dropdown.Item text='Drawing'/>
+                    <Dropdown.Item text='Painting'/>
+                    <Dropdown.Item text='Potery'/>
+                  </Dropdown.Menu>
+                </Dropdown>
+              </Menu.Menu>
             </Menu.Item>
+            </Menu.Item>
+            {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
+              <Menu.Item>
+                <Menu.Header>Tester</Menu.Header>
+                <Menu.Menu>
+                  <Menu.Item
+                      name='Class1'
+                      active={activeItem === 'Class1'}
+                      onClick={this.handleItemClick}
+                  />
+                  <Menu.Item
+                      name='Class2'
+                      active={activeItem === 'Class2'}
+                      onClick={this.handleItemClick}
+                  />
+                  <Menu.Item
+                      name='D4nk Maymays'
+                      active={activeItem === 'D4nk Maymays'}
+                      onClick={this.handleItemClick}
+                  />
+                </Menu.Menu>
+              </Menu.Item>
+          ) : ''}
           </Menu>
-
-        </Container>
+          </Grid.Column>
+          <Grid.Column width={6}>
+            <Segment>
+              <Header as='h1'><Icon name='user'/>Example Name</Header>
+              <Header as='h2'><Icon name='book'/>Subjects</Header>
+              <List bulleted relaxed>
+                <List.Item>Class 1</List.Item>
+                <List.Item>Class 2</List.Item>
+                <List.Item>Class 3</List.Item>
+              </List>
+            </Segment>
+            {this.props.mentors.map(mentor => <MentorCard key={mentor._id} mentor={mentor} />)}
+          </Grid.Column>
+          </Grid.Row>
+        </Grid>
     );
   }
 }

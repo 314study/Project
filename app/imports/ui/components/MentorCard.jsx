@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Card, Container, Rating, List } from 'semantic-ui-react';
+import { Grid, Card, Container, Rating, List, Icon } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 
 /** Renders a single row in the List Stuff (Admin) table. See pages/ListStuffAdmin.jsx. */
@@ -14,7 +14,7 @@ class MentorCard extends React.Component {
         <Grid.Column>
           <Card>
             <Card.Header className='mentor-card-header'>
-              {this.props.mentor.firstName} {this.props.mentor.lastName}
+              <Icon name='user'/>{this.props.mentor.firstName} {this.props.mentor.lastName}
             </Card.Header>
             <Card.Content>
               <Container>
@@ -23,6 +23,7 @@ class MentorCard extends React.Component {
                     <Rating icon='star' defaultRating={5} maxRating={5}/>
                   </Grid.Column>
                   <Grid.Column width={4} className='text-align-center'>
+                    <Icon name='book'/>
                     <List bulleted>
                       <List.Item>{this.props.mentor.class1}</List.Item>
                       <List.Item>{this.props.mentor.class2}</List.Item>

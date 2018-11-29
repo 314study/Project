@@ -47,7 +47,6 @@ export default withTracker(() => {
   11/25/18
   -subscribed 'MentorAdmin' is from '/startup/server/mentor.js'
    */
-
   const subscription = Meteor.subscribe('Mentor');
   return {
     mentors: Mentors.find({}).fetch(),

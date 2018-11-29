@@ -34,9 +34,27 @@ class Mentorapp extends React.Component {
 
   /** On submit, insert the data. */
   submit(data) {
-    const { firstName, lastName, age, subjectStrength, major, contactNumber, experience, availableHours, availableDaysOfWeek} = data;
+    const {
+      firstName,
+      lastName,
+      subjectStrength,
+      major,
+      contactNumber,
+      experience,
+      availableHours,
+      availableDaysOfWeek } = data;
     const owner = Meteor.user().username;
-    Mentors.insert({ firstName, lastName, age, subjectStrength, major, contactNumber, experience, availableHours, availableDaysOfWeek, owner }, this.insertCallback);
+    Mentors.insert({
+      firstName,
+      lastName,
+      subjectStrength,
+      major,
+      contactNumber,
+      experience,
+      availableHours,
+      availableDaysOfWeek,
+      owner,
+    }, this.insertCallback);
   }
 
   /** Render the form. Use Uniforms: https://github.com/vazco/uniforms */
@@ -45,11 +63,12 @@ class Mentorapp extends React.Component {
         <Grid container centered>
           <Grid.Column>
             <Header as="h2" textAlign="center">Mentorship App</Header>
-            <AutoForm ref={(ref) => { this.formRef = ref; }} schema={MentorSchema} onSubmit={this.submit}>
+            <AutoForm ref={(ref) => {
+              this.formRef = ref;
+            }} schema={MentorSchema} onSubmit={this.submit}>
               <Segment>
                 <TextField name='firstName'/>
                 <TextField name='lastName'/>
-                <NumField name='age' decimal={false}/>
                 <TextField name='subjectStrength'/>
                 <TextField name='major'/>
                 <NumField name='contactNumber' decimal={false}/>

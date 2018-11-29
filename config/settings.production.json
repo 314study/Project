@@ -36,9 +36,73 @@
       "condition": "excellent"
     }
   ],
+  "defaultProfile": [
+    {
+      "firstName": "Kain",
+      "lastName": "Yogi",
+      "studyClass": "test",
+      "owner": "admin@foo.com"
+    }
+  ],
+  "defaultCalendar": [
+    {
+      "day": "Mo",
+      "timeBegin": "7:00",
+      "timeEnd": "7:00",
+      "condition": "available",
+      "owner": "john@foo.com"
+    }
+  ],
+  "defaultMentors": [
+    {
+      "firstName": "Philip",
+      "lastName": "Johnson",
+      "class1": "Software Engineering",
+      "class2": "Data Structures",
+      "class3": "Advanced AI",
+      "availability": "all day err day",
+      "subjectStrength": "XX",
+      "major": "XX",
+      "contactNumber": 2,
+      "experience": "Yes",
+      "availableHours": "XX",
+      "availableDaysOfWeek": "XX",
+      "owner": "john@foo.com"
+    },
+    {
+      "firstName": "Aaron",
+      "lastName": "Geronimo",
+      "class1": "Software Engineering",
+      "class2": "Data Structures",
+      "class3": "Advanced AI",
+      "availability": "all day err day",
+      "subjectStrength": "XX",
+      "major": "XX",
+      "contactNumber": 2,
+      "experience": "Yes",
+      "availableHours": "XX",
+      "availableDaysOfWeek": "XX",
+      "owner": "john@foo.com"
+    },
+    {
+      "firstName": "Kain",
+      "lastName": "Yogi",
+      "class1": "Software Engineering",
+      "class2": "Data Structures",
+      "class3": "Advanced AI",
+      "availability": "all day err day",
+      "subjectStrength": "XX",
+      "major": "XX",
+      "contactNumber": 2,
+      "experience": "Yes",
+      "availableHours": "XX",
+      "availableDaysOfWeek": "XX",
+      "owner": "john@foo.com"
+    }
+  ],
   "galaxy.meteor.com": {
     "env": {
-      "MONGO_URL": "mongodb://user:t3stuser@ds145981.mlab.com:45981/appdb"
+      "MONGO_URL": "mongodb://admin:password1@ds121203.mlab.com:21203/dbstudbudd"
     }
   }
 }

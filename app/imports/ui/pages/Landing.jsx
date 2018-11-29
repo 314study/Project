@@ -32,8 +32,6 @@ class Landing extends React.Component {
               </p>
               <Grid container stackable columns={3}>
                 {this.props.mentors.map(mentor => <MentorCard key={mentor._id} mentor={mentor} />)}
-                {this.props.mentors.map(mentor => <MentorCard key={mentor._id} mentor={mentor} />)}
-                {this.props.mentors.map(mentor => <MentorCard key={mentor._id} mentor={mentor} />)}
               </Grid>
             </div>
             <Header/>

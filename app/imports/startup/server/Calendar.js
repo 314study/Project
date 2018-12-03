@@ -1,10 +1,11 @@
 import { Meteor } from 'meteor/meteor';
 import { Roles } from 'meteor/alanning:roles';
 import { Calendar } from '../../api/Calendar/Calendar.js';
+import { Mentors } from '../../api/mentor/mentor';
 
 /** Initialize the database with a default data document. */
 function addData(data) {
-  console.log(`  Adding: ${data.timeBegin} ${data.timeEnd}`);
+  console.log(`  Adding: ${data.timeBegin} `);
   Calendar.insert(data);
 }
 
@@ -15,6 +16,10 @@ if (Calendar.find().count() === 0) {
     Meteor.settings.defaultCalendar.map(data => addData(data));
   }
 }
+
+Meteor.publish('Calendar', function publish() {
+  return Calendar.find();
+});
 
 /** This subscription publishes all documents regardless of user, but only if the logged in user is the Admin. */
 Meteor.publish('Calendar', function publish() {

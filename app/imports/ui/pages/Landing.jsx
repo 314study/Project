@@ -32,7 +32,7 @@ class Landing extends React.Component {
               </p>
               <div className="ui center aligned container small-padding-bottom">
                 <span className="Nunito-font font-medium font-bold font-color-green">
-                  Our top mentors
+                  Our Top Mentors
                 </span>
               </div>
                 <Grid container stackable columns={3}>

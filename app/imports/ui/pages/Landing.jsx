@@ -6,7 +6,6 @@ import { Profile } from '/imports/api/profile/profile';
 import MentorCard from '/imports/ui/components/MentorCard';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
-import CalendarItem from '../components/CalendarItem';
 
 /** A simple static component to render some text for the landing page. */
 class Landing extends React.Component {
@@ -39,9 +38,6 @@ class Landing extends React.Component {
                 <Grid container stackable columns={3}>
                   {this.props.mentors.map(mentor => <MentorCard key={mentor._id} mentor={mentor} />)}
                 </Grid>
-            </div>
-            <div className="medium-padding-bottom">
-              <CalendarItem/>
             </div>
           </div>
           <div>

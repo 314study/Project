@@ -1,9 +1,32 @@
 import React from 'react';
-import { Header, Icon, Segment, List } from 'semantic-ui-react';
+import { Header, Icon, Segment, List, Button } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
+import { Roles } from 'meteor/alanning:roles';
+import { Meteor } from 'meteor/meteor';
+import { Bert } from 'meteor/themeteorchef:bert';
+import { Mentors } from '/imports/api/mentor/mentor';
 
 /** Renders a single row in the List Stuff (Admin) table. See pages/ListStuffAdmin.jsx. */
 class MentorItemAdmin extends React.Component {
+  constructor(props) {
+    super(props);
+    this.onClick = this.onClick.bind(this);
+  }
+
+  /** Notify the user of the results of the submit. If successful, clear the form. */
+  deleteCallback(error) {
+    if (error) {
+      Bert.alert({ type: 'danger', message: `Delete failed: ${error.message}` });
+    } else {
+      Bert.alert({ type: 'success', message: 'Delete succeeded' });
+    }
+  }
+
+  /* When the delete button is clicked, remove the corresponding item from the collection. */
+  onClick() {
+    Mentors.remove(this.props.mentor._id, this.deleteCallback);
+  }
+
   render() {
     return (
         /*
@@ -18,6 +41,9 @@ class MentorItemAdmin extends React.Component {
           <List.Item>{this.props.mentor.class1}</List.Item>
           <List.Item>{this.props.mentor.class2}</List.Item>
           <List.Item>{this.props.mentor.class3}</List.Item>
+          {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
+              <Button basic onClick={this.onClick}>Delete</Button>
+          ) : ''}
         </List>
       </Segment>
     );

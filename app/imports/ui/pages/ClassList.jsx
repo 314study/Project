@@ -160,7 +160,9 @@ class ClassList extends React.Component {
                   <Menu.Item
                       name='D4nk Maymays'
                       active={activeItem === 'D4nk Maymays'}
-                      onClick={this.handleItemClick}
+                      onClick={this.props.mentors.map(
+                          mentor => <MentorCard
+                               key={mentor._findMapping(mentor.class === 'D4nk Maymays')} mentor={mentor} />)}
                   />
                 </Menu.Menu>
               </Menu.Item>
@@ -178,6 +180,9 @@ class ClassList extends React.Component {
               </List>
             </Segment>
             {this.props.mentors.map(mentor => <MentorCard key={mentor._id} mentor={mentor} />)}
+            {this.props.mentors.map(
+                mentor => <MentorCard key={mentor._findMapping(mentor.class3 === 'D4nk Maymays')} mentor={mentor} />,
+            )}
           </Grid.Column>
           </Grid.Row>
         </Grid>

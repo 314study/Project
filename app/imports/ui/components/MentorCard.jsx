@@ -27,7 +27,7 @@ class MentorCard extends React.Component {
                     <List bulleted>
                       <List.Item>{this.props.mentor.class1}</List.Item>
                       <List.Item>{this.props.mentor.class2}</List.Item>
-                      <List.Item>{this.props.mentor.class1}</List.Item>
+                      <List.Item>{this.props.mentor.class3}</List.Item>
                     </List>
                   </Grid.Column>
                 </Grid>

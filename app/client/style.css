@@ -58,6 +58,14 @@
   padding-bottom: 96px;
 }
 
+.medium-padding-bottom {
+  padding-bottom: 42px;
+}
+
+.small-padding-bottom {
+  padding-bottom: 18px;
+}
+
 .big-padding-top {
   padding-top: 96px;
 }
@@ -67,7 +75,7 @@
 }
 
 .background-site {
-  background-image: url('/images/Landing-4.jpg');
+  background-image: url('/images/Landing-3.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }

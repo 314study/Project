@@ -5,7 +5,7 @@ import { Mentors } from '../../api/mentor/mentor';
 
 /** Initialize the database with a default data document. */
 function addData(data) {
-  console.log(`  Adding: ${data.timeBegin} `);
+  console.log(`  Adding: ${data.MotimeBegin} `);
   Calendar.insert(data);
 }
 

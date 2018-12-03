@@ -7,14 +7,20 @@ const Calendar = new Mongo.Collection('Calendar');
 
 /** Create a schema to constrain the structure of documents associated with this collection. */
 const CalendarSchema = new SimpleSchema({
-  day: String,
-  timeBegin: String,
-  timeEnd: String,
-  condition: {
-    type: String,
-    allowedValues: ['available', 'not available', 'maybe'],
-    defaultValue: 'not available',
-  },
+  MotimeBegin: String,
+  MotimeEnd: String,
+  TutimeBegin: String,
+  TutimeEnd: String,
+  WetimeBegin: String,
+  WetimeEnd: String,
+  ThtimeBegin: String,
+  ThtimeEnd: String,
+  FrtimeBegin: String,
+  FrtimeEnd: String,
+  SatimeBegin: String,
+  SatimeEnd: String,
+  SutimeBegin: String,
+  SutimeEnd: String,
 }, { tracker: Tracker });
 
 /** Attach this schema to the collection. */

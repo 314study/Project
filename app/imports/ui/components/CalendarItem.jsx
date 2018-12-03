@@ -1,15 +1,11 @@
 import React from 'react';
-import { Meteor } from 'meteor/meteor';
 import { Table } from 'semantic-ui-react';
-import { Calendar } from '/imports/api/Calendar/Calendar';
 import PropTypes from 'prop-types';
-import { withTracker } from 'meteor/react-meteor-data';
 
 /** Renders a single row in the List Stuff table. See pages/ListStuff.jsx. */
 class CalendarItem extends React.Component {
   render() {
     return (
-        <div className="ui container">
           <Table celled>
             <Table.Header>
               <Table.Row>
@@ -39,19 +35,10 @@ class CalendarItem extends React.Component {
               </Table.Row>
             </Table.Body>
           </Table>
-        </div>
     );
   }
 }
 CalendarItem.propTypes = {
   Calendar: PropTypes.object.isRequired,
 };
-
-export default withTracker(() => {
-  // Get access to Stuff documents.
-  const subscription = Meteor.subscribe('Calendar');
-  return {
-    Calendar: Calendar.find({}).fetch(),
-    ready: subscription.ready(),
-  };
-})(CalendarItem);
+export default CalendarItem;

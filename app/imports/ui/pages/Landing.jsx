@@ -7,14 +7,13 @@ import MentorCard from '/imports/ui/components/MentorCard';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import CalendarItem from '../components/CalendarItem';
+import { Calendar } from '/imports/api/Calendar/Calendar';
 
 /** A simple static component to render some text for the landing page. */
 class Landing extends React.Component {
   render() {
-
     return (
     <div>
-
       <div className="background-site">
             <div className="ui center aligned container container-width big-padding-bottom">
               <p className="Nunito-font font-large big-padding-top">
@@ -67,26 +66,28 @@ class Landing extends React.Component {
             </div>
           </div>
           <div>
-            <CalendarItem/>
+            {this.props.Calendar.map(calendar => <CalendarItem key={calendar._id} calendar={calendar} />)}
           </div>
       </div>
     );
   }
 }
-
 /** Require an array of Stuff documents in the props. */
 Landing.propTypes = {
   mentors: PropTypes.array.isRequired,
   student: PropTypes.array.isRequired,
+  Calendar: PropTypes.array.isRequired,
   ready: PropTypes.bool.isRequired,
 };
 
 export default withTracker(() => {
   const subscription = Meteor.subscribe('Mentor');
   const subscription2 = Meteor.subscribe('Profile');
+  const subscription3 = Meteor.subscribe('Calendar');
   return {
     mentors: Mentors.find({}).fetch(),
     student: Profile.find({}).fetch(),
-    ready: subscription.ready() && subscription2.ready(),
+    Calendar: Calendar.find({}).fetch(),
+    ready: subscription.ready() && subscription2.ready() && subscription3.ready(),
   };
 })(Landing);

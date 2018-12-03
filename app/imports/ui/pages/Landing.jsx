@@ -15,7 +15,7 @@ class Landing extends React.Component {
     <div>
 
       <div className="background-site">
-            <div className="ui center aligned container container-width small-padding-bottom">
+            <div className="ui center aligned container container-width big-padding-bottom">
               <p className="Nunito-font font-large big-padding-top">
                 <span className="font-bold font-color-white">Welcome to</span>
                 <span className="font-bold font-color-green"> Stud</span>

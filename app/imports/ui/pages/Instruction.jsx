@@ -4,8 +4,9 @@ import { Grid, Header } from 'semantic-ui-react';
 /** A simple static component to render some text for the landing page. */
 class Instruction extends React.Component {
   render() {
+    const divStyle = { paddingTop: '15px', paddingBottom: '20px' };
     return (
-        <Grid container centered>
+        <Grid container centered style={divStyle}>
           <Grid.Column>
             <p></p>
             <Header as="h2" textAlign="center">Intructions For Students</Header>

@@ -22,8 +22,9 @@ class ClassList extends React.Component {
   /** Render the page once subscriptions have been received. */
   renderPage() {
     const { activeItem } = this.state || {};
+    const divStyle = { paddingTop: '15px', paddingBottom: '20px' };
     return (
-        <Grid>
+        <Grid style={divStyle}>
           <Grid.Row>
             <Container>
               <Divider hidden />

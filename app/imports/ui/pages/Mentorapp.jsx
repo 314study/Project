@@ -1,6 +1,6 @@
 import React from 'react';
 import { Mentors, MentorSchema } from '/imports/api/mentor/mentor';
-import { Grid, Segment, Header } from 'semantic-ui-react';
+import { Grid, Segment, Header, Divider } from 'semantic-ui-react';
 import AutoForm from 'uniforms-semantic/AutoForm';
 import TextField from 'uniforms-semantic/TextField';
 import NumField from 'uniforms-semantic/NumField';
@@ -62,6 +62,7 @@ class Mentorapp extends React.Component {
     return (
         <Grid container centered>
           <Grid.Column>
+            <Divider hidden />
             <Header as="h2" textAlign="center">Mentorship App</Header>
             <AutoForm ref={(ref) => {
               this.formRef = ref;

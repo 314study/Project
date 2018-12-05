@@ -1,6 +1,6 @@
 import React from 'react';
 import { Profile, ProfileSchema } from '/imports/api/profile/profile';
-import { Grid, Segment, Header } from 'semantic-ui-react';
+import { Grid, Segment, Divider } from 'semantic-ui-react';
 import AutoForm from 'uniforms-semantic/AutoForm';
 import TextField from 'uniforms-semantic/TextField';
 import SubmitField from 'uniforms-semantic/SubmitField';
@@ -43,6 +43,7 @@ class EditProfile extends React.Component {
         <div className="inverted-section">
         <Grid centered container>
           <Grid.Column>
+            <Divider hidden />
             <p className="text-align-center Nunito-font font-medium small-padding-top font-color-white">Edit <span className="font-color-green">Profile</span></p>
             <AutoForm ref={(ref) => { this.formRef = ref; }} schema={ProfileSchema} onSubmit={this.submit}>
               <Segment>

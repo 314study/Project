@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Header, Loader } from 'semantic-ui-react';
+import { Divider, Grid, Header, Loader } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 import { withTracker } from 'meteor/react-meteor-data';
 import { Meteor } from 'meteor/meteor';
@@ -11,10 +11,11 @@ class Statistics extends React.Component {
     return (this.props.ready) ? this.renderPage() : <Loader active>Getting data</Loader>;
   }
 
-  render() {
+  renderPage() {
     return (
         <Grid container centered>
           <Grid.Column>
+            <Divider hidden />
             <Header as="h2" textAlign="center">Statistics</Header>
           </Grid.Column>
         </Grid>

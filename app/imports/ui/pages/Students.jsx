@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Container, Header, Loader } from 'semantic-ui-react';
+import { Card, Container, Header, Loader, Divider } from 'semantic-ui-react';
 import { Profile } from '/imports/api/profile/profile';
 import PropTypes from 'prop-types';
 import StudentCard from '/imports/ui/components/StudentCard';
@@ -17,6 +17,7 @@ class Students extends React.Component {
     const divStyle = { paddingTop: '15px' };
     return (
         <div style={divStyle}>
+          <Divider hidden />
           <Header as="h2" textAlign="center">Maybe youd prefer studying in a group? </Header>
           <p className='text-align-center font-Small Nunito-font'>
             Here is a list of students that are also looking for help in the same class as you

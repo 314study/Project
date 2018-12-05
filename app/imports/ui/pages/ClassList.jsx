@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Menu, Grid, Loader, Dropdown, Header, Icon, List, Segment, Container, Divider } from 'semantic-ui-react';
+import { Menu, Grid, Loader, Dropdown, Header, Container, Divider } from 'semantic-ui-react';
 import { Mentors } from '/imports/api/mentor/mentor';
 import MentorCard from '/imports/ui/components/MentorCard';
 import { withTracker } from 'meteor/react-meteor-data';
@@ -26,7 +26,7 @@ class ClassList extends React.Component {
     for (i = 0; i < activeIndex.length; i++) {
       if (activeIndex[i] === titleProps.name) {
         isItIn = true;
-        activeIndex.splice(i);
+        activeIndex.splice(i, 1);
         console.log(activeIndex);
       }
     }
@@ -82,7 +82,7 @@ class ClassList extends React.Component {
                             {subject === 'Electrical'} onClick={this.handleClick} />
                         <Dropdown.Item text='Computer' name='Computer' active=
                             {subject === 'Computer'} onClick={this.handleClick}/>
-                        <Dropdown.Item text='Software' name='Software' active=
+                        <Dropdown.Item text='Software' name='Software Engineering' active=
                             {subject === 'Software Engineering'} onClick={this.handleClick}/>
                       </Dropdown.Menu>
                     </Dropdown>
@@ -116,6 +116,7 @@ class ClassList extends React.Component {
                         active={subject === 'Economics'} onClick={this.handleClick}
                     />
                   </Menu.Menu>
+                </Menu.Item>
                   <Menu.Item>
                     <Menu.Header>Humanities</Menu.Header>
                     <Menu.Menu>
@@ -168,7 +169,6 @@ class ClassList extends React.Component {
                       </Dropdown>
                     </Menu.Menu>
                   </Menu.Item>
-                </Menu.Item>
                 {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
                     <Menu.Item>
                       <Menu.Header>Tester</Menu.Header>

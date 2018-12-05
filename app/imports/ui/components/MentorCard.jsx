@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 /** Renders a single row in the List Stuff (Admin) table. See pages/ListStuffAdmin.jsx. */
 class MentorCard extends React.Component {
   render() {
+    console.log(this.props.mentor);
     return (
         /*
         11/25/18

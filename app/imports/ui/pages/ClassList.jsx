@@ -177,7 +177,6 @@ class ClassList extends React.Component {
                 <List.Item>Class 3</List.Item>
               </List>
             </Segment>
-            {this.props.mentors.map(mentor => <MentorCard key={mentor._id} mentor={mentor} />)}
           </Grid.Column>
           </Grid.Row>
         </Grid>

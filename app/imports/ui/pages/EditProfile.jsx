@@ -28,14 +28,13 @@ class EditProfile extends React.Component {
       Bert.alert({ type: 'danger', message: `Edit failed: ${error.message}` });
     } else {
       Bert.alert({ type: 'success', message: 'Edit successful!' });
-      this.formRef.reset();
     }
   }
 
   /** On submit, insert the data. */
   submit(data) {
-  const { firstName, lastName, studyClass, owner } = data;
-  Profile.update(owner, { $set: { firstName, lastName, studyClass } }, this.insertCallback());
+  const { firstName, lastName, studyClass, _id } = data;
+  Profile.update(_id, { $set: { firstName, lastName, studyClass } }, this.insertCallback());
   }
 
   /** If the subscription(s) have been received, render the page, otherwise show a loading icon. */
@@ -51,7 +50,7 @@ class EditProfile extends React.Component {
           <Grid.Column>
             <p className="text-align-center Nunito-font font-medium small-padding-top font-color-white">
               Edit <span className="font-color-green">Profile</span></p>
-            <AutoForm ref={(ref) => { this.formRef = ref; }} schema={ProfileSchema} onSubmit={this.submit}>
+            <AutoForm schema={ProfileSchema} onSubmit={this.submit} model={this.props.doc}>
               <Segment>
                 <TextField name='firstName'/>
                 <TextField name='lastName'/>

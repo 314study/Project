@@ -65,8 +65,8 @@ class ClassList extends React.Component {
                         active={subject === 'Physics'} onClick={this.handleClick}
                     />
                     <Menu.Item
-                        name='Software Engineering'
-                        active={subject === 'Software Engineering'} onClick={this.handleClick}
+                        name='Chemistry'
+                        active={subject === 'Chemistry'} onClick={this.handleClick}
                     />
                     <Menu.Item
                         name='Biology'
@@ -82,6 +82,8 @@ class ClassList extends React.Component {
                             {subject === 'Electrical'} onClick={this.handleClick} />
                         <Dropdown.Item text='Computer' name='Computer' active=
                             {subject === 'Computer'} onClick={this.handleClick}/>
+                        <Dropdown.Item text='Software' name='Software' active=
+                            {subject === 'Software Engineering'} onClick={this.handleClick}/>
                       </Dropdown.Menu>
                     </Dropdown>
                     <Menu.Item
@@ -190,15 +192,6 @@ class ClassList extends React.Component {
               </Menu>
             </Grid.Column>
             <Grid.Column width={6}>
-              <Segment>
-                <Header as='h1'><Icon name='user'/>Example Name</Header>
-                <Header as='h2'><Icon name='book'/>Subjects</Header>
-                <List bulleted relaxed>
-                  <List.Item>Class 1</List.Item>
-                  <List.Item>Class 2</List.Item>
-                  <List.Item>Class 3</List.Item>
-                </List>
-              </Segment>
               {this.props.mentors.filter(
                   mentor => (this.state.activeIndex && (this.state.activeIndex.includes((mentor.class1) || (mentor.class2) || (mentor.class3)))),
               ).map(

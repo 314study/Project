@@ -19,6 +19,7 @@ import ClassList from '../pages/ClassList';
 import Tutors from '../pages/Tutors';
 import Students from '../pages/Students';
 import EditProfile from '../pages/EditProfile';
+import AddProfile from '../pages/AddProfile';
 import EditMentor from '../pages/EditMentor';
 import Statistics from '../pages/Statistics';
 import Mentorapp from '../pages/Mentorapp';
@@ -48,6 +49,7 @@ class App extends React.Component {
               <ProtectedRoute path="/signout" component={Signout}/>
               <ProtectedRoute path="/editprofile/:_id" component={EditProfile}/>
               <ProtectedRoute path="/editavailability/:_id" component={EditAvailability}/>
+              <ProtectedRoute path="/addprofile" component={AddProfile}/>
               <ProtectedRoute path="/editmentor/:_id" component={EditMentor}/>
               <Route component={NotFound}/>
             </Switch>

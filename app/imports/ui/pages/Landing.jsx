@@ -20,7 +20,7 @@ class Landing extends React.Component {
                 <span className="font-bold font-color-white">Welcome to</span>
                 <span className="font-bold font-color-green"> Stud</span>
                 <span className="font-color-green">Budd</span>
-                <p className="font-small font-color-white big-padding-bottom">
+                <p className="font-small font-color-white medium-padding-bottom">
                   <span className="font-bold font-color-lightgrey">P</span>eople
                   <span className="font-bold font-color-lightgrey"> H</span>ave
                   <span className="font-bold font-color-lightgrey"> Q</span>uestions,
@@ -30,11 +30,15 @@ class Landing extends React.Component {
                   <span className="font-bold font-color-lightgrey"> P</span>lease.
                 </p>
               </p>
-              <Grid container stackable columns={3}>
-                {this.props.mentors.map(mentor => <MentorCard key={mentor._id} mentor={mentor} />)}
-              </Grid>
+              <div className="ui center aligned container small-padding-bottom">
+                <span className="Nunito-font font-medium font-bold font-color-green">
+                  Our Top Mentors
+                </span>
+              </div>
+                <Grid container stackable columns={3}>
+                  {this.props.mentors.map(mentor => <MentorCard key={mentor._id} mentor={mentor} />)}
+                </Grid>
             </div>
-            <Header/>
           </div>
           <div>
             <div className="ui center aligned container">

@@ -14,7 +14,7 @@ class Students extends React.Component {
   }
 
   renderPage() {
-    const divStyle = { paddingTop: '15px' };
+    const divStyle = { paddingTop: '15px', paddingBottom: '20px' };
     return (
         <div style={divStyle}>
           <Header as="h2" textAlign="center">Maybe youd prefer studying in a group? </Header>

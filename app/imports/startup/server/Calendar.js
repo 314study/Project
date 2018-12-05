@@ -19,16 +19,16 @@ if (Calendar.find().count() === 0) {
 
 Meteor.publish('Calendar', function publish() {
   if (this.userId) {
-    const username = Meteor.users.findOne(this.userId).username;
-    return Calendar.find({ owner: username });
+    return Calendar.find({});
   }
   return this.ready();
 });
-
-/** This subscription publishes all documents regardless of user, but only if the logged in user is the Admin. */
+/**
+/** This subscription publishes all documents regardless of user, but only if the logged in user is the Admin.
 Meteor.publish('Calendar', function publish() {
   if (this.userId && Roles.userIsInRole(this.userId, 'admin')) {
     return Calendar.find();
   }
   return this.ready();
 });
+*/

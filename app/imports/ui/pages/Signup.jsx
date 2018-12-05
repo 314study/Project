@@ -28,6 +28,9 @@ class Signup extends React.Component {
     this.setState({ [name]: value });
   }
 
+  returnProfiles(userId) {
+    return Profile.findOne({ owner: userId });
+  }
   /** Handle Signup submission using Meteor's account mechanism. */
   handleSubmit() {
     const { email, password } = this.state;
@@ -86,7 +89,7 @@ class Signup extends React.Component {
                   {this.props.currentUser ? (
                       <Message>
                         <span className=" font-small ">
-                          Click <Link to="/addprofile" className="font-color-green font-bold font-kindaSmall">
+                          Click <Link to={`/editprofile/${this.returnProfiles(this.props.currentUser)._id}`} className="font-color-green font-bold font-kindaSmall">
                           here</Link> to finish creating your profile
                         </span>
                       </Message>

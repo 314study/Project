@@ -19,13 +19,11 @@ import ClassList from '../pages/ClassList';
 import Tutors from '../pages/Tutors';
 import Students from '../pages/Students';
 import EditProfile from '../pages/EditProfile';
+import EditMentor from '../pages/EditMentor';
 import Statistics from '../pages/Statistics';
 import Mentorapp from '../pages/Mentorapp';
 import Instruction from '../pages/Instruction';
 import EditAvailability from '../pages/EditAvailability';
-
-
-
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 class App extends React.Component {
   render() {
@@ -50,6 +48,7 @@ class App extends React.Component {
               <ProtectedRoute path="/signout" component={Signout}/>
               <ProtectedRoute path="/editprofile/:_id" component={EditProfile}/>
               <ProtectedRoute path="/editavailability/:_id" component={EditAvailability}/>
+              <ProtectedRoute path="/editmentor/:_id" component={EditMentor}/>
               <Route component={NotFound}/>
             </Switch>
             <Footer/>

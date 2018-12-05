@@ -1,5 +1,6 @@
 import React from 'react';
 import { Calendar } from '/imports/api/Calendar/Calendar';
+import { Profile } from '/imports/api/profile/profile';
 import { Bert } from 'meteor/themeteorchef:bert';
 import PropTypes from 'prop-types';
 import { Meteor } from 'meteor/meteor';
@@ -38,20 +39,19 @@ class Signup extends React.Component {
     const FridayAvailability = 'Unavailable';
     const SaturdayAvailability = 'Unavailable';
     const SundayAvailability = 'Unavailable';
-    Calendar.insert({ MondayAvailability, TuesdayAvailability,
-      WednesdayAvailability, ThursdayAvailability,
-      FridayAvailability, SaturdayAvailability,
-      SundayAvailability, owner }, (error) => (error ?
-        Bert.alert({ type: 'danger', message: `Update failed: ${error.message}` }) :
-        Bert.alert({ type: 'success', message: 'Update succeeded' })));
     Accounts.createUser({ email, username: email, password }, (err) => {
       if (err) {
         this.setState({ error: err.reason });
       } else if (!err) {
         // FlowRouter.go('/editprofile'); // or go(url)
+        Calendar.insert({ MondayAvailability, TuesdayAvailability,
+          WednesdayAvailability, ThursdayAvailability,
+          FridayAvailability, SaturdayAvailability,
+          SundayAvailability, owner }, (error) => (error ?
+            Bert.alert({ type: 'danger', message: `Update failed: ${error.message}` }) :
+            Bert.alert({ type: 'success', message: 'Update succeeded' })));
       }
     });
-    console.log('it got to this point');
   }
 
   /** Display the signup form. */

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Profile, ProfileSchema } from '/imports/api/profile/profile';
-import { Grid, Segment, Header } from 'semantic-ui-react';
+import { Grid, Segment } from 'semantic-ui-react';
 import AutoForm from 'uniforms-semantic/AutoForm';
 import TextField from 'uniforms-semantic/TextField';
 import SubmitField from 'uniforms-semantic/SubmitField';

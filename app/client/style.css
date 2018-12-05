@@ -77,7 +77,7 @@
 .background-site {
   background-image: url('/images/Landing-3.jpg');
   background-size: cover;
-  background-position-y: -400px;
+  background-position-y: -100px;
   background-repeat: no-repeat;
 }
 

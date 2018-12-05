@@ -13,7 +13,6 @@ class CalendarItem extends React.Component {
 
   render() {
     return (
-        <div>
         <Table celled>
           <Table.Header>
             <Table.Row>
@@ -33,24 +32,23 @@ class CalendarItem extends React.Component {
           </Table.Header>
           <Table.Body>
             <Table.Row>
-              <Table.Cell className={this.colorCell(this.props.Calendar.SundayAvailability)}>
+              <Table.Cell style={{ width: '150px' }} className={this.colorCell(this.props.Calendar.SundayAvailability)}>
                 {this.props.Calendar.SundayAvailability}</Table.Cell>
-              <Table.Cell className={this.colorCell(this.props.Calendar.MondayAvailability)}>
+              <Table.Cell style={{ width: '150px' }} className={this.colorCell(this.props.Calendar.MondayAvailability)}>
                 {this.props.Calendar.MondayAvailability}</Table.Cell>
-              <Table.Cell className={this.colorCell(this.props.Calendar.TuesdayAvailability)}>
+              <Table.Cell style={{ width: '150px' }} className={this.colorCell(this.props.Calendar.TuesdayAvailability)}>
                 {this.props.Calendar.TuesdayAvailability}</Table.Cell>
-              <Table.Cell className={this.colorCell(this.props.Calendar.WednesdayAvailability)}>
+              <Table.Cell style={{ width: '150px' }} className={this.colorCell(this.props.Calendar.WednesdayAvailability)}>
                 {this.props.Calendar.WednesdayAvailability}</Table.Cell>
-              <Table.Cell className={this.colorCell(this.props.Calendar.ThursdayAvailability)}>
+              <Table.Cell style={{ width: '150px' }} className={this.colorCell(this.props.Calendar.ThursdayAvailability)}>
                 {this.props.Calendar.ThursdayAvailability}</Table.Cell>
-              <Table.Cell className={this.colorCell(this.props.Calendar.FridayAvailability)}>
+              <Table.Cell style={{ width: '150px' }} className={this.colorCell(this.props.Calendar.FridayAvailability)}>
                 {this.props.Calendar.FridayAvailability}</Table.Cell>
-              <Table.Cell className={this.colorCell(this.props.Calendar.SaturdayAvailability)}>
+              <Table.Cell style={{ width: '150px' }} className={this.colorCell(this.props.Calendar.SaturdayAvailability)}>
                 {this.props.Calendar.SaturdayAvailability}</Table.Cell>
             </Table.Row>
           </Table.Body>
         </Table>
-        </div>
     );
   }
 }

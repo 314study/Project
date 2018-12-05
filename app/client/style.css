@@ -67,8 +67,9 @@
 }
 
 .background-site {
-  background-image: url('/images/Landing-4.jpg');
+  background-image: url('/images/Landing-6.jpg');
   background-size: cover;
+  background-position-y: -400px;
   background-repeat: no-repeat;
 }
 

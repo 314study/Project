@@ -1,6 +1,6 @@
 import React from 'react';
 import { Profile, ProfileSchema } from '/imports/api/profile/profile';
-import { Grid, Segment } from 'semantic-ui-react';
+import { Grid, Segment, Header } from 'semantic-ui-react';
 import AutoForm from 'uniforms-semantic/AutoForm';
 import TextField from 'uniforms-semantic/TextField';
 import SubmitField from 'uniforms-semantic/SubmitField';
@@ -8,11 +8,12 @@ import HiddenField from 'uniforms-semantic/HiddenField';
 import ErrorsField from 'uniforms-semantic/ErrorsField';
 import { Bert } from 'meteor/themeteorchef:bert';
 import { Meteor } from 'meteor/meteor';
-import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
+import { withRouter } from 'react-router-dom';
+import { withTracker } from 'meteor/react-meteor-data';
 
 /** Renders the Page for adding a document. */
-class EditProfile extends React.Component {
+class AddProfile extends React.Component {
 
   /** Bind 'this' so that a ref to the Form can be saved in formRef and communicated between render() and submit(). */
   constructor(props) {
@@ -25,18 +26,18 @@ class EditProfile extends React.Component {
   /** Notify the user of the results of the submit. If successful, clear the form. */
   insertCallback(error) {
     if (error) {
-      Bert.alert({ type: 'danger', message: `Edit failed: ${error.message}` });
+      Bert.alert({ type: 'danger', message: `Add failed: ${error.message}` });
     } else {
-      Bert.alert({ type: 'success', message: 'Edit successful!' });
+      Bert.alert({ type: 'success', message: 'Add succeeded' });
       this.formRef.reset();
     }
   }
 
   /** On submit, insert the data. */
   submit(data) {
-    const { firstName, lastName, studyClass, owner } = data;
-    Profile.update(owner, { $set: { firstName, lastName, studyClass } }, this.insertCallback());
-
+    const { firstName, lastName, studyClass } = data;
+    const owner = Meteor.user().username;
+    Profile.insert({ firstName, lastName, studyClass, owner }, this.insertCallback);
   }
 
   /** Render the form. Use Uniforms: https://github.com/vazco/uniforms */
@@ -45,8 +46,7 @@ class EditProfile extends React.Component {
         <div className="inverted-section">
         <Grid centered container>
           <Grid.Column>
-            <p className="text-align-center Nunito-font font-medium small-padding-top font-color-white">
-              Edit <span className="font-color-green">Profile</span></p>
+            <p className="text-align-center Nunito-font font-medium small-padding-top font-color-white">Add <span className="font-color-green">Profile</span></p>
             <AutoForm ref={(ref) => { this.formRef = ref; }} schema={ProfileSchema} onSubmit={this.submit}>
               <Segment>
                 <TextField name='firstName'/>
@@ -54,7 +54,7 @@ class EditProfile extends React.Component {
                 <TextField name='studyClass'/>
                 <SubmitField value='Submit'/>
                 <ErrorsField/>
-                <HiddenField name='owner' value= {this.props.currentUser} />
+                <HiddenField name='owner' value= {this.props.currentUser}/>
               </Segment>
             </AutoForm>
           </Grid.Column>
@@ -64,18 +64,13 @@ class EditProfile extends React.Component {
   }
 }
 
-EditProfile.propTypes = {
-  doc: PropTypes.object,
+AddProfile.propTypes = {
+  currentUser: PropTypes.string,
 };
 
-export default withTracker(({ match }) => {
-  // Get the documentID from the URL field. See imports/ui/layouts/App.jsx for the route containing :_id.
-  const documentId = match.params.owner;
-  // Get access to Stuff documents.
-  const subscription = Meteor.subscribe('Profile');
-  return {
-    doc: Profile.findOne(documentId),
-    ready: subscription.ready(),
-  };
+/** withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker */
+const AddProfileContainer = withTracker(() => ({
+  currentUser: Meteor.user() ? Meteor.user().username : '',
+}))(AddProfile);
 
-})(EditProfile);
+export default withRouter(AddProfileContainer);

@@ -1,5 +1,8 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import { Meteor } from 'meteor/meteor';
+import { withTracker } from 'meteor/react-meteor-data';
+import { Link, NavLink, withRouter } from 'react-router-dom';
 import { Container, Form, Grid, Header, Message, Segment } from 'semantic-ui-react';
 import { Accounts } from 'meteor/accounts-base';
 import { Dropdown } from 'semantic-ui-react/dist/commonjs/modules/Dropdown/Dropdown';
@@ -8,7 +11,7 @@ import { Menu } from 'semantic-ui-react/dist/commonjs/collections/Menu/Menu';
 /**
  * Signup component is similar to signin component, but we attempt to create a new user instead.
  */
-export default class Signup extends React.Component {
+class Signup extends React.Component {
   /** Initialize state fields. */
   constructor(props) {
     super(props);
@@ -30,11 +33,11 @@ export default class Signup extends React.Component {
     Accounts.createUser({ email, username: email, password }, (err) => {
       if (err) {
         this.setState({ error: err.reason });
-      } else {
-        // this.setState({ success: err.reason });
+      } else if (!err) {
+        // FlowRouter.go('/editprofile'); // or go(url)
       }
     });
-    this.location = 'http://www.w3schools.com';
+    console.log('it got to this point');
   }
 
   /** Display the signup form. */
@@ -67,10 +70,17 @@ export default class Signup extends React.Component {
                       onChange={this.handleChange}
                   />
                   <Form.Button content="Submit" />
+                  {this.props.currentUser ? (
+                      <Message>
+                        <span className=" font-small ">
+                          Click <Link to="/addprofile" className="font-color-green font-bold font-kindaSmall">here</Link> to finish creating your profile
+                        </span>
+                      </Message>
+                  ) : ''}
                 </Segment>
               </Form>
               <Message>
-                Already have an account? Login <Link to="/signin">here</Link>
+                Already have an account? Login <Link to="/signin" className="font-color-green">here</Link>
               </Message>
               {this.state.error === '' ? (
                   ''
@@ -87,3 +97,14 @@ export default class Signup extends React.Component {
     );
   }
 }
+
+Signup.propTypes = {
+  currentUser: PropTypes.string,
+};
+
+/** withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker */
+const SignupContainer = withTracker(() => ({
+  currentUser: Meteor.user() ? Meteor.user().username : '',
+}))(Signup);
+
+export default withRouter(SignupContainer);

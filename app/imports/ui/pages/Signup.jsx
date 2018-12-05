@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Calendar } from '/imports/api/Calendar/Calendar';
 import { Container, Form, Grid, Header, Message, Segment } from 'semantic-ui-react';
 import { Accounts } from 'meteor/accounts-base';
+import { Bert } from 'meteor/themeteorchef:bert';
 
 /**
  * Signup component is similar to signin component, but we attempt to create a new user instead.
@@ -25,6 +27,20 @@ export default class Signup extends React.Component {
   /** Handle Signup submission using Meteor's account mechanism. */
   handleSubmit() {
     const { email, password } = this.state;
+    const owner = email;
+    const MondayAvailability = 'Unavailable';
+    const TuesdayAvailability = 'Unavailable';
+    const WednesdayAvailability = 'Unavailable';
+    const ThursdayAvailability = 'Unavailable';
+    const FridayAvailability = 'Unavailable';
+    const SaturdayAvailability = 'Unavailable';
+    const SundayAvailability = 'Unavailable';
+    Calendar.insert({ MondayAvailability, TuesdayAvailability,
+      WednesdayAvailability, ThursdayAvailability,
+      FridayAvailability, SaturdayAvailability,
+      SundayAvailability, owner }, (error) => (error ?
+        Bert.alert({ type: 'danger', message: `Update failed: ${error.message}` }) :
+        Bert.alert({ type: 'success', message: 'Update succeeded' })));
     Accounts.createUser({ email, username: email, password }, (err) => {
       if (err) {
         this.setState({ error: err.reason });
@@ -80,6 +96,7 @@ export default class Signup extends React.Component {
               )}
             </Grid.Column>
           </Grid>
+          <p>Create Your Availability</p>
         </Container>
     );
   }

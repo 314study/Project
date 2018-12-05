@@ -5,7 +5,7 @@ import { Mentors } from '../../api/mentor/mentor';
 
 /** Initialize the database with a default data document. */
 function addData(data) {
-  console.log(`  Adding: ${data.MotimeBegin} `);
+  console.log(`  Adding: ${data.MondayAvailability} `);
   Calendar.insert(data);
 }
 
@@ -18,7 +18,11 @@ if (Calendar.find().count() === 0) {
 }
 
 Meteor.publish('Calendar', function publish() {
-  return Calendar.find();
+  if (this.userId) {
+    const username = Meteor.users.findOne(this.userId).username;
+    return Calendar.find({ owner: username });
+  }
+  return this.ready();
 });
 
 /** This subscription publishes all documents regardless of user, but only if the logged in user is the Admin. */

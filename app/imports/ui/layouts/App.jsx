@@ -22,6 +22,8 @@ import EditProfile from '../pages/EditProfile';
 import Statistics from '../pages/Statistics';
 import Mentorapp from '../pages/Mentorapp';
 import Instruction from '../pages/Instruction';
+import EditAvailability from '../pages/EditAvailability';
+
 
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
@@ -46,7 +48,8 @@ class App extends React.Component {
               <AdminProtectedRoute path="/admin" component={ListStuffAdmin}/>
               <AdminProtectedRoute path="/stats" component={Statistics}/>
               <ProtectedRoute path="/signout" component={Signout}/>
-              <ProtectedRoute path="/editprofile" component={EditProfile}/>
+              <ProtectedRoute path="/editprofile/:_id" component={EditProfile}/>
+              <ProtectedRoute path="/editavailability/:_id" component={EditAvailability}/>
               <Route component={NotFound}/>
             </Switch>
             <Footer/>

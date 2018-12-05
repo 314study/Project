@@ -25,13 +25,13 @@ class CalendarItem extends React.Component {
             </Table.Header>
             <Table.Body>
               <Table.Row>
-                <Table.Cell>{this.props.Calendar.MotimeBegin} - {this.props.Calendar.MotimeEnd}</Table.Cell>
-                <Table.Cell>{this.props.Calendar.TutimeBegin} - {this.props.Calendar.TutimeEnd}</Table.Cell>
-                <Table.Cell>{this.props.Calendar.WetimeBegin} - {this.props.Calendar.WetimeEnd}</Table.Cell>
-                <Table.Cell>{this.props.Calendar.ThtimeBegin} - {this.props.Calendar.ThtimeEnd}</Table.Cell>
-                <Table.Cell>{this.props.Calendar.FrtimeBegin} - {this.props.Calendar.FrtimeEnd}</Table.Cell>
-                <Table.Cell>{this.props.Calendar.SatimeBegin} - {this.props.Calendar.SatimeEnd}</Table.Cell>
-                <Table.Cell>{this.props.Calendar.SutimeBegin} - {this.props.Calendar.SutimeEnd}</Table.Cell>
+                <Table.Cell>{this.props.Calendar.SundayAvailability}</Table.Cell>
+                <Table.Cell>{this.props.Calendar.MondayAvailability}</Table.Cell>
+                <Table.Cell>{this.props.Calendar.TuesdayAvailability}</Table.Cell>
+                <Table.Cell>{this.props.Calendar.WednesdayAvailability}</Table.Cell>
+                <Table.Cell>{this.props.Calendar.ThursdayAvailability}</Table.Cell>
+                <Table.Cell>{this.props.Calendar.FridayAvailability}</Table.Cell>
+                <Table.Cell>{this.props.Calendar.SaturdayAvailability}</Table.Cell>
               </Table.Row>
             </Table.Body>
           </Table>

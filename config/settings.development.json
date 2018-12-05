@@ -46,21 +46,24 @@
   ],
   "defaultCalendar": [
     {
-      "MotimeBegin": "1:00",
-      "MotimeEnd": "2:00",
-      "TutimeBegin": "3:00",
-      "TutimeEnd": "4:00",
-      "WetimeBegin": "5:00",
-      "WetimeEnd": "6:00",
-      "ThtimeBegin": "7:00",
-      "ThtimeEnd": "8:00",
-      "FrtimeBegin": "9:00",
-      "FrtimeEnd": "10:00",
-      "SatimeBegin": "11:00",
-      "SatimeEnd": "12:00",
-      "SutimeBegin": "unavailable",
-      "SutimeEnd": "unavailable",
+      "MondayAvailability": "Unavailable",
+      "TuesdayAvailability": "Unavailable",
+      "WednesdayAvailability": "Unavailable",
+      "ThursdayAvailability": "Unavailable",
+      "FridayAvailability": "Unavailable",
+      "SaturdayAvailability": "Unavailable",
+      "SundayAvailability": "Unavailable",
       "owner": "john@foo.com"
+    },
+    {
+      "MondayAvailability": "Unavailable",
+      "TuesdayAvailability": "Unavailable",
+      "WednesdayAvailability": "Unavailable",
+      "ThursdayAvailability": "Unavailable",
+      "FridayAvailability": "Unavailable",
+      "SaturdayAvailability": "Unavailable",
+      "SundayAvailability": "Unavailable",
+      "owner": "admin@foo.com"
     }
   ],
   "defaultMentors": [

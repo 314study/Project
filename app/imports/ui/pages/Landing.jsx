@@ -66,7 +66,7 @@ class Landing extends React.Component {
             </div>
           </div>
           <div>
-            {this.props.Calendar.map(calendar => <CalendarItem key={calendar._id} Calendar={calendar} />)}
+           {this.props.Calendar.map((calendar) => <CalendarItem key={calendar._id} Calendar={calendar} />)}
           </div>
       </div>
     );

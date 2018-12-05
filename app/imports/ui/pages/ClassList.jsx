@@ -7,8 +7,6 @@ import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import { Roles } from 'meteor/alanning:roles';
 
-
-
 /** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
 class ClassList extends React.Component {
 
@@ -202,7 +200,7 @@ class ClassList extends React.Component {
                 </List>
               </Segment>
               {this.props.mentors.filter(
-                  mentor => (this.state.activeIndex && (this.state.activeIndex.includes((mentor.class1) || (mentor.class2) || (mentor.class3))))
+                  mentor => (this.state.activeIndex && (this.state.activeIndex.includes((mentor.class1) || (mentor.class2) || (mentor.class3)))),
               ).map(
                   (mentor, index) => <MentorCard key={index} mentor={mentor} />,
               )}

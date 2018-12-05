@@ -6,12 +6,17 @@ import { withRouter, NavLink } from 'react-router-dom';
 import { Menu, Dropdown, Image } from 'semantic-ui-react';
 import { Roles } from 'meteor/alanning:roles';
 import { Calendar } from '/imports/api/Calendar/Calendar';
+import { Profile } from '/imports/api/profile/profile';
 import { Bert } from 'meteor/themeteorchef:bert';
 
 /** The NavBar appears at the top of every page. Rendered by the App Layout component. */
 class NavBar extends React.Component {
   returnProfile(userId) {
     return Calendar.findOne({ owner: userId });
+  }
+
+  returnProfiles(userId) {
+    return Profile.findOne({ owner: userId });
   }
 
   dropDownMenu() {
@@ -29,7 +34,8 @@ class NavBar extends React.Component {
     return (
         <Dropdown text={this.props.currentUser} pointing="top right" icon={'user'}>
           <Dropdown.Menu>
-            <Dropdown.Item icon="user" text="Edit Profile" as={NavLink} exact to="/editprofile"/>
+            <Dropdown.Item icon="user" text="Edit Profile" as={NavLink}
+                           exact to={`/editprofile/${this.returnProfiles(this.props.currentUser)._id}`}/>
             <Dropdown.Item icon="user" text="Edit Availability" as={NavLink}
                            exact to={`/editavailability/${this.returnProfile(this.props.currentUser)._id}`}/>
             <Dropdown.Item icon="sign out" text="Sign Out" as={NavLink} exact to="/signout"/>
@@ -76,7 +82,7 @@ NavBar.propTypes = {
 /** withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker */
 const NavBarContainer = withTracker(() => ({
   currentUser: Meteor.user() ? Meteor.user().username : '',
-  ready: Meteor.subscribe('Calendar').ready(),
+  ready: Meteor.subscribe('Calendar').ready() && Meteor.subscribe('Profile').ready(),
 }))(NavBar);
 
 /** Enable ReactRouter for this component. https://reacttraining.com/react-router/web/api/withRouter */

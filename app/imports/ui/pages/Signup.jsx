@@ -47,9 +47,8 @@ class Signup extends React.Component {
         Calendar.insert({ MondayAvailability, TuesdayAvailability,
           WednesdayAvailability, ThursdayAvailability,
           FridayAvailability, SaturdayAvailability,
-          SundayAvailability, owner }, (error) => (error ?
-            Bert.alert({ type: 'danger', message: `Update failed: ${error.message}` }) :
-            Bert.alert({ type: 'success', message: 'Update succeeded' })));
+          SundayAvailability, owner });
+        Profile.insert({ firstName: email, lastName: email, studyClass: email, owner });
       }
     });
   }

@@ -42,6 +42,12 @@
       "lastName": "Yogi",
       "studyClass": "test",
       "owner": "admin@foo.com"
+    },
+    {
+      "firstName": "Kain",
+      "lastName": "Yogi",
+      "studyClass": "test",
+      "owner": "john@foo.com"
     }
   ],
   "defaultCalendar": [

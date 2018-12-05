@@ -146,11 +146,11 @@ class Instruction extends React.Component {
                 their own profile has been uploaded.
               </p>
             </Accordion.Content>
-            <Accordion.Title active={activeIndex === 11} index={12} onClick={this.handleClick}>
+            <Accordion.Title active={activeIndex === 11} index={11} onClick={this.handleClick}>
               <Icon name='dropdown' />
               Sign Out
             </Accordion.Title>
-            <Accordion.Content active={activeIndex === 13}>
+            <Accordion.Content active={activeIndex === 11}>
               <p>
                 Completely signs you out of your account so other people on the computer will not
                 be able to change nor view your information and sesssions.

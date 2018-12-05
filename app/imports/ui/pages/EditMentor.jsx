@@ -29,7 +29,6 @@ class EditMentor extends React.Component {
       Bert.alert({ type: 'danger', message: `Edit failed: ${error.message}` });
     } else {
       Bert.alert({ type: 'success', message: 'Edit successful!' });
-      this.formRef.reset();
     }
   }
 

@@ -2,7 +2,7 @@ import React from 'react';
 import { Meteor } from 'meteor/meteor';
 import { Menu, Grid, Loader, Dropdown, Header, Icon, List, Segment, Container, Divider } from 'semantic-ui-react';
 import { Mentors } from '/imports/api/mentor/mentor';
-import MentorCard from '/imports/ui/components/MentorCard';
+import MentorItemAdmin from '/imports/ui/components/MentorItemAdmin';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 // import { NavLink } from 'react-router-dom';
@@ -22,8 +22,9 @@ class ClassList extends React.Component {
   /** Render the page once subscriptions have been received. */
   renderPage() {
     const { activeItem } = this.state || {};
+    const divStyle = { paddingTop: '15px', paddingBottom: '20px' };
     return (
-        <Grid>
+        <Grid style={divStyle}>
           <Grid.Row>
             <Container>
               <Divider hidden />
@@ -177,7 +178,7 @@ class ClassList extends React.Component {
                 <List.Item>Class 3</List.Item>
               </List>
             </Segment>
-            {this.props.mentors.map(mentor => <MentorCard key={mentor._id} mentor={mentor} />)}
+            {this.props.mentors.map(mentor => <MentorItemAdmin key={mentor._id} mentor={mentor} />)}
           </Grid.Column>
           </Grid.Row>
         </Grid>
@@ -199,7 +200,7 @@ export default withTracker(() => {
   -subscribed 'MentorAdmin' is from '/startup/server/mentor.js'
    */
 
-  const subscription = Meteor.subscribe('MentorAdmin');
+  const subscription = Meteor.subscribe('Mentor');
   return {
     mentors: Mentors.find({}).fetch(),
     ready: subscription.ready(),

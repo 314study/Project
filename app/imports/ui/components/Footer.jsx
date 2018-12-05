@@ -4,33 +4,49 @@ import { Grid, List } from 'semantic-ui-react';
 /** The Footer appears at the bottom of every page. Rendered by the App Layout component. */
 class Footer extends React.Component {
   render() {
-    const divStyle = { paddingTop: '15px' };
+    const divStyle = { background: '#1B1C1D', paddingTop: '15px' };
     return (
-        <div style={divStyle}>
+        <div className="Nunito-font font-color-white" style={divStyle}>
           <footer>
             <Grid textAlign='center' container>
               <Grid.Column width={3}>
-                <List> Social Media </List>
+                <List className="font-color-green font-bold font-small"> Social Media </List>
                 <hr/>
-                <List.Item className="black" href={'https://www.facebook.com/'}> Facebook </List.Item> <br />
-                <List.Item className="black" href={'https://www.instagram.com/'}> Instagram </List.Item> <br />
-                <List.Item className="black" href={'https://twitter.com/'}> Twitter </List.Item> <br />
+                <List.Item className="font-color-white" href={'https://www.facebook.com/'}>
+                  Facebook
+                </List.Item> <br />
+                <List.Item className="font-color-white" href={'https://www.instagram.com/'}>
+                  Instagram
+                </List.Item> <br />
+                <List.Item className="font-color-white" href={'https://twitter.com/'}>
+                  Twitter
+                </List.Item> <br />
               </Grid.Column>
               <Grid.Column width={3}>
-                <List>Useful Links</List>
+                <List className="font-color-green font-bold font-small">Useful Links</List>
                 <hr/>
-                <List.Item className="black" href={'https://www.khanacademy.org/'}>Khan Academy</List.Item> <br />
-                <List.Item className="black" href={'https://www.chegg.com/study'}>Chegg</List.Item> <br />
-                <List.Item className="black" href={'https://stackoverflow.com/'}>Stack Overflow</List.Item> <br />
+                <List.Item className="font-color-white" href={'https://www.khanacademy.org/'}>
+                  Khan Academy
+                </List.Item> <br />
+                <List.Item className="font-color-white" href={'https://www.chegg.com/study'}>
+                  Chegg
+                </List.Item> <br />
+                <List.Item className="font-color-white" href={'https://stackoverflow.com/'}>
+                  Stack Overflow
+                </List.Item> <br />
               </Grid.Column>
               <Grid.Column width={3}>
-                <List>Support Us</List>
+                <List className="font-color-green font-bold font-small">Support Us</List>
                 <hr/>
-                <List.Item className="black" href={'https://www.paypal.com/us/home'}>PayPal</List.Item> <br />
-                <List.Item className="black" href={'https://www.gofundme.com/'}>GoFund Me</List.Item> <br />
+                <List.Item className="font-color-white" href={'https://www.paypal.com/us/home'}>
+                  PayPal
+                </List.Item> <br />
+                <List.Item className="font-color-white" href={'https://www.gofundme.com/'}>
+                  GoFund Me
+                </List.Item> <br />
               </Grid.Column>
               <Grid.Column width={3}>
-                <List>About Us</List>
+                <List className="font-color-green font-bold font-small">About Us</List>
                 <hr/>
                 <List.Item>
                   PHQSHTP inc. llc. co. LtD. est 2018 <br />

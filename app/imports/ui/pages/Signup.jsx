@@ -1,7 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { Container, Form, Grid, Header, Message, Segment } from 'semantic-ui-react';
 import { Accounts } from 'meteor/accounts-base';
+import { Dropdown } from 'semantic-ui-react/dist/commonjs/modules/Dropdown/Dropdown';
+import { Menu } from 'semantic-ui-react/dist/commonjs/collections/Menu/Menu';
 
 /**
  * Signup component is similar to signin component, but we attempt to create a new user instead.
@@ -29,9 +31,10 @@ export default class Signup extends React.Component {
       if (err) {
         this.setState({ error: err.reason });
       } else {
-        // browserHistory.push('/login');
+        // this.setState({ success: err.reason });
       }
     });
+    this.location = 'http://www.w3schools.com';
   }
 
   /** Display the signup form. */
@@ -63,7 +66,7 @@ export default class Signup extends React.Component {
                       type="password"
                       onChange={this.handleChange}
                   />
-                  <Form.Button content="Submit"/>
+                  <Form.Button content="Submit" />
                 </Segment>
               </Form>
               <Message>

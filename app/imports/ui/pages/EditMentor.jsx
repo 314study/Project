@@ -76,6 +76,8 @@ class EditMentor extends React.Component {
 
 EditMentor.propTypes = {
   doc: PropTypes.object,
+  model: PropTypes.object,
+  ready: PropTypes.bool.isRequired,
 };
 
 export default withTracker(({ match }) => {

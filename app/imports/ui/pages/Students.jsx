@@ -27,6 +27,7 @@ class Students extends React.Component {
             <Card.Group>
               {this.props.student.map((student) => <StudentCard key={student._id} student={student}/>)}
             </Card.Group>
+            <Divider hidden />
           </Container>
         </div>
     );

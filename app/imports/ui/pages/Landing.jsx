@@ -46,8 +46,8 @@ class Landing extends React.Component {
                   Our Top Mentors
                 </span>
               </div>
-              <Grid container columns={3}>
-                {this.props.mentors.map(mentor => <MentorCard key={mentor._id} mentor={mentor}/>)}
+              <Grid container stackable columns={3}>
+                {this.props.mentors.slice(0, 3).map(mentor => <MentorCard key={mentor._id} mentor={mentor}/>)}
               </Grid>
             </div>
           </div>

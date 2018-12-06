@@ -15,6 +15,9 @@ if (Profile.find().count() === 0) {
     Meteor.settings.defaultProfile.map(data => addData(data));
   }
 }
+Meteor.publish('ProfileLanding', function publish() {
+  return Profile.find();
+});
 
 /** This subscription publishes only the documents associated with the logged in user */
 Meteor.publish('Profile', function publish() {

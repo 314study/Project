@@ -49,28 +49,30 @@ class NavBar extends React.Component {
   render() {
     const menuStyle = { marginBottom: '0px' };
     return (
-        <Menu style={menuStyle} attached="top" borderless inverted>
-          <Menu.Item as={NavLink} activeClassName="" exact to="/">
-            <Image size='medium' src="/images/StudBudd2-transperent.png"/>
-          </Menu.Item>
-          <Menu.Item as={NavLink} activeClassName="active" exact to='/classes'
-                     key='classes' className='font-kindaSmall Nunito-font'>Classes</Menu.Item>
-          <Menu.Item as={NavLink} activeClassName="active" exact to='/tutors'
-                     key='tutors' className='font-kindaSmall Nunito-font'>Mentors</Menu.Item>
-          <Menu.Item as={NavLink} activeClassName="active" exact to='/instruction' key='instruction'
-                     className='font-kindaSmall Nunito-font'>Instructions</Menu.Item>
-          {this.props.currentUser ? (
-              [<Menu.Item as={NavLink} activeClassName="active"
-                          exact to="/students" key='add'
-                          className='font-kindaSmall Nunito-font'>Students</Menu.Item>]
-          ) : ''}
-          {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
-              <Menu.Item as={NavLink} activeClassName="active" exact to="/stats" key='admin'
-                         className='font-kindaSmall Nunito-font'>User Statistics</Menu.Item>) : ''}
-          <Menu.Item position="right">
-            {this.dropDownMenu()}
-          </Menu.Item>
-        </Menu>
+        <div>
+          <Menu style={menuStyle} attached="top" borderless inverted>
+            <Menu.Item as={NavLink} activeClassName="" exact to="/">
+              <Image size='medium' src="/images/StudBudd2-transperent.png"/>
+            </Menu.Item>
+            <Menu.Item as={NavLink} activeClassName="active" exact to='/classes'
+                       key='classes' className='font-kindaSmall Nunito-font'>Classes</Menu.Item>
+            <Menu.Item as={NavLink} activeClassName="active" exact to='/tutors'
+                       key='tutors' className='font-kindaSmall Nunito-font'>Mentors</Menu.Item>
+            <Menu.Item as={NavLink} activeClassName="active" exact to='/instruction' key='instruction'
+                       className='font-kindaSmall Nunito-font'>Instructions</Menu.Item>
+            {this.props.currentUser ? (
+                [<Menu.Item as={NavLink} activeClassName="active"
+                            exact to="/students" key='add'
+                            className='font-kindaSmall Nunito-font'>Students</Menu.Item>]
+            ) : ''}
+            {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
+                <Menu.Item as={NavLink} activeClassName="active" exact to="/stats" key='admin'
+                           className='font-kindaSmall Nunito-font'>User Statistics</Menu.Item>) : ''}
+            <Menu.Item position="right">
+              {this.dropDownMenu()}
+            </Menu.Item>
+          </Menu>
+        </div>
     );
   }
 }

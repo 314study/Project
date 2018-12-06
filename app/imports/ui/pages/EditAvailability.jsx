@@ -39,25 +39,28 @@ class EditAvailability extends React.Component {
   /** Render the form. Use Uniforms: https://github.com/vazco/uniforms */
   renderPage() {
     return (
-        <div className="inverted-section">
-          <AutoForm schema={CalendarSchema} onSubmit={this.submit} model={this.props.doc}>
-            <Segment>
-              <Grid centered container>
-                <Grid.Column>
-                  <SelectField name='MondayAvailability'/>
-                  <SelectField name='TuesdayAvailability'/>
-                  <SelectField name='WednesdayAvailability'/>
-                  <SelectField name='ThursdayAvailability'/>
-                  <SelectField name='FridayAvailability'/>
-                  <SelectField name='SaturdayAvailability'/>
-                  <SelectField name='SundayAvailability'/>
-                  <SubmitField value='Submit'/>
-                  <ErrorsField/>
-                  <HiddenField name='owner' value='fakeuser@foo.com'/>
-                </Grid.Column>
-              </Grid>
-            </Segment>
-          </AutoForm>
+        <div className="small-padding-top more-padding-bottom inverted-section">
+          <Grid centered container>
+            <p className="text-align-center Nunito-font font-medium small-padding-top font-color-white">Edit <span className="font-color-green">Calendar</span></p>
+            <AutoForm schema={CalendarSchema} onSubmit={this.submit} model={this.props.doc}>
+              <Segment>
+                <Grid centered container>
+                  <Grid.Column>
+                    <SelectField name='MondayAvailability'/>
+                    <SelectField name='TuesdayAvailability'/>
+                    <SelectField name='WednesdayAvailability'/>
+                    <SelectField name='ThursdayAvailability'/>
+                    <SelectField name='FridayAvailability'/>
+                    <SelectField name='SaturdayAvailability'/>
+                    <SelectField name='SundayAvailability'/>
+                    <SubmitField value='Submit'/>
+                    <ErrorsField/>
+                    <HiddenField name='owner' value='fakeuser@foo.com'/>
+                  </Grid.Column>
+                </Grid>
+              </Segment>
+            </AutoForm>
+          </Grid>
         </div>
     );
   }

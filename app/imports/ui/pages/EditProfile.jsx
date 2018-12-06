@@ -45,23 +45,23 @@ class EditProfile extends React.Component {
   /** Render the form. Use Uniforms: https://github.com/vazco/uniforms */
   renderPage() {
     return (
-        <div className="inverted-section">
-        <Grid centered container>
-          <Grid.Column>
-            <p className="text-align-center Nunito-font font-medium small-padding-top font-color-white">
-              Edit <span className="font-color-green">Profile</span></p>
-            <AutoForm schema={ProfileSchema} onSubmit={this.submit} model={this.props.doc}>
-              <Segment>
-                <TextField name='firstName'/>
-                <TextField name='lastName'/>
-                <TextField name='studyClass'/>
-                <SubmitField value='Submit'/>
-                <ErrorsField/>
-                <HiddenField name='owner' value= "fakeuser@foo.com" />
-              </Segment>
-            </AutoForm>
-          </Grid.Column>
-        </Grid>
+        <div className=" small-padding-bottom inverted-section-OF">
+          <Grid centered container>
+            <Grid.Column>
+              <p className="text-align-center Nunito-font font-medium small-padding-top font-color-white">
+                Edit <span className="font-color-green">Profile</span></p>
+              <AutoForm schema={ProfileSchema} onSubmit={this.submit} model={this.props.doc}>
+                <Segment>
+                  <TextField name='firstName'/>
+                  <TextField name='lastName'/>
+                  <TextField name='studyClass'/>
+                  <SubmitField value='Submit'/>
+                  <ErrorsField/>
+                  <HiddenField name='owner' value= "fakeuser@foo.com" />
+                </Segment>
+              </AutoForm>
+            </Grid.Column>
+          </Grid>
         </div>
     );
   }

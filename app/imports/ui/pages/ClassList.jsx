@@ -42,7 +42,7 @@ class ClassList extends React.Component {
   renderPage() {
     const { activeItem } = this.state || {};
     const { subject } = this.state;
-    const divStyle = { paddingTop: '15px', paddingBottom: '20px' };
+    const divStyle = { paddingBottom: '20px' };
     return (
         <Grid style={divStyle}>
           <Grid.Row>

@@ -16,7 +16,7 @@ class Tutors extends React.Component {
 
   /** Render the page once subscriptions have been received. */
   renderPage() {
-    const divStyle = { paddingTop: '15px', paddingBottom: '20px' };
+    const divStyle = { paddingBottom: '20px' };
     return (
         /*
         11/15/18 - Jeff
@@ -25,7 +25,7 @@ class Tutors extends React.Component {
         Only changed mentor references and imported Mentors schema from /imports/api/mentor/mentor
         {this.props.mentors.map(mentor => <MentorItemAdmin key={mentor._id} mentor={mentor} />)}
         */
-        <Container style={divStyle}>
+        <Container className='margin-top' style={divStyle}>
           <Divider hidden />
           <Header as="h1" textAlign="center">Mentors</Header>
           <Segment.Group>

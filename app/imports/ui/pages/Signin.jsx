@@ -46,7 +46,7 @@ export default class Signin extends React.Component {
     }
     // Otherwise return the Login form.
     return (
-        <div className="inverted-section">
+        <div className="small-padding-bottom inverted-section-OF margin-top">
           <Container>
             <Divider hidden />
             <Grid textAlign="center" verticalAlign="middle" centered columns={2}>

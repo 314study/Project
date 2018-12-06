@@ -121,7 +121,7 @@
   ],
   "galaxy.meteor.com": {
     "env": {
-      "MONGO_URL": "mongodb://admin:password1@ds229373.mlab.com:29373/dbstudbudd"
+      "MONGO_URL": "mongodb://admin:password1@ds229373.mlab.com:29373/studbudddb"
     }
   }
 }

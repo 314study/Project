@@ -115,7 +115,6 @@ class Signup extends React.Component {
                 )}
               </Grid.Column>
             </Grid>
-            <p>Create Your Availability</p>
           </Container>
         </div>
     );

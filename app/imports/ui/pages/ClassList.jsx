@@ -31,6 +31,7 @@ class ClassList extends React.Component {
       }
     }
     if (isItIn === false) {
+      activeIndex.splice(i);
       activeIndex.push(titleProps.name);
     }
     console.log(activeIndex);
@@ -192,7 +193,7 @@ class ClassList extends React.Component {
                 ) : ''}
               </Menu>
             </Grid.Column>
-            <Grid.Column width={6}>
+            <Grid.Column width={8}>
               {this.props.mentors.filter(
                   mentor => (this.state.activeIndex && (this.state.activeIndex.includes((mentor.class1)
                       || (mentor.class2) || (mentor.class3)))),

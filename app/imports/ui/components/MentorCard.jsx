@@ -12,19 +12,17 @@ class MentorCard extends React.Component {
            {this.props.mentors.map((mentor) => <MentorItemAdmin key={mentor._id} mentor={mentor} />)}
          */
         <Grid.Column>
-          <Card>
-            <Card.Header className='mentor-card-header'>
+          <Card className='green-outline'>
+            <Card.Header className='mentor-card-header font-smaller font-color-white'>
               <Icon name='user'/>{this.props.mentor.firstName} {this.props.mentor.lastName}
             </Card.Header>
             <Card.Content>
               <Container>
                 <Grid>
-                  <Grid.Column width={8}>
-                    <Rating icon='star' defaultRating={5} maxRating={5}/>
-                  </Grid.Column>
-                  <Grid.Column width={4} className='text-align-center'>
+
+                  <Grid.Column className='text-align-center mentor-card-content font-color-white'>
                     <Icon name='book'/>
-                    <List bulleted>
+                    <List>
                       <List.Item>{this.props.mentor.class1}</List.Item>
                       <List.Item>{this.props.mentor.class2}</List.Item>
                       <List.Item>{this.props.mentor.class3}</List.Item>

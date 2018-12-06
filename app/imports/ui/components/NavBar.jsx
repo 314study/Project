@@ -35,9 +35,15 @@ class NavBar extends React.Component {
         <Dropdown text={this.props.currentUser} pointing="top right" icon={'user'}>
           <Dropdown.Menu>
             <Dropdown.Item icon="user" text="Edit Profile" as={NavLink}
+<<<<<<< HEAD
                            exact to={`/editprofile/${this.returnProfiles(this.props.currentUser)._id}`}/>
             <Dropdown.Item icon="user" text="Edit Availability" as={NavLink}
                            exact to={`/editavailability/${this.returnProfile(this.props.currentUser)._id}`}/>
+=======
+                           exact to={/editprofile/${this.returnProfiles(this.props.currentUser)._id}}/>
+            <Dropdown.Item icon="user" text="Edit Availability" as={NavLink}
+                           exact to={/editavailability/${this.returnProfile(this.props.currentUser)._id}}/>
+>>>>>>> issue-51-EditMentor-CSS
             <Dropdown.Item icon="sign out" text="Sign Out" as={NavLink} exact to="/signout"/>
           </Dropdown.Menu>
         </Dropdown>

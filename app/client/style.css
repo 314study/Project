@@ -38,6 +38,19 @@
   color: #6fbe44;
 }
 
+<<<<<<< HEAD
+=======
+.font-color-black {
+  color: black;
+}
+
+.green-outline  {
+  border: solid !important;
+  border-color: #6fbe44 !important;
+  border-width: 2px !important;
+}
+
+>>>>>>> issue-51-EditMentor-CSS
 .text-align-right {
   text-align: right;
 }
@@ -103,10 +116,6 @@
   font-size: 72px;
 }
 
-.black {
-  color: black;
-}
-
 .footer-trial {
   position: absolute;
   bottom: 0;
@@ -114,6 +123,12 @@
 
 .mentor-card-header {
   padding: 15px 15px 15px 15px;
+  background-color: rgba(0, 0, 0, .8);
+}
+
+.mentor-card-content  {
+  background-color: rgba(0, 0, 0, .8);
+
 }
 
 .greenBlock{

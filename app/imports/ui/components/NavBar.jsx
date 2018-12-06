@@ -11,11 +11,17 @@ import { Profile } from '/imports/api/profile/profile';
 /** The NavBar appears at the top of every page. Rendered by the App Layout component. */
 class NavBar extends React.Component {
   returnProfile(userId) {
-    return Calendar.findOne({ owner: userId });
+    if (Calendar.findOne({ owner: userId }) === '') {
+      return 'xxxx';
+    }
+    return Calendar.findOne({ owner: userId })._id;
   }
 
   returnProfiles(userId) {
-    return Profile.findOne({ owner: userId });
+    if (Profile.findOne({ owner: userId }) === '') {
+      return 'xxxx';
+    }
+    return Profile.findOne({ owner: userId })._id;
   }
 
   dropDownMenu() {
@@ -28,26 +34,24 @@ class NavBar extends React.Component {
             </Dropdown.Menu>
           </Dropdown>
       );
-     }
+    }
     return (
         <div>
-          {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
-          <Dropdown text={this.props.currentUser} pointing="top right" icon={'user'}>
-            <Dropdown.Menu>
-              <Dropdown.Item icon="archive" text="Mentorship Application" as={NavLink} exact to="/mentorapp"/>
-              <Dropdown.Item icon="user" text="My Profile" as={NavLink}
-                             exact to={`/myprofile/${this.returnProfiles(this.props.currentUser)._id}`}/>
-              <Dropdown.Item icon="user" text="Edit Profile" as={NavLink}
-                             exact to={`/editprofile/${this.returnProfiles(this.props.currentUser)._id}`}/>
-              <Dropdown.Item icon="user" text="Edit Availability" as={NavLink}
-                             exact to={`/editavailability/${this.returnProfile(this.props.currentUser)._id}`}/>
-              <Dropdown.Item icon="sign out" text="Sign Out" as={NavLink} exact to="/signout"/>
-            </Dropdown.Menu>
-          </Dropdown>
-          ) : ''}
+              <Dropdown text={this.props.currentUser} pointing="top right" icon={'user'}>
+                <Dropdown.Menu>
+                  <Dropdown.Item icon="archive" text="Mentorship Application" as={NavLink} exact to="/mentorapp"/>
+                  <Dropdown.Item icon="user" text="My Profile" as={NavLink}
+                                 exact to={`/myprofile/${this.returnProfiles(this.props.currentUser)}`}/>
+                  <Dropdown.Item icon="user" text="Edit Profile" as={NavLink}
+                                 exact to={`/editprofile/${this.returnProfiles(this.props.currentUser)}`}/>
+                  <Dropdown.Item icon="user" text="Edit Availability" as={NavLink}
+                                 exact to={`/editavailability/${this.returnProfile(this.props.currentUser)}`}/>
+                  <Dropdown.Item icon="sign out" text="Sign Out" as={NavLink} exact to="/signout"/>
+                </Dropdown.Menu>
+              </Dropdown>
         </div>
-      );
-    }
+    );
+  }
 
   render() {
     const menuStyle = { marginBottom: '0px' };
@@ -72,7 +76,7 @@ class NavBar extends React.Component {
                 <Menu.Item as={NavLink} activeClassName="active" exact to="/stats" key='admin'
                            className='font-kindaSmall Nunito-font'>User Statistics</Menu.Item>
             ) : ''}
-                <Menu.Item position="right">
+            <Menu.Item position="right">
               {this.dropDownMenu()} </Menu.Item>
           </Menu>
         </div>

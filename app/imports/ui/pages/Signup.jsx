@@ -61,14 +61,14 @@ class Signup extends React.Component {
   /** Display the signup form. */
   render() {
     return (
-        <div>
+        <div className='inverted-section-with-padding'>
           <Container>
-            <Divider hidden/>
             <Grid textAlign="center" verticalAlign="middle" centered columns={2}>
               <Grid.Column>
-                <Header as="h2" textAlign="center">
-                  Register your account
-                </Header>
+                <p className="text-align-center Nunito-font font-medium font-color-white">
+                  Sign up for a new
+                  <span className="font-color-green"> Account</span>
+                </p>
                 <Form onSubmit={this.handleSubmit}>
                   <Segment stacked>
                     <Form.Input

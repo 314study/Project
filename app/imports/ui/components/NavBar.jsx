@@ -7,7 +7,6 @@ import { Menu, Dropdown, Image } from 'semantic-ui-react';
 import { Roles } from 'meteor/alanning:roles';
 import { Calendar } from '/imports/api/Calendar/Calendar';
 import { Profile } from '/imports/api/profile/profile';
-import { Bert } from 'meteor/themeteorchef:bert';
 
 /** The NavBar appears at the top of every page. Rendered by the App Layout component. */
 class NavBar extends React.Component {
@@ -29,7 +28,7 @@ class NavBar extends React.Component {
             </Dropdown.Menu>
           </Dropdown>
       );
-    }
+     }
     return (
         <Dropdown text={this.props.currentUser} pointing="top right" icon={'user'}>
           <Dropdown.Menu>
@@ -44,7 +43,7 @@ class NavBar extends React.Component {
           </Dropdown.Menu>
         </Dropdown>
     );
-  }
+    }
 
   render() {
     const menuStyle = { marginBottom: '0px' };
@@ -68,9 +67,9 @@ class NavBar extends React.Component {
             {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
                 <Menu.Item as={NavLink} activeClassName="active" exact to="/stats" key='admin'
                            className='font-kindaSmall Nunito-font'>User Statistics</Menu.Item>) : ''}
-            <Menu.Item position="right">
-              {this.dropDownMenu()}
-            </Menu.Item>
+            {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
+                <Menu.Item position="right">
+              {this.dropDownMenu()} </Menu.Item>) : ''}
           </Menu>
         </div>
     );

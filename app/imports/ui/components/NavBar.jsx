@@ -25,7 +25,6 @@ class NavBar extends React.Component {
           <Dropdown text="Login" pointing="top right" icon={'user'}>
             <Dropdown.Menu>
               <Dropdown.Item icon="user" text="Sign In" as={NavLink} exact to="/signin"/>
-              <Dropdown.Item icon="archive" text="Mentorship Application" as={NavLink} exact to="/mentorapp"/>
               <Dropdown.Item icon="add user" text="Sign Up" as={NavLink} exact to="/signup"/>
             </Dropdown.Menu>
           </Dropdown>
@@ -34,6 +33,9 @@ class NavBar extends React.Component {
     return (
         <Dropdown text={this.props.currentUser} pointing="top right" icon={'user'}>
           <Dropdown.Menu>
+            <Dropdown.Item icon="archive" text="Mentorship Application" as={NavLink} exact to="/mentorapp"/>
+            <Dropdown.Item icon="user" text="My Profile" as={NavLink}
+                           exact to={`/myprofile/${this.returnProfiles(this.props.currentUser)._id}`}/>
             <Dropdown.Item icon="user" text="Edit Profile" as={NavLink}
                            exact to={`/editprofile/${this.returnProfiles(this.props.currentUser)._id}`}/>
             <Dropdown.Item icon="user" text="Edit Availability" as={NavLink}

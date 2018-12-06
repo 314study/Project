@@ -17,13 +17,10 @@ const MentorSchema = new SimpleSchema({
     allowedValues: ['Yes', 'No'],
     defaultValue: 'Yes',
   },
-  availableHours: String,
-  availableDaysOfWeek: String,
   owner: String,
   class1: String,
   class2: String,
   class3: String,
-  availability: String,
   /*
   can eventually include
   -----------------

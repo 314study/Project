@@ -23,6 +23,7 @@ import AddProfile from '../pages/AddProfile';
 import EditMentor from '../pages/EditMentor';
 import Statistics from '../pages/Statistics';
 import Mentorapp from '../pages/Mentorapp';
+import MyProfile from '../pages/MyProfile';
 import Instruction from '../pages/Instruction';
 import EditAvailability from '../pages/EditAvailability';
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
@@ -35,7 +36,6 @@ class App extends React.Component {
             <Switch>
               <Route exact path="/" component={Landing}/>
               <Route path="/signin" component={Signin}/>
-              <Route path="/mentorapp" component={Mentorapp}/>
               <Route path="/signup" component={Signup}/>
               <Route path="/classes" component={ClassList}/>
               <Route path="/tutors" component={Tutors}/>
@@ -47,9 +47,11 @@ class App extends React.Component {
               <AdminProtectedRoute path="/admin" component={ListStuffAdmin}/>
               <AdminProtectedRoute path="/stats" component={Statistics}/>
               <ProtectedRoute path="/signout" component={Signout}/>
+              <ProtectedRoute path="/mentorapp" component={Mentorapp}/>
               <ProtectedRoute path="/editprofile/:_id" component={EditProfile}/>
               <ProtectedRoute path="/editavailability/:_id" component={EditAvailability}/>
               <ProtectedRoute path="/addprofile" component={AddProfile}/>
+              <ProtectedRoute path="/myprofile/:_id" component={MyProfile}/>
               <ProtectedRoute path="/editmentor/:_id" component={EditMentor}/>
               <Route component={NotFound}/>
             </Switch>

@@ -28,7 +28,6 @@ class Mentorapp extends React.Component {
       Bert.alert({ type: 'danger', message: `Add failed: ${error.message}` });
     } else {
       Bert.alert({ type: 'success', message: 'Add succeeded' });
-      this.formRef.reset();
     }
   }
 
@@ -41,8 +40,10 @@ class Mentorapp extends React.Component {
       major,
       contactNumber,
       experience,
-      availableHours,
-      availableDaysOfWeek } = data;
+      class1,
+      class2,
+      class3,
+    } = data;
     const owner = Meteor.user().username;
     Mentors.insert({
       firstName,
@@ -51,8 +52,9 @@ class Mentorapp extends React.Component {
       major,
       contactNumber,
       experience,
-      availableHours,
-      availableDaysOfWeek,
+      class1,
+      class2,
+      class3,
       owner,
     }, this.insertCallback);
   }
@@ -62,7 +64,7 @@ class Mentorapp extends React.Component {
     return (
         <Grid container centered>
           <Grid.Column>
-            <Divider hidden />
+            <Divider hidden/>
             <Header as="h2" textAlign="center">Mentorship App</Header>
             <AutoForm ref={(ref) => {
               this.formRef = ref;
@@ -74,8 +76,9 @@ class Mentorapp extends React.Component {
                 <TextField name='major'/>
                 <NumField name='contactNumber' decimal={false}/>
                 <SelectField name='experience'/>
-                <TextField name='availableHours'/>
-                <TextField name='availableDaysOfWeek'/>
+                <TextField name='class1'/>
+                <TextField name='class2'/>
+                <TextField name='class3'/>
                 <SubmitField value='Submit'/>
                 <ErrorsField/>
                 <HiddenField name='owner' value='fakeuser@foo.com'/>

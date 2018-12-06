@@ -82,6 +82,8 @@ class ClassList extends React.Component {
                             {subject === 'Electrical'} onClick={this.handleClick} />
                         <Dropdown.Item text='Computer' name='Computer' active=
                             {subject === 'Computer'} onClick={this.handleClick}/>
+                        <Dropdown.Item text='Software' name='Software Engineering' active=
+                            {subject === 'Software Engineering'} onClick={this.handleClick}/>
                       </Dropdown.Menu>
                     </Dropdown>
                     <Menu.Item

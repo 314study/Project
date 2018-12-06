@@ -50,6 +50,11 @@
   text-align: center;
 }
 
+.align-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .margin-bottom-minus-10 {
   margin-bottom: -10px;
 }
@@ -60,6 +65,10 @@
 
 .medium-padding-bottom {
   padding-bottom: 42px;
+}
+
+.more-padding-bottom {
+  padding-bottom: 24px;
 }
 
 .small-padding-bottom {
@@ -92,6 +101,11 @@
   background-color: rgba(0, 0, 0, .8);
 }
 
+.inverted-section-OF {
+  background-color: rgba(0, 0, 0, .8);
+  overflow: hidden;
+}
+
 .inverted-section-with-padding {
   background-color: rgba(0, 0, 0, .8);
   padding-top: 68px !important;
@@ -122,4 +136,12 @@
 
 .redBlock{
   background-color: red;
+}
+
+.fixed {
+  position: sticky;
+  top: -71px;
+  left: 0;
+  right: 0;
+  height: 71px;
 }

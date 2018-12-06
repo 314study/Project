@@ -61,61 +61,63 @@ class Signup extends React.Component {
   /** Display the signup form. */
   render() {
     return (
-        <Container>
-          <Divider hidden/>
-          <Grid textAlign="center" verticalAlign="middle" centered columns={2}>
-            <Grid.Column>
-              <Header as="h2" textAlign="center">
-                Register your account
-              </Header>
-              <Form onSubmit={this.handleSubmit}>
-                <Segment stacked>
-                  <Form.Input
-                      label="Email"
-                      icon="user"
-                      iconPosition="left"
-                      name="email"
-                      type="email"
-                      placeholder="E-mail address"
-                      onChange={this.handleChange}
-                  />
-                  <Form.Input
-                      label="Password"
-                      icon="lock"
-                      iconPosition="left"
-                      name="password"
-                      placeholder="Password"
-                      type="password"
-                      onChange={this.handleChange}
-                  />
-                  <Form.Button content="Submit"/>
-                  {this.props.currentUser ? (
-                      <Message>
-                        <span className=" font-small ">
-                          Click <Link to={`/editprofile/${this.returnProfiles(this.props.currentUser)._id}`}
-                                      className="font-color-green font-bold font-kindaSmall">
-                          here</Link> to finish creating your profile
-                        </span>
-                      </Message>
-                  ) : ''}
-                </Segment>
-              </Form>
-              <Message>
-                Already have an account? Login <Link to="/signin" className="font-color-green">here</Link>
-              </Message>
-              {this.state.error === '' ? (
-                  ''
-              ) : (
-                  <Message
-                      error
-                      header="Registration was not successful"
-                      content={this.state.error}
-                  />
-              )}
-            </Grid.Column>
-          </Grid>
-          <p>Create Your Availability</p>
-        </Container>
+        <div>
+          <Container>
+            <Divider hidden/>
+            <Grid textAlign="center" verticalAlign="middle" centered columns={2}>
+              <Grid.Column>
+                <Header as="h2" textAlign="center">
+                  Register your account
+                </Header>
+                <Form onSubmit={this.handleSubmit}>
+                  <Segment stacked>
+                    <Form.Input
+                        label="Email"
+                        icon="user"
+                        iconPosition="left"
+                        name="email"
+                        type="email"
+                        placeholder="E-mail address"
+                        onChange={this.handleChange}
+                    />
+                    <Form.Input
+                        label="Password"
+                        icon="lock"
+                        iconPosition="left"
+                        name="password"
+                        placeholder="Password"
+                        type="password"
+                        onChange={this.handleChange}
+                    />
+                    <Form.Button content="Submit"/>
+                    {this.props.currentUser ? (
+                        <Message>
+                          <span className=" font-small ">
+                            Click <Link to={`/editprofile/${this.returnProfiles(this.props.currentUser)._id}`}
+                                        className="font-color-green font-bold font-kindaSmall">
+                            here</Link> to finish creating your profile
+                          </span>
+                        </Message>
+                    ) : ''}
+                  </Segment>
+                </Form>
+                <Message>
+                  Already have an account? Login <Link to="/signin" className="font-color-green">here</Link>
+                </Message>
+                {this.state.error === '' ? (
+                    ''
+                ) : (
+                    <Message
+                        error
+                        header="Registration was not successful"
+                        content={this.state.error}
+                    />
+                )}
+              </Grid.Column>
+            </Grid>
+            <p>Create Your Availability</p>
+          </Container>
+        </div>
     );
   }
 }

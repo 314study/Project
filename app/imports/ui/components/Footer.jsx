@@ -44,6 +44,12 @@ class Footer extends React.Component {
                 <List.Item className="font-color-white" href={'https://www.gofundme.com/'}>
                   GoFund Me
                 </List.Item> <br />
+                <List.Item className="font-color-white" href={'https://www.twitch.tv/aesplozion'}>
+                  Twitch - aesplozion
+                </List.Item> <br />
+                <List.Item className="font-color-white" href={'https://www.twitch.tv/potatonii'}>
+                  Twitch - potatonii
+                </List.Item> <br />
               </Grid.Column>
               <Grid.Column width={3}>
                 <List className="font-color-green font-bold font-small">About Us</List>

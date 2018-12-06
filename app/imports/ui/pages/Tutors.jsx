@@ -1,10 +1,11 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Container, Header, Loader, Segment, Divider } from 'semantic-ui-react';
+import { Loader } from 'semantic-ui-react';
 import { Mentors } from '/imports/api/mentor/mentor';
-import MentorItemAdmin from '/imports/ui/components/MentorItemAdmin';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
+import CalendarItem from '../components/CalendarItem';
+import { Calendar } from '/imports/api/Calendar/Calendar';
 
 /** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
 class Tutors extends React.Component {
@@ -16,7 +17,6 @@ class Tutors extends React.Component {
 
   /** Render the page once subscriptions have been received. */
   renderPage() {
-    const divStyle = { paddingBottom: '20px' };
     return (
         /*
         11/15/18 - Jeff
@@ -25,13 +25,11 @@ class Tutors extends React.Component {
         Only changed mentor references and imported Mentors schema from /imports/api/mentor/mentor
         {this.props.mentors.map(mentor => <MentorItemAdmin key={mentor._id} mentor={mentor} />)}
         */
-        <Container className='margin-top' style={divStyle}>
-          <Divider hidden />
-          <Header as="h1" textAlign="center">Mentors</Header>
-          <Segment.Group>
-             {this.props.mentors.map(mentor => <MentorItemAdmin key={mentor._id} mentor={mentor} />)}
-          </Segment.Group>
-        </Container>
+        <div className="container">
+          <div className="ui center aligned container">
+            {this.props.Calendar.map((calendar) => <CalendarItem key={calendar._id} Calendar={calendar}/>)}
+          </div>
+        </div>
     );
   }
 }
@@ -39,20 +37,17 @@ class Tutors extends React.Component {
 /** Require an array of Stuff documents in the props. */
 Tutors.propTypes = {
   mentors: PropTypes.array.isRequired,
+  student: PropTypes.array.isRequired,
+  Calendar: PropTypes.array.isRequired,
   ready: PropTypes.bool.isRequired,
 };
 
-/** withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker */
 export default withTracker(() => {
-  /*
-  Going to need to make a mentor.js file in '/startup/server'
-  11/25/18
-  -subscribed 'MentorAdmin' is from '/startup/server/mentor.js'
-   */
-
   const subscription = Meteor.subscribe('Mentor');
+  const subscription3 = Meteor.subscribe('Calendar');
   return {
     mentors: Mentors.find({}).fetch(),
-    ready: subscription.ready(),
+    Calendar: Calendar.find({}).fetch(),
+    ready: subscription.ready() && subscription3.ready(),
   };
 })(Tutors);

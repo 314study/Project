@@ -1,7 +1,6 @@
 import { Meteor } from 'meteor/meteor';
 import { Roles } from 'meteor/alanning:roles';
 import { Calendar } from '../../api/Calendar/Calendar.js';
-import { Mentors } from '../../api/mentor/mentor';
 
 /** Initialize the database with a default data document. */
 function addData(data) {

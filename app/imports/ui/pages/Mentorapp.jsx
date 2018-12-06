@@ -36,10 +36,6 @@ class Mentorapp extends React.Component {
     const {
       firstName,
       lastName,
-      subjectStrength,
-      major,
-      contactNumber,
-      experience,
       class1,
       class2,
       class3,
@@ -48,10 +44,6 @@ class Mentorapp extends React.Component {
     Mentors.insert({
       firstName,
       lastName,
-      subjectStrength,
-      major,
-      contactNumber,
-      experience,
       class1,
       class2,
       class3,
@@ -72,13 +64,9 @@ class Mentorapp extends React.Component {
               <Segment>
                 <TextField name='firstName'/>
                 <TextField name='lastName'/>
-                <TextField name='subjectStrength'/>
-                <TextField name='major'/>
-                <NumField name='contactNumber' decimal={false}/>
-                <SelectField name='experience'/>
-                <TextField name='class1'/>
-                <TextField name='class2'/>
-                <TextField name='class3'/>
+                <SelectField name='class1'/>
+                <SelectField name='class2'/>
+                <SelectField name='class3'/>
                 <SubmitField value='Submit'/>
                 <ErrorsField/>
                 <HiddenField name='owner' value='fakeuser@foo.com'/>

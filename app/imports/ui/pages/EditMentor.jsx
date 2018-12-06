@@ -10,6 +10,7 @@ import { Bert } from 'meteor/themeteorchef:bert';
 import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
+import SelectField from 'uniforms-semantic/SelectField';
 
 
 /** Renders the Page for adding a document. */
@@ -34,10 +35,8 @@ class EditMentor extends React.Component {
 
   /** On submit, insert the data. */
   submit(data) {
-    const { firstName, lastName, subjectStrength, contactNumber, availableHours,
-      availableDaysOfWeek, class1, class2, class3, _id } = data;
-    Mentors.update(_id, { $set: { firstName, lastName, subjectStrength,
-        contactNumber, availableHours, availableDaysOfWeek, class1, class2, class3 } }, this.insertCallback());
+    const { firstName, lastName, class1, class2, class3, _id } = data;
+    Mentors.update(_id, { $set: { firstName, lastName, class1, class2, class3 } }, this.insertCallback());
 
   }
 
@@ -47,20 +46,15 @@ class EditMentor extends React.Component {
         <div className="inverted-section-OF">
           <Grid centered container>
             <Grid.Column>
-              <p className="text-align-center Nunito-font font-medium small-padding-top font-color-white">Edit <span className="font-color-green">Mentor</span></p>
+              <p className="text-align-center Nunito-font font-medium
+              small-padding-top font-color-white">Edit <span className="font-color-green">Mentor</span></p>
               <AutoForm model={this.props.doc} schema={MentorSchema} onSubmit={this.submit}>
                 <Segment>
                   <TextField name='firstName'/>
                   <TextField name='lastName'/>
-                  <TextField name='subjectStrength'/>
-                  <TextField name='major'/>
-                  <TextField name='contactNumber'/>
-                  <TextField name='availableHours'/>
-                  <TextField name='availableDaysOfWeek'/>
-                  <TextField name='class1'/>
-                  <TextField name='class2'/>
-                  <TextField name='class3'/>
-                  <TextField name='availability'/>
+                  <SelectField name='class1'/>
+                  <SelectField name='class2'/>
+                  <SelectField name='class3'/>
                   <SubmitField value='Submit'/>
                   <ErrorsField/>
                   <HiddenField name='owner' value='fakeuser@foo.com'/>

@@ -40,6 +40,7 @@ class App extends React.Component {
               <Route path="/classes" component={ClassList}/>
               <Route path="/tutors" component={Tutors}/>
               <Route path="/instruction" component={Instruction}/>
+              <Route path="/myprofile/:_id" component={MyProfile}/>
               <ProtectedRoute path="/students" component={Students}/>
               <ProtectedRoute path="/list" component={ListStuff}/>
               <ProtectedRoute path="/add" component={AddStuff}/>
@@ -51,7 +52,6 @@ class App extends React.Component {
               <ProtectedRoute path="/editprofile/:_id" component={EditProfile}/>
               <ProtectedRoute path="/editavailability/:_id" component={EditAvailability}/>
               <ProtectedRoute path="/addprofile" component={AddProfile}/>
-              <ProtectedRoute path="/myprofile/:_id" component={MyProfile}/>
               <ProtectedRoute path="/editmentor/:_id" component={EditMentor}/>
               <Route component={NotFound}/>
             </Switch>

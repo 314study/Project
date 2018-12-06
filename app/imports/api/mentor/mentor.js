@@ -9,18 +9,24 @@ const Mentors = new Mongo.Collection('Mentors');
 const MentorSchema = new SimpleSchema({
   firstName: String,
   lastName: String,
-  subjectStrength: String,
-  major: String,
-  contactNumber: Number,
-  experience: {
-    type: String,
-    allowedValues: ['Yes', 'No'],
-    defaultValue: 'Yes',
-  },
   owner: String,
-  class1: String,
-  class2: String,
-  class3: String,
+  class1: {
+    type: String,
+    allowedValues: ['Physics', 'Chemistry', 'Biology', 'Mechanical', 'Civil', 'Electrical', 'Computer', 'Software', 'Math', 'Psychology', 'Anthropology', 'Sociology', 'Political Science', 'Economics', 'Philosophy', 'History', 'English',
+      'Japanese', 'Korean', 'Mandarin', 'Spanish', 'German', 'Russian', 'Religion', 'Law', 'Drawing', 'Painting', 'Poetry', 'None'],
+    defaultValue: 'None',
+  },
+  class2: {
+    type: String,
+    allowedValues: ['Physics', 'Chemistry', 'Biology', 'Mechanical', 'Civil', 'Electrical', 'Computer', 'Software', 'Math', 'Psychology', 'Anthropology', 'Sociology', 'Political Science', 'Economics', 'Philosophy', 'History', 'English', 'Japanese', 'Korean', 'Mandarin', 'Spanish', 'German', 'Russian', 'Religion', 'Law', 'Drawing', 'Painting', 'Poetry', 'None'],
+    defaultValue: 'None',
+  },
+  class3: {
+    type: String,
+    allowedValues: ['Physics', 'Chemistry', 'Biology', 'Mechanical', 'Civil', 'Electrical', 'Computer', 'Software', 'Math', 'Psychology', 'Anthropology', 'Sociology', 'Political Science', 'Economics', 'Philosophy', 'History', 'English',
+      'Japanese', 'Korean', 'Mandarin', 'Spanish', 'German', 'Russian', 'Religion', 'Law', 'Drawing', 'Painting', 'Poetry', 'None'],
+    defaultValue: 'None',
+  },
   /*
   can eventually include
   -----------------

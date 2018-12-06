@@ -22,7 +22,7 @@ class ClassList extends React.Component {
     console.log(titleProps);
     const { activeIndex } = this.state;
     let isItIn = false;
-    let i = 0;
+    let i;
     for (i = 0; i < activeIndex.length; i++) {
       if (activeIndex[i] === titleProps.name) {
         isItIn = true;
@@ -31,6 +31,7 @@ class ClassList extends React.Component {
       }
     }
     if (isItIn === false) {
+      activeIndex.splice(0);
       activeIndex.push(titleProps.name);
     }
     console.log(activeIndex);
@@ -56,7 +57,7 @@ class ClassList extends React.Component {
             <Grid.Column width = {1}>
               <Divider vertical hidden />
             </Grid.Column>
-            <Grid.Column>
+            <Grid.Column width = {3}>
               <Menu vertical>
                 <Menu.Item>
                   <Menu.Header>STEM</Menu.Header>
@@ -183,8 +184,8 @@ class ClassList extends React.Component {
                             active={subject === 'Class2'} onClick={this.handleClick}
                         />
                         <Menu.Item
-                            name='D4nk Maymays'
-                            active={activeItem === 'D4nk Maymays'}
+                            name='Advanced AI'
+                            active={activeItem === 'Advanced AI'}
                             onClick={ this.handleItemClick }
                         />
                       </Menu.Menu>
@@ -192,13 +193,15 @@ class ClassList extends React.Component {
                 ) : ''}
               </Menu>
             </Grid.Column>
-            <Grid.Column width={6}>
+            <Grid.Column width = {10}>
+              <Grid container columns={3}>
               {this.props.mentors.filter(
                   mentor => (this.state.activeIndex && (this.state.activeIndex.includes((mentor.class1)
                       || (mentor.class2) || (mentor.class3)))),
               ).map(
                   (mentor, index) => <MentorCard key={index} mentor={mentor} />,
               )}
+              </Grid>
             </Grid.Column>
           </Grid.Row>
         </Grid>

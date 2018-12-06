@@ -5,6 +5,8 @@ import { Roles } from 'meteor/alanning:roles';
 import { Meteor } from 'meteor/meteor';
 import { Bert } from 'meteor/themeteorchef:bert';
 import { Mentors } from '/imports/api/mentor/mentor';
+import { withRouter, NavLink } from 'react-router-dom';
+
 
 /** Renders a single row in the List Stuff (Admin) table. See pages/ListStuffAdmin.jsx. */
 class MentorItemAdmin extends React.Component {
@@ -41,10 +43,13 @@ class MentorItemAdmin extends React.Component {
           <List.Item>{this.props.mentor.class1}</List.Item>
           <List.Item>{this.props.mentor.class2}</List.Item>
           <List.Item>{this.props.mentor.class3}</List.Item>
-          {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
-              <Button basic onClick={this.onClick}>Delete</Button>
-          ) : ''}
         </List>
+        {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
+            <Button basic onClick={this.onClick}>Delete</Button>
+        ) : ''}
+        {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
+            <Button basic as={NavLink} exact to={`/editmentor/${this.props.mentor._id}`} key='editmentor'>Edit</Button>
+        ) : ''}
       </Segment>
     );
   }
@@ -55,4 +60,4 @@ MentorItemAdmin.propTypes = {
   mentor: PropTypes.object.isRequired,
 };
 
-export default MentorItemAdmin;
+export default withRouter(MentorItemAdmin);

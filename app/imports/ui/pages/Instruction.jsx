@@ -4,7 +4,6 @@ import { Header, Container, Accordion, Icon, Divider, Image } from 'semantic-ui-
 /** A simple static component to render some text for the landing page. */
 class Instruction extends React.Component {
   state = { activeIndex: 0 }
-
   handleClick = (e, titleProps) => {
     const { index } = titleProps;
     const { activeIndex } = this.state;
@@ -12,7 +11,6 @@ class Instruction extends React.Component {
 
     this.setState({ activeIndex: newIndex });
   }
-
   render() {
     const { activeIndex } = this.state;
     return (

@@ -42,8 +42,9 @@ class ClassList extends React.Component {
   renderPage() {
     const { activeItem } = this.state || {};
     const { subject } = this.state;
+    const divStyle = { paddingTop: '15px', paddingBottom: '20px' };
     return (
-        <Grid>
+        <Grid style={divStyle}>
           <Grid.Row>
             <Container>
               <Divider hidden />
@@ -193,7 +194,8 @@ class ClassList extends React.Component {
             </Grid.Column>
             <Grid.Column width={6}>
               {this.props.mentors.filter(
-                  mentor => (this.state.activeIndex && (this.state.activeIndex.includes((mentor.class1) || (mentor.class2) || (mentor.class3)))),
+                  mentor => (this.state.activeIndex && (this.state.activeIndex.includes((mentor.class1)
+                      || (mentor.class2) || (mentor.class3)))),
               ).map(
                   (mentor, index) => <MentorCard key={index} mentor={mentor} />,
               )}
@@ -218,7 +220,7 @@ export default withTracker(() => {
   -subscribed 'MentorAdmin' is from '/startup/server/mentor.js'
    */
 
-  const subscription = Meteor.subscribe('MentorAdmin');
+  const subscription = Meteor.subscribe('Mentor');
   return {
     mentors: Mentors.find({}).fetch(),
     ready: subscription.ready(),

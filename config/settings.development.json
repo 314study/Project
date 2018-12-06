@@ -42,15 +42,34 @@
       "lastName": "Yogi",
       "studyClass": "test",
       "owner": "admin@foo.com"
+    },
+    {
+      "firstName": "Kain",
+      "lastName": "Yogi",
+      "studyClass": "test",
+      "owner": "john@foo.com"
     }
   ],
   "defaultCalendar": [
     {
-      "day": "Mo",
-      "timeBegin": "7:00",
-      "timeEnd": "7:00",
-      "condition": "available",
+      "MondayAvailability": "Unavailable",
+      "TuesdayAvailability": "Unavailable",
+      "WednesdayAvailability": "Unavailable",
+      "ThursdayAvailability": "Unavailable",
+      "FridayAvailability": "Unavailable",
+      "SaturdayAvailability": "Unavailable",
+      "SundayAvailability": "Unavailable",
       "owner": "john@foo.com"
+    },
+    {
+      "MondayAvailability": "Unavailable",
+      "TuesdayAvailability": "Unavailable",
+      "WednesdayAvailability": "Unavailable",
+      "ThursdayAvailability": "Unavailable",
+      "FridayAvailability": "Unavailable",
+      "SaturdayAvailability": "Unavailable",
+      "SundayAvailability": "Unavailable",
+      "owner": "admin@foo.com"
     }
   ],
   "defaultMentors": [

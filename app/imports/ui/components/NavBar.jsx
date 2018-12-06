@@ -5,9 +5,45 @@ import { withTracker } from 'meteor/react-meteor-data';
 import { withRouter, NavLink } from 'react-router-dom';
 import { Menu, Dropdown, Image } from 'semantic-ui-react';
 import { Roles } from 'meteor/alanning:roles';
+import { Calendar } from '/imports/api/Calendar/Calendar';
+import { Profile } from '/imports/api/profile/profile';
+import { Bert } from 'meteor/themeteorchef:bert';
 
 /** The NavBar appears at the top of every page. Rendered by the App Layout component. */
 class NavBar extends React.Component {
+  returnProfile(userId) {
+    return Calendar.findOne({ owner: userId });
+  }
+
+  returnProfiles(userId) {
+    return Profile.findOne({ owner: userId });
+  }
+
+  dropDownMenu() {
+    if (this.props.currentUser === '') {
+      return (
+          <Dropdown text="Login" pointing="top right" icon={'user'}>
+            <Dropdown.Menu>
+              <Dropdown.Item icon="user" text="Sign In" as={NavLink} exact to="/signin"/>
+              <Dropdown.Item icon="archive" text="Mentorship Application" as={NavLink} exact to="/mentorapp"/>
+              <Dropdown.Item icon="add user" text="Sign Up" as={NavLink} exact to="/signup"/>
+            </Dropdown.Menu>
+          </Dropdown>
+      );
+    }
+    return (
+        <Dropdown text={this.props.currentUser} pointing="top right" icon={'user'}>
+          <Dropdown.Menu>
+            <Dropdown.Item icon="user" text="Edit Profile" as={NavLink}
+                           exact to={`/editprofile/${this.returnProfiles(this.props.currentUser)._id}`}/>
+            <Dropdown.Item icon="user" text="Edit Availability" as={NavLink}
+                           exact to={`/editavailability/${this.returnProfile(this.props.currentUser)._id}`}/>
+            <Dropdown.Item icon="sign out" text="Sign Out" as={NavLink} exact to="/signout"/>
+          </Dropdown.Menu>
+        </Dropdown>
+    );
+  }
+
   render() {
     const menuStyle = { marginBottom: '0px' };
     return (
@@ -18,7 +54,7 @@ class NavBar extends React.Component {
           <Menu.Item as={NavLink} activeClassName="active" exact to='/classes'
                      key='classes' className='font-kindaSmall Nunito-font'>Classes</Menu.Item>
           <Menu.Item as={NavLink} activeClassName="active" exact to='/tutors'
-                     key='tutors' className='font-kindaSmall Nunito-font'>Tutors</Menu.Item>
+                     key='tutors' className='font-kindaSmall Nunito-font'>Mentors</Menu.Item>
           <Menu.Item as={NavLink} activeClassName="active" exact to='/instruction' key='instruction'
                      className='font-kindaSmall Nunito-font'>Instructions</Menu.Item>
           {this.props.currentUser ? (
@@ -30,22 +66,7 @@ class NavBar extends React.Component {
               <Menu.Item as={NavLink} activeClassName="active" exact to="/stats" key='admin'
                          className='font-kindaSmall Nunito-font'>User Statistics</Menu.Item>) : ''}
           <Menu.Item position="right">
-            {this.props.currentUser === '' ? (
-                <Dropdown text="Login" pointing="top right" icon={'user'}>
-                  <Dropdown.Menu>
-                    <Dropdown.Item icon="user" text="Sign In" as={NavLink} exact to="/signin"/>
-                    <Dropdown.Item icon="archive" text="Mentorship Application" as={NavLink} exact to="/mentorapp"/>
-                    <Dropdown.Item icon="add user" text="Sign Up" as={NavLink} exact to="/signup"/>
-                  </Dropdown.Menu>
-                </Dropdown>
-            ) : (
-                <Dropdown text={this.props.currentUser} pointing="top right" icon={'user'}>
-                  <Dropdown.Menu>
-                    <Dropdown.Item icon="user" text="Edit Profile" as={NavLink} exact to="/editprofile"/>
-                    <Dropdown.Item icon="sign out" text="Sign Out" as={NavLink} exact to="/signout"/>
-                  </Dropdown.Menu>
-                </Dropdown>
-            )}
+            {this.dropDownMenu()}
           </Menu.Item>
         </Menu>
     );
@@ -55,11 +76,13 @@ class NavBar extends React.Component {
 /** Declare the types of all properties. */
 NavBar.propTypes = {
   currentUser: PropTypes.string,
+  ready: PropTypes.bool,
 };
 
 /** withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker */
 const NavBarContainer = withTracker(() => ({
   currentUser: Meteor.user() ? Meteor.user().username : '',
+  ready: Meteor.subscribe('Calendar').ready() && Meteor.subscribe('Profile').ready(),
 }))(NavBar);
 
 /** Enable ReactRouter for this component. https://reacttraining.com/react-router/web/api/withRouter */

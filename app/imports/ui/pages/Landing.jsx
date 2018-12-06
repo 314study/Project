@@ -80,9 +80,6 @@ class Landing extends React.Component {
               </Grid>
             </div>
           </div>
-          <div className="ui center aligned container">
-            {this.props.Calendar.map((calendar) => <CalendarItem key={calendar._id} Calendar={calendar}/>)}
-          </div>
           <div className="Nunito-font font-small">
             <Container>
               <Divider hidden/>

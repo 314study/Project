@@ -25,7 +25,7 @@ class MyProfile extends React.Component {
               <Grid as={Segment}>
                 <Grid.Row columns='equal'>
                   <Grid.Column width={4}>
-                    <Image src='../images/defaultPic.jpg' size='medium'/>
+                    <Image src='../images/mrfullmoon.jpeg' size='medium'/>
                   </Grid.Column>
                   <Grid.Column>
                     <Grid>

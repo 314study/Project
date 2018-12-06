@@ -1,6 +1,6 @@
 import React from 'react';
 import { Mentors, MentorSchema } from '/imports/api/mentor/mentor';
-import { Grid, Segment } from 'semantic-ui-react';
+import { Grid, Segment, Message } from 'semantic-ui-react';
 import AutoForm from 'uniforms-semantic/AutoForm';
 import TextField from 'uniforms-semantic/TextField';
 import SubmitField from 'uniforms-semantic/SubmitField';
@@ -20,7 +20,6 @@ class EditMentor extends React.Component {
     super(props);
     this.submit = this.submit.bind(this);
     this.insertCallback = this.insertCallback.bind(this);
-    this.formRef = null;
   }
 
   /** Notify the user of the results of the submit. If successful, clear the form. */
@@ -45,27 +44,41 @@ class EditMentor extends React.Component {
   render() {
     return (
         <div className="inverted-section">
-        <Grid centered container>
-          <Grid.Column>
+        <Grid centered container relaxed>
+          <Grid.Column centered>
+            <Grid.Row>
             <p className="text-align-center Nunito-font font-medium small-padding-top font-color-white">Edit <span className="font-color-green">Mentor</span></p>
-            <AutoForm model={this.props.doc} schema={MentorSchema} onSubmit={this.submit}>
-              <Segment>
-                <TextField name='firstName'/>
-                <TextField name='lastName'/>
-                <TextField name='subjectStrength'/>
-                <TextField name='major'/>
-                <TextField name='contactNumber'/>
-                <TextField name='availableHours'/>
-                <TextField name='availableDaysOfWeek'/>
-                <TextField name='class1'/>
-                <TextField name='class2'/>
-                <TextField name='class3'/>
-                <TextField name='availability'/>
-                <SubmitField value='Submit'/>
-                <ErrorsField/>
-                <HiddenField name='owner' value='fakeuser@foo.com'/>
-              </Segment>
-            </AutoForm>
+            </Grid.Row>
+            <Grid.Column className='green-outline'>
+              <AutoForm model={this.props.doc} schema={MentorSchema} onSubmit={this.submit}>
+                <Segment>
+                  <Grid>
+                    <Grid.Row>
+                      <Grid.Column width={8}>
+                        <TextField name='firstName'/>
+                      </Grid.Column>
+                      <Grid.Column width={4}>
+                        <TextField name='lastName'/>
+                      </Grid.Column>
+                    </Grid.Row>
+                  </Grid>
+                  <div>
+                    <TextField name='subjectStrength'/>
+                    <TextField name='major'/>
+                    <TextField name='contactNumber'/>
+                    <TextField name='availableHours'/>
+                    <TextField name='availableDaysOfWeek'/>
+                    <TextField name='class1'/>
+                    <TextField name='class2'/>
+                    <TextField name='class3'/>
+                    <TextField name='availability'/>
+                  </div>
+                  <SubmitField value='Submit'/>
+                  <ErrorsField/>
+                  <HiddenField name='owner' value='fakeuser@foo.com'/>
+                </Segment>
+              </AutoForm>
+            </Grid.Column>
           </Grid.Column>
         </Grid>
         </div>

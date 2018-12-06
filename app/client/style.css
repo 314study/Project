@@ -18,6 +18,9 @@
   font-size: 18px;
 }
 
+.font-smaller {
+  font-size: 16px;
+}
 .font-bold {
   font-weight: bold;
 }
@@ -38,6 +41,12 @@
   color: #6fbe44;
 }
 
+.green-outline  {
+  border: solid;
+  border-color: #6fbe44;
+  border-width: 2px;
+}
+
 .text-align-right {
   text-align: right;
 }
@@ -48,6 +57,10 @@
 
 .text-align-center {
   text-align: center;
+}
+
+.position-center  {
+  align-content: center;
 }
 
 .margin-bottom-minus-10 {

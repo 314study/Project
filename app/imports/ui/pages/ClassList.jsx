@@ -123,8 +123,8 @@ class ClassList extends React.Component {
                     <Menu.Header>Humanities</Menu.Header>
                     <Menu.Menu>
                       <Menu.Item
-                          name='Philosiphy'
-                          active={subject === 'Philosiphy'} onClick={this.handleClick}
+                          name='Philosophy'
+                          active={subject === 'Philosophy'} onClick={this.handleClick}
                       />
                       <Menu.Item
                           name='History'
@@ -149,8 +149,8 @@ class ClassList extends React.Component {
                         </Dropdown.Menu>
                       </Dropdown>
                       <Menu.Item
-                          name='Religon'
-                          active={subject === 'Religon'} onClick={this.handleClick}
+                          name='Religion'
+                          active={subject === 'Religion'} onClick={this.handleClick}
                       />
                       <Menu.Item
                           name='Law'
@@ -164,7 +164,7 @@ class ClassList extends React.Component {
                           <Dropdown.Item text='Painting' name='Painting' active=
                               {subject === 'Painting'} onClick={this.handleClick}
                           />
-                          <Dropdown.Item text='Potery' name='Poetry' active=
+                          <Dropdown.Item text='Poetry' name='Poetry' active=
                               {subject === 'Poetry'} onClick={this.handleClick}
                           />
                         </Dropdown.Menu>
@@ -176,8 +176,8 @@ class ClassList extends React.Component {
                       <Menu.Header>Tester</Menu.Header>
                       <Menu.Menu>
                         <Menu.Item
-                            name='Class1'
-                            active={subject === 'Class1'} onClick={this.handleClick}
+                            name='Data Structures'
+                            active={subject === 'Data Structures'} onClick={this.handleClick}
                         />
                         <Menu.Item
                             name='Class2'

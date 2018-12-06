@@ -200,6 +200,18 @@ class ClassList extends React.Component {
               ).map(
                   (mentor, index) => <MentorCard key={index} mentor={mentor} />,
               )}
+
+                {this.props.mentors.filter(
+                    mentor => (this.state.activeIndex && (this.state.activeIndex.includes((mentor.class2)))),
+                ).map(
+                    (mentor, index) => <MentorCard key={index} mentor={mentor} />,
+                )}
+
+                {this.props.mentors.filter(
+                    mentor => (this.state.activeIndex && (this.state.activeIndex.includes((mentor.class3)))),
+                ).map(
+                    (mentor, index) => <MentorCard key={index} mentor={mentor} />,
+                )}
               </Grid>
             </Grid.Column>
           </Grid.Row>

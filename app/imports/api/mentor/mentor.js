@@ -9,24 +9,34 @@ const Mentors = new Mongo.Collection('Mentors');
 const MentorSchema = new SimpleSchema({
   firstName: String,
   lastName: String,
-  owner: String,
   class1: {
     type: String,
-    allowedValues: ['Physics', 'Chemistry', 'Biology', 'Mechanical', 'Civil', 'Electrical', 'Computer', 'Software', 'Math', 'Psychology', 'Anthropology', 'Sociology', 'Political Science', 'Economics', 'Philosophy', 'History', 'English',
-      'Japanese', 'Korean', 'Mandarin', 'Spanish', 'German', 'Russian', 'Religion', 'Law', 'Drawing', 'Painting', 'Poetry', 'None'],
+    allowedValues: ['Physics', 'Chemistry', 'Biology', 'Mechanical', 'Civil',
+      'Electrical', 'Computer', 'Software Engineering', 'Math', 'Psychology', 'Anthropology',
+      'Sociology', 'Political Science', 'Economics', 'Philosophy', 'History',
+      'English', 'Japanese', 'Korean', 'Mandarin', 'Spanish', 'German', 'Russian',
+      'Religion', 'Law', 'Drawing', 'Painting', 'Poetry', 'None'],
     defaultValue: 'None',
   },
   class2: {
     type: String,
-    allowedValues: ['Physics', 'Chemistry', 'Biology', 'Mechanical', 'Civil', 'Electrical', 'Computer', 'Software', 'Math', 'Psychology', 'Anthropology', 'Sociology', 'Political Science', 'Economics', 'Philosophy', 'History', 'English', 'Japanese', 'Korean', 'Mandarin', 'Spanish', 'German', 'Russian', 'Religion', 'Law', 'Drawing', 'Painting', 'Poetry', 'None'],
+    allowedValues: ['Physics', 'Chemistry', 'Biology', 'Mechanical', 'Civil',
+      'Electrical', 'Computer', 'Software Engineering', 'Math', 'Psychology', 'Anthropology',
+      'Sociology', 'Political Science', 'Economics', 'Philosophy', 'History',
+      'English', 'Japanese', 'Korean', 'Mandarin', 'Spanish', 'German', 'Russian',
+      'Religion', 'Law', 'Drawing', 'Painting', 'Poetry', 'None'],
     defaultValue: 'None',
   },
   class3: {
     type: String,
-    allowedValues: ['Physics', 'Chemistry', 'Biology', 'Mechanical', 'Civil', 'Electrical', 'Computer', 'Software', 'Math', 'Psychology', 'Anthropology', 'Sociology', 'Political Science', 'Economics', 'Philosophy', 'History', 'English',
-      'Japanese', 'Korean', 'Mandarin', 'Spanish', 'German', 'Russian', 'Religion', 'Law', 'Drawing', 'Painting', 'Poetry', 'None'],
+    allowedValues: ['Physics', 'Chemistry', 'Biology', 'Mechanical', 'Civil',
+      'Electrical', 'Computer', 'Software Engineering', 'Math', 'Psychology', 'Anthropology',
+      'Sociology', 'Political Science', 'Economics', 'Philosophy', 'History',
+      'English', 'Japanese', 'Korean', 'Mandarin', 'Spanish', 'German', 'Russian',
+      'Religion', 'Law', 'Drawing', 'Painting', 'Poetry', 'None'],
     defaultValue: 'None',
   },
+  owner: String,
   /*
   can eventually include
   -----------------

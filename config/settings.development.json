@@ -77,24 +77,24 @@
       "firstName": "Philip",
       "lastName": "Johnson",
       "class1": "Software Engineering",
-      "class2": "Software Engineering",
-      "class3": "Software Engineering",
+      "class2": "Computer",
+      "class3": "Poetry",
       "owner": "john@foo.com"
     },
     {
       "firstName": "Aaron",
       "lastName": "Geronimo",
       "class1": "Software Engineering",
-      "class2": "Software Engineering",
-      "class3": "Software Engineering",
+      "class2": "Mandarin",
+      "class3": "Electrical",
       "owner": "john@foo.com"
     },
     {
       "firstName": "Kain",
       "lastName": "Yogi",
       "class1": "Software Engineering",
-      "class2": "Software Engineering",
-      "class3": "Software Engineering",
+      "class2": "Spanish",
+      "class3": "Electrical",
       "owner": "john@foo.com"
     }
   ]

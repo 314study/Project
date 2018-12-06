@@ -100,7 +100,7 @@ class ClassList extends React.Component {
                         active={subject === 'Psychology'} onClick={this.handleClick}
                     />
                     <Menu.Item
-                        name='Antrhopology'
+                        name='Anthropology'
                         active={subject === 'Anthropology'} onClick={this.handleClick}
                     />
                     <Menu.Item

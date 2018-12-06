@@ -250,7 +250,7 @@ Landing.propTypes = {
 
 export default withTracker(() => {
   const subscription = Meteor.subscribe('Mentor');
-  const subscription2 = Meteor.subscribe('Profile');
+  const subscription2 = Meteor.subscribe('ProfileLanding');
   const subscription3 = Meteor.subscribe('Calendar');
   return {
     mentors: Mentors.find({}).fetch(),
